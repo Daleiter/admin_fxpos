@@ -1551,3 +1551,26 @@
 2023-09-06 18:02:43,965 [INFO] Scheduler started
 2023-09-06 18:02:43,966 [DEBUG] Looking for jobs to run
 2023-09-06 18:02:43,976 [DEBUG] Next wakeup is due at 2023-09-06 18:04:43.962715+03:00 (in 119.985946 seconds)
+2023-09-06 18:06:27,857 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-06 18:06:27,859 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-06 18:06:27,859 [INFO] Added job "get_aler" to job store "default"
+2023-09-06 18:06:27,860 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-06 18:06:27,860 [INFO] Scheduler started
+2023-09-06 18:06:27,860 [DEBUG] Looking for jobs to run
+2023-09-06 18:06:27,871 [DEBUG] Next wakeup is due at 2023-09-06 18:08:27.857286+03:00 (in 119.986299 seconds)
+2023-09-06 18:06:27,882 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8888
+ * Running on http://10.69.8.107:8888
+2023-09-06 18:06:27,882 [INFO] [33mPress CTRL+C to quit[0m
+2023-09-06 18:06:27,884 [INFO]  * Restarting with stat
+2023-09-06 18:06:28,665 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-06 18:06:28,667 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-06 18:06:28,667 [INFO] Added job "get_aler" to job store "default"
+2023-09-06 18:06:28,668 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-06 18:06:28,668 [INFO] Scheduler started
+2023-09-06 18:06:28,668 [DEBUG] Looking for jobs to run
+2023-09-06 18:06:28,679 [DEBUG] Next wakeup is due at 2023-09-06 18:08:28.665248+03:00 (in 119.986146 seconds)
+2023-09-06 18:06:28,692 [WARNING]  * Debugger is active!
+2023-09-06 18:06:28,692 [INFO]  * Debugger PIN: 490-768-130
+2023-09-06 18:06:40,640 [INFO] 10.69.8.107 - - [06/Sep/2023 18:06:40] "GET / HTTP/1.1" 200 -
