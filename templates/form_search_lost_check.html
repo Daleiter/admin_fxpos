@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% block active_home %}active{% endblock %}
+{% block main %}
+<div class="index-title">
+    <h2>Admin fxpos web app</h2>
+</div>
+<div class="grid-container">
+    <div class="column side">
+        <button
+        onclick="document.getElementById('id01').style.display='block'"
+        style="width: auto"
+      >
+        Search check
+      </button>
+      <br><br>
+        <div id="id01" class="modal">
+            <form class="modal-content animate" action="{{url_for('get_lost_check.get_lost_check')}}" method="post">
+              <div class="modal-title">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <h3>Search lost check</h3>
+              </div>
+          
+              <div class="container">
+                <label for="ename"><b>Id shop</b></label>
+                <input type="number" placeholder="Enter id shop" name="ename" required>
+          
+                <label for="edate"><b>Id workplace</b></label>
+                <input type="number" name="edate" placeholder="Enter id workplace" required>
+          
+                <label for="esalary"><b>Id check</b></label>
+                <input type="number" name="esalary" placeholder="Enter id check" required>
+                    
+                <button type="submit">Search</button>
+              </div>
+          
+              <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+              </div>
+            </form>
+          </div>
+    </div>
+    <div class="column middle">
+        
+    </div>
+</div>
+<script>
+    // Function from delete department and redirect
+
+    // Get the modal
+    var modal = document.getElementById("id01");
+  
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    };
+  </script>
+{% endblock %}

@@ -1,0 +1,44 @@
+
+<label for="userInput">Article</label>
+<input type="text" id="userInput" />
+<label for="start">Дата "вжити до":</label>
+
+<input type="date" id="date" name="trip-start"
+       value="2023-06-01">
+</br>
+</br>
+<button style="height: 30px; width: 100px;" onclick="downloadAndOpenPdfFromApi()">Open</button>
+<button style="height: 30px; width: 100px;" onclick="window.open('http://192.168.1.64:8888/api/labelprint/123', '_blank');">download</button>
+<script>
+function downloadAndOpenPdfFromApi() {
+
+var input = document.getElementById("userInput").value;
+var inputdate = document.getElementById("date").value;
+var apiUrl = 'http://192.168.1.64:8888/api/labelprint/' + input + "?date=" + inputdate
+  fetch(apiUrl)
+    .then(response => response.blob())
+    .then(blob => {
+      // Create a temporary URL object for the blob
+      const blobUrl = URL.createObjectURL(blob);
+
+      // Create a new anchor tag to initiate the download
+      const link = document.createElement('a');
+      link.href = blobUrl;
+      link.target = '_blank';
+      link.download = 'document.pdf'; // Set the desired file name
+
+      // Trigger a click event on the anchor tag to initiate the download
+      //link.click();
+
+      // Open the downloaded file
+      window.open(blobUrl, '_blank');
+    })
+    .catch(error => {
+      console.log('Error:', error);
+    });
+}
+
+// Usage
+//var apiUrl = 'http://localhost:8888/api/labelprint/123';
+//downloadAndOpenPdfFromApi(apiUrl);;
+</script>

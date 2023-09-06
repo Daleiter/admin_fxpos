@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}"> 
+    <meta charset="UTF-8">
+    {% block title %}
+    <title>Admin LKH</title>
+    {% endblock %}
+    <script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
+</head>
+<body>
+    <div class="topnav">
+        <a class="{% block active_home %}{% endblock %}" href="{{url_for('get_home')}}">Home</a>
+        <a class="{% block active_pos_dashboard %}{% endblock %}" href="{{url_for('pos_dashboard.get_dashboard')}}">Dashboard</a>
+        <a class="{% block active_silence %}{% endblock %}" href="{{url_for('silences_blueprint.get_silences')}}">Problems</a>
+        <a class="{% block active_lost_check %}{% endblock %}" href="{{url_for('get_lost_check.get_form_search_check')}}">Lost check</a>
+        <a class="{% block active_check_item %}{% endblock %}" href="{{url_for('check_item.check_item')}}">Check item price</a>
+        <a class="{% block active_inventory %}{% endblock %}" href="{{url_for('inventory_shop.get_inventory')}}">Inventory</a>
+        <a class="{% block active_employee %}{% endblock %}" href="">TODO</a>
+    </div>
+    
+    {% block main %}
+    {% endblock %}
+
+</body>
+</html>

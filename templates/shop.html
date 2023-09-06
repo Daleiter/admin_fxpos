@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+{% block active_lost_check %}active{% endblock %}}
+{% block main %}
+
+<main class="container-fluid px-4 overflow-hidden bg-dark" >
+  <div class="row g-5">
+    <div class="col col-lg-3">
+      <a href="#" class="btn btn-outline-primary" >General</a>
+
+    </div>
+    <div class="col-md-8 text-white">
+      <dl class="row">
+        <dt class="col-sm-3">Id shop</dt>
+        <dd class="col-sm-9">{{ shop_data[0]["shop"]["shop_number"] }}</dd>
+        <dt class="col-sm-3">Name shop</dt>
+        <dd class="col-sm-9">{{ shop_data[0]["shop"]["name"] }}</dd>
+        <hr>
+        <dt class="col-sm-3">Router</dt>
+        <dd class="col-sm-9">OK</dd>
+        <hr>
+        <dt class="col-sm-3">Pos</dt>
+        <dd class="col-sm-9">
+        {% for item in shop_data %}
+        {% if item["id_type"] == 1 %}
+          {% for attr in item["attributes"] %}
+          {% if attr["id_attribute"] == 3 %}
+          <a type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#modalformCreateShop" onclick="getFormItem()">{{ attr["value"] }}</a>
+          {% endif %}
+          {% endfor %}
+        {% endif %}
+        {% endfor %}
+        </dd>
+        <hr>
+        <dt class="col-sm-3">PC</dt>
+        <dd class="col-sm-9">
+        {% for item in shop_data %}
+        {% if item["id_type"] == 4 %}
+          <a type="button" class="btn btn-outline-success"  data-bs-toggle="modal" data-bs-target="#modalformCreateShop" onclick="getFormItem()">{{ item["host"] }}</a>
+        {% endif %}
+        {% endfor %}
+        </dd>
+      </dl>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Edit phones</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <form  id="form-search">
+            <div class="modal-body" id="div-form">
+
+              <label for="exampleDataList" class="form-label">Select shop</label>
+              <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search..." onchange="view_shop_info()">
+              <datalist id="datalistOptions" onchange="update_form()">
+                {% for item in data %}
+                <option value="{{ item["shop_number"] }}">{{ item["shop_name"] }}</option>
+                {% endfor %}
+              </datalist>
+              <div id="shop-info">
+                
+              </div>
+             
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success" onclick="addInput()">Add</button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-success" data-bs-dismiss="modal"  onclick="save()">Save</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+</main>
+
+<script>
+  async function getFormItem() {
+    const element = document.getElementById("formCreateShop");
+
+    let response = await fetch('{{url_for('inventory_edit.get_item_modal')}}');
+    let htmlForm;    
+    if (response.ok) { // если HTTP-статус в диапазоне 200-299
+      // получаем тело ответа (см. про этот метод ниже)
+      htmlForm = await response.text();
+      
+    } else {
+      alert("Ошибка HTTP: " + response.status);
+    }
+    element.innerHTML = htmlForm;
+    console.log(htmlForm)
+
+    }
+</script>
+{% endblock %}

@@ -1,0 +1,146 @@
+{% extends 'base.html' %}
+{% block active_lost_check %}active{% endblock %}}
+{% block main %}
+
+
+<main class="container-fluid px-4 overflow-hidden bg-dark">
+  <div class="row g-5">
+    <div class="col col-lg-2">
+      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal">
+        Search check
+      </button>
+      <br>
+
+
+      <a
+        href="{{url_for('get_lost_check.get_form_search_check_csv', idshop=id_shop, idworkplace=id_workplace, idcheck=id_check)}}">Download
+        report</a>
+
+    </div>
+    <div class="col-md-10">
+      <div class="table-responsive shadow-sm">
+      {% if data != None %}
+      <table id="myTable" class="table-silence table table-light table-hover sortable table-bordered">
+        <thead class="table-dark">
+          <th>РК</th>
+          <th>Каса</th>
+          <th>Касир</th>
+          <th>Дія</th>
+          <th>Артикул</th>
+          <th>Товар</th>
+          <th>Кількість</th>
+          <th>Вартість</th>
+          <th>Ціна</th>
+          <th>Номер чеку</th>
+          <th>Час пробивання</th>
+          <th>Знижка</th>
+          <th>Оплата готівкою</th>
+          <th>Оплата картою</th>
+        </thead>
+        {% for item in data %}
+
+        <tr>
+          <td>{{ item["id_shop"] }}</td>
+          <td>{{ item["id_workplace"] }}</td>
+          <td>{{ item["id_user"] }}</td>
+          <td>{{ item["id_action"] }}</td>
+          <td>{{ item["article"] }}</td>
+          <td>{{ item["name"] }}</td>
+          <td>{{ item["quantity"] }}</td>
+          <td>{{ item["price_sale"] }}</td>
+          <td>{{ item["price"] }}</td>
+          <td>{{ item["check_number"] }}</td>
+          <td>{{ item["date"] }}</td>
+          <td>{{ item["discount"] }}</td>
+          <td>{{ item["pay_cash"] }}</td>
+          <td>{{ item["pay_card"] }}</td>
+        </tr>
+        {% endfor %}
+      </table>
+      {% endif%}
+    </div>
+    </div>
+
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Search check</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form action="{{url_for('get_lost_check.get_lost_check')}}" method="post" id="form-search">
+          <div class="modal-body">
+
+            <div class="form-floating mb-3">
+              <input type="number" name="idshop" class="form-control" id="exampleFormControlInput1"
+                placeholder="ID Shop" required>
+              <label for="exampleFormControlInput1">ID Shop</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="number" name="idworkplace" class="form-control" id="exampleFormControlInput2"
+                placeholder="ID workplace">
+              <label for="exampleFormControlInput2">ID workplace</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="number" name="idcheck" class="form-control" id="exampleFormControlInput3"
+                placeholder="ID check">
+              <label for="exampleFormControlInput3">ID check</label>
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary">Search</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+
+    function view_wait() {
+      var wait_anim = document.getElementById('wait-anim');
+      wait_anim.style.display = "inline-block";
+    }
+
+    const form = document.getElementById('form-search');
+    form.addEventListener('submit', view_wait)
+
+
+  </script>
+
+  <script>
+    function myFunction() {
+      var input, filter, table, tr, td, i, txtValue;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      table = document.getElementById("myTable");
+      tr = table.getElementsByTagName("tr");
+      for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[3];
+        if (td) {
+          txtValue = td.textContent || td.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            tr[i].style.display = "";
+          } else {
+            tr[i].style.display = "none";
+          }
+        }
+      }
+    }
+  </script>
+
+  {% endblock %}

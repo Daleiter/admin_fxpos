@@ -1,0 +1,19 @@
+{% extends 'base.html' %} {% block active_departments %}active{% endblock %} {%
+block main %}
+
+<div class="index-title"></div>
+
+<div class="grid-container">
+  <div class="column side">
+    <h3>LEFT COLUMN</h3>
+  </div>
+  <div class="column middle">
+    <textarea cols="500">
+      {{custom}}
+      </textarea>
+      <br><br>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</div>
+{% endblock %}

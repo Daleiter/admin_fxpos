@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Admin-Fxpos</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Dashboard</a>
+              </li>
+              <li class="nav-item nav-pills">
+                <a class="nav-link active" href="#">Problems</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Tools
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Lost check</a></li>
+                  <li><a class="dropdown-item" href="#">Check item price</a></li>
+                  <li><a class="dropdown-item" href="#">Get sales form shop</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Inventory
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Pos list</a></li>
+                  <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"> Create new shop</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">TO DO</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">New shop</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Address shop">
+                <label for="exampleFormControlInput1">Address shop</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="exampleFormControlInput2" placeholder="ID Shop">
+                <label for="exampleFormControlInput2">ID Shop</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="exampleFormControlInput2" placeholder="ID Shop">
+                <label for="exampleFormControlInput2">Pos count</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="exampleFormControlInput2" placeholder="ID Shop">
+                <label for="exampleFormControlInput2">IP Address</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="ID Shop">
+                <label for="exampleFormControlInput2">Fishka token</label>
+              </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Edit advanced</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <button class="nav-link active" id="nav-pos-1-tab" data-bs-toggle="tab" data-bs-target="#nav-pos-1" type="button" role="tab" aria-controls="nav-pos-1" aria-selected="true">Pos 1</button>
+              <button class="nav-link" id="nav-pos-2-tab" data-bs-toggle="tab" data-bs-target="#nav-pos-2" type="button" role="tab" aria-controls="nav-pos-2" aria-selected="false">Pos 2</button>
+              <button class="nav-link" id="nav-pos-3-tab" data-bs-toggle="tab" data-bs-target="#nav-pos-3" type="button" role="tab" aria-controls="nav-pos-3" aria-selected="false">Pos 3</button>
+              <button class="nav-link" id="nav-scales-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Scales</button>
+              <button class="nav-link" id="nav-pc-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Pc</button>
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-pos-1" role="tabpanel" aria-labelledby="nav-home-tab">
+
+
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="enablePos">
+                <label class="form-check-label" for="enablePoss">Enable pos</label>
+              </div>
+              <div class="input-group form-floating mb-3">
+                <input type="text" class="form-control" id="ipAddressPos" placeholder="Address shop">
+                <label for="ipAddressPos">Ip address</label>
+              </div>
+              <div class="input-group form-floating mb-3">
+                <input type="number" class="form-control" id="idWorkplace" placeholder="ID Shop">
+                <label for="idWorkplace">ID workplace</label>
+              </div>
+              <div class="input-group form-floating mb-3">
+                <input type="number" class="form-control" id="idShop" placeholder="ID Shop">
+                <label for="idShop">ID shop</label>
+              </div>
+              <div class="input-group mb-3">
+                <select class="form-select" id="ecrPort" aria-label="ECR port">
+                  <option selected>Select port</option>
+                  <option value="ttyUSB0">ttyUSB0</option>
+                  <option value="ttyUSB1">ttyUSB1</option>
+                  <option value="ttyUSB2">ttyUSB2</option>
+                  <option value="ttyS0">ttyS0</option>
+                  <option value="ttyS1">ttyS1</option>
+                  <option value="ttyS2">ttyS2</option>
+                  <option value="ttyS3">ttyS3</option>
+                  <option value="ttyS4">ttyS4</option>
+                  <option value="ttyS5">ttyS5</option>
+                  <option value="ttyS6">ttyS6</option>
+                </select>
+                </select>
+                <label class="input-group-text" for="ecrPort">  ECR port</label>
+              </div>
+              <div class="input-group mb-3">
+                <select class="form-select" id="scanPort" aria-label="Scan port">
+                  <option selected>Select port</option>
+                  <option value="ttyUSB0">ttyUSB0</option>
+                  <option value="ttyUSB1">ttyUSB1</option>
+                  <option value="ttyUSB2">ttyUSB2</option>
+                  <option value="ttyS0">ttyS0</option>
+                  <option value="ttyS1">ttyS1</option>
+                  <option value="ttyS2">ttyS2</option>
+                  <option value="ttyS3">ttyS3</option>
+                  <option value="ttyS4">ttyS4</option>
+                  <option value="ttyS5">ttyS5</option>
+                  <option value="ttyS6">ttyS6</option>
+                </select>
+                </select>
+                <label class="input-group-text" for="scanPort"> Scan port</label>
+              </div>
+              <div class="input-group mb-3">
+                <select class="form-select" id="scalePort" aria-label="Scale port">
+                  <option selected>Select port</option>
+                  <option value="ttyUSB0">ttyUSB0</option>
+                  <option value="ttyUSB1">ttyUSB1</option>
+                  <option value="ttyUSB2">ttyUSB2</option>
+                  <option value="ttyS0">ttyS0</option>
+                  <option value="ttyS1">ttyS1</option>
+                  <option value="ttyS2">ttyS2</option>
+                  <option value="ttyS3">ttyS3</option>
+                  <option value="ttyS4">ttyS4</option>
+                  <option value="ttyS5">ttyS5</option>
+                  <option value="ttyS6">ttyS6</option>
+                </select>
+                </select>
+                <label class="input-group-text" for="scalePort">Scale port</label>
+              </div>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="enablePrro">
+                <label class="form-check-label" for="enablePrro">Enable prro</label>
+              </div>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="enableTouch">
+                <label class="form-check-label" for="enableTouch">Enable touch screen</label>
+              </div>
+              <div class="input-group mb-3">
+                <select class="form-select" aria-label="Bpos acquirer" id="bposAcquirer">
+                  <option selected>Select acquirer</option>
+                  <option value="ПриватБанк">ПриватБанк</option>
+                  <option value="ОщадБанк">ОщадБанк</option>
+                </select>
+                </select>
+                <label class="input-group-text" for="bposAcquirer">Bpos acquirer</label>
+              </div>
+             </div>
+
+            <div class="tab-pane fade" id="nav-pos-2" role="tabpanel" aria-labelledby="nav-profile-tab">
+
+
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Address shop">
+                <label for="exampleFormControlInput1">Address shop</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="exampleFormControlInput2" placeholder="ID Shop">
+                <label for="exampleFormControlInput2">ID Shop</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="exampleFormControlInput2" placeholder="ID Shop">
+                <label for="exampleFormControlInput2">Pos count</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="exampleFormControlInput2" placeholder="ID Shop">
+                <label for="exampleFormControlInput2">IP Address</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="ID Shop">
+                <label for="exampleFormControlInput2">Fishka token</label>
+              </div>
+
+
+            </div>
+            <div class="tab-pane fade" id="nav-pos-3" role="tabpanel" aria-labelledby="nav-profile-tab">
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Address shop">
+                <label for="exampleFormControlInput1">Address shop</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="exampleFormControlInput2" placeholder="ID Shop">
+                <label for="exampleFormControlInput2">ID Shop</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="exampleFormControlInput2" placeholder="ID Shop">
+                <label for="exampleFormControlInput2">Pos count</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="exampleFormControlInput2" placeholder="ID Shop">
+                <label for="exampleFormControlInput2">IP Address</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="ID Shop">
+                <label for="exampleFormControlInput2">Fishka token</label>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Address shop">
+                <label for="exampleFormControlInput1">Address shop</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="exampleFormControlInput2" placeholder="ID Shop">
+                <label for="exampleFormControlInput2">ID Shop</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="exampleFormControlInput2" placeholder="ID Shop">
+                <label for="exampleFormControlInput2">Pos count</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="exampleFormControlInput2" placeholder="ID Shop">
+                <label for="exampleFormControlInput2">IP Address</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="ID Shop">
+                <label for="exampleFormControlInput2">Fishka token</label>
+              </div>
+            </div>
+          </div>
+              
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary"  onclick="getInputs()">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+      
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+    <script>
+      function getInputs(){
+        var inputs = document.querySelectorAll('#nav-pos-1 input, select');
+        var values = {}
+        for (const input of inputs){
+          values[input.name] = input.value
+          if (input.type ==  "checkbox") {
+            console.log(input.id, input.checked)
+            values[input.id] = input.checked
+          } else {
+            console.log(input.id, input.value)
+            values[input.id] = input.value
+          }
+
+        }
+      }
+    </script>
+  </body>
+</html>

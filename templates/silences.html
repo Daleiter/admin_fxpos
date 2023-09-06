@@ -1,0 +1,128 @@
+{% extends 'base.html' %}
+{% block active_silence %}active{% endblock %}}
+{% block main %}
+
+
+
+<main class="container-fluid px-4 overflow-hidden bg-dark">
+  <div class="row g-5">
+    <div class="col-md-auto g-5">
+      <input class="form-control me-5" type="search" id="myInput" placeholder="Search" aria-label="Search">
+      
+      <a href="{{url_for('silences_blueprint.get_report')}}">Download report</a>
+    </div>
+
+    <div class="col-md-auto">
+      <div class="table-responsive shadow-sm">
+        <table id="myTable" class="table-silence table table-dark table-hover sortable table-bordered">
+          <thead class="table-dark">
+            <th>Id pos</th>
+            <th>Id Shop</th>
+            <th>Ip pos</th>
+            <th>Shop name</th>
+            <th>Comment</th>
+            <th>Created by</th>
+            <th>Started at</th>
+            <th>End at</th>
+            <th>Type</th>
+          </thead>
+          <tbody>
+            </tr>
+            {% for silence in data %}
+            <tr>
+              {% for item in silence["matchers"] %}
+
+              {% if item["name"] == "shop_name" %}
+              <td>{{ item["value"] }}</td>
+              {% endif%}
+
+              {% if item["name"] == "id_shop" %}
+              <td>{{ item["value"] }}</td>
+              {% endif%}
+
+              {% if item["name"] == "id_pos" %}
+              <td>{{ item["value"] }}</td>
+              {% endif%}
+
+              {% if item["name"] == "instance" %}
+              <td>{{ item["value"] }}</td>
+              {% endif%}
+              {% endfor %}
+
+              <td>{{ silence["comment"] }}</td>
+              <td>{{ silence["createdBy"] }}</td>
+              <td>{{ datetime.strptime(silence["startsAt"] , '%Y-%m-%dT%H:%M:%S.%fZ')}}</td>
+              <td>{{ datetime.strptime(silence["endsAt"] , '%Y-%m-%dT%H:%M:%S.%fZ')}}</td>
+              {% for item in silence["matchers"] %}
+              {% if item["name"] == "alertname" %}
+              <td>{{ item["value"] }}</td>
+              {% endif%}
+              {% endfor %}
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+
+<div id="id01" class="modal">
+
+  <form class="modal-content animate" action="/departments" method="post">
+    <div class="modal-title">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close"
+        title="Close Modal">&times;</span>
+      <h3>Add new department</h3>
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Name of department</b></label>
+      <input type="text" placeholder="Enter name" name="dname" required>
+
+      <button type="submit">Create</button>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'"
+        class="cancelbtn">Cancel</button>
+    </div>
+  </form>
+</div>
+
+<script>
+  // Get the modal
+  var modal = document.getElementById('id01');
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
+
+<script>
+  function myFunction() {
+    var input, filter, table, tr, td, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("myTable");
+    tr = table.getElementsByTagName("tr");
+    for (i = 0; i < tr.length; i++) {
+      td = tr[i].getElementsByTagName("td")[3];
+      if (td) {
+        txtValue = td.textContent || td.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          tr[i].style.display = "";
+        } else {
+          tr[i].style.display = "none";
+        }
+      }
+    }
+  }
+</script>
+
+{% endblock %}

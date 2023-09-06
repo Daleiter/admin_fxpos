@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+{% block active_lost_check %}active{% endblock %}}
+{% block main %}
+
+<main class="container-fluid px-4 overflow-hidden bg-dark" >
+  <div class="row g-5">
+    <div class="col col-lg-3">
+      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal">
+        Edit phones
+      </button>
+      <a href="#" class="btn btn-outline-primary" >Каса звичайна</a>
+      <a href="#" class="btn btn-outline-primary" >Каса пРРО</a>
+    </div>
+    <div class="col-md-8">
+      <div class="table-responsive shadow-sm">
+        <table class="table table-dark">
+          <thead class="table-dark">
+            <tr>
+              <th>ID shop</th>
+              <th>Shop name</th>
+              <th>IP</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for item in shops %}
+            {% if item["active"] == True %}
+            <tr>
+              <td>{{ item["shop_number"] }}</td>
+              <td>{{ item["name"] }}</td>
+              <td>{{ item["base_ip"] }}</td>
+            </tr>
+           {% endif %}
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Edit phones</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <form  id="form-search">
+            <div class="modal-body" id="div-form">
+
+              <label for="exampleDataList" class="form-label">Select shop</label>
+              <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search..." onchange="view_shop_info()">
+              <datalist id="datalistOptions" onchange="update_form()">
+                {% for item in data %}
+                <option value="{{ item["shop_number"] }}">{{ item["shop_name"] }}</option>
+                {% endfor %}
+              </datalist>
+              <div id="shop-info">
+                
+              </div>
+             
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success" onclick="addInput()">Add</button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-success" data-bs-dismiss="modal"  onclick="save()">Save</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+</main>
+<script>
+  
+</script>
+{% endblock %}

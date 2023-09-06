@@ -1,0 +1,113 @@
+{% extends 'base.html' %}
+{% block active_check_item %}active{% endblock %}
+{% block main %}
+
+<main class="container-fluid px-4 overflow-hidden bg-dark">
+  <div class="row g-5">
+    <div class="col col-lg-2">
+      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Search item
+      </button>
+      <br><br>
+    </div>
+    <div class="col-md-8">
+      <div class="table-responsive shadow-sm">
+        {% if data %}
+        <table id="myTable" class="table-silence table table-dark table-hover sortable table-bordered">
+          <thead class="table-dark">
+            <th>Ціна</th>
+            <th>Назва</th>
+            <th>Артикул</th>
+            <th>Штрих-код</th>
+            <th>Ід артикулу</th>
+            <th>Ід штрих-коду</th>
+            <th>Ід магазину</th>
+            <th>Номер каси</th>
+          </thead>
+          {% for item in data %}
+
+          {% if not item["false"] %}
+          <tr>
+            <td>{{ item["price"] }}</td>
+            <td>{{ item["item_name"] }}</td>
+            <td>{{ item["article"] }}</td>
+            <td>{{ item["barcode"] }}</td>
+            <td>{{ item["id_article"] }}</td>
+            <td>{{ item["id_barcode"] }}</td>
+            <td>{{ item["id_shop"] }}</td>
+            <td>{{ item["id_workplace"] }}</td>
+          </tr>
+          {% else %}
+          <tr style="background-color: rgb(248, 154, 154);">
+            <td colspan="6" style="color: crimson; text-align: center; font-weight: bolder;">Каса без зв'язку!</td>
+            <td>{{ item["id_shop"] }}</td>
+            <td>{{ item["id_workplace"] }}</td>
+          </tr>
+          {% endif%}
+
+          {% endfor %}
+        </table>
+
+        {% endif%}
+        {% if is_barcode == False %}
+        <b>Штрих-код в базі DPOS не знайдено!!!</b>
+        {% endif%}
+        {% if is_article == False %}
+        <br>
+        <b>Артикул в базі DPOS не знайдено!!!</b>
+        {% endif%}
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Search item</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <form action="{{url_for('check_item.get_item')}}" method="post">
+        <div class="modal-body">
+
+          <div class="form-floating mb-3">
+            <input type="number" name="shop" class="form-control" id="exampleFormControlInput1" placeholder="ID Shop"
+              required>
+            <label for="exampleFormControlInput1">ID Shop</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="number" name="barcode" class="form-control" id="exampleFormControlInput2"
+              placeholder="Barcode">
+            <label for="exampleFormControlInput2">Barcode</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="number" name="article" class="form-control" id="exampleFormControlInput3"
+              placeholder="Article">
+            <label for="exampleFormControlInput3">Article</label>
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-primary">Search</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<script>
+  // Function from delete department and redirect
+
+  // Get the modal
+  var modal = document.getElementById("id01");
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  };
+</script>
+{% endblock %}

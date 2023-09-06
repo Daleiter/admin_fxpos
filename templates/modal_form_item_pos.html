@@ -1,0 +1,195 @@
+  <!-- Modal 
+  <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"> 
+    
+
+    <div class="modal-dialog modal-dialog-centered">-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Edit advanced</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <button class="nav-link active" id="nav-pos-1-tab" data-bs-toggle="tab" data-bs-target="#nav-pos-1" type="button" role="tab" aria-controls="nav-pos-1" aria-selected="true">Pos 1</button>
+              <button class="nav-link" id="nav-pos-2-tab" data-bs-toggle="tab" data-bs-target="#nav-pos-2" type="button" role="tab" aria-controls="nav-pos-2" aria-selected="false">Pos 2</button>
+              <button class="nav-link" id="nav-pos-3-tab" data-bs-toggle="tab" data-bs-target="#nav-pos-3" type="button" role="tab" aria-controls="nav-pos-3" aria-selected="false">Pos 3</button>
+              <button class="nav-link" id="nav-scales-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Scales</button>
+              <button class="nav-link" id="nav-pc-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Pc</button>
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-pos-1" role="tabpanel" aria-labelledby="nav-home-tab">
+
+
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="enablePos">
+                <label class="form-check-label" for="enablePoss">Enable pos</label>
+              </div>
+              <div class="input-group form-floating mb-3">
+                <input type="text" class="form-control" id="ipAddressPos" placeholder="Address shop">
+                <label for="ipAddressPos">Ip address</label>
+              </div>
+              <div class="input-group form-floating mb-3">
+                <input type="number" class="form-control" id="idWorkplace" placeholder="ID Shop">
+                <label for="idWorkplace">ID workplace</label>
+              </div>
+              <div class="input-group form-floating mb-3">
+                <input type="number" class="form-control" id="idShop" placeholder="ID Shop">
+                <label for="idShop">ID shop</label>
+              </div>
+              <div class="input-group mb-3">
+                <select class="form-select" id="ecrPort" aria-label="ECR port">
+                  <option selected>Select port</option>
+                  <option value="ttyUSB0">ttyUSB0</option>
+                  <option value="ttyUSB1">ttyUSB1</option>
+                  <option value="ttyUSB2">ttyUSB2</option>
+                  <option value="ttyS0">ttyS0</option>
+                  <option value="ttyS1">ttyS1</option>
+                  <option value="ttyS2">ttyS2</option>
+                  <option value="ttyS3">ttyS3</option>
+                  <option value="ttyS4">ttyS4</option>
+                  <option value="ttyS5">ttyS5</option>
+                  <option value="ttyS6">ttyS6</option>
+                </select>
+                </select>
+                <label class="input-group-text" for="ecrPort">  ECR port</label>
+              </div>
+              <div class="input-group mb-3">
+                <select class="form-select" id="scanPort" aria-label="Scan port">
+                  <option selected>Select port</option>
+                  <option value="ttyUSB0">ttyUSB0</option>
+                  <option value="ttyUSB1">ttyUSB1</option>
+                  <option value="ttyUSB2">ttyUSB2</option>
+                  <option value="ttyS0">ttyS0</option>
+                  <option value="ttyS1">ttyS1</option>
+                  <option value="ttyS2">ttyS2</option>
+                  <option value="ttyS3">ttyS3</option>
+                  <option value="ttyS4">ttyS4</option>
+                  <option value="ttyS5">ttyS5</option>
+                  <option value="ttyS6">ttyS6</option>
+                </select>
+                </select>
+                <label class="input-group-text" for="scanPort"> Scan port</label>
+              </div>
+              <div class="input-group mb-3">
+                <select class="form-select" id="scalePort" aria-label="Scale port">
+                  <option selected>Select port</option>
+                  <option value="ttyUSB0">ttyUSB0</option>
+                  <option value="ttyUSB1">ttyUSB1</option>
+                  <option value="ttyUSB2">ttyUSB2</option>
+                  <option value="ttyS0">ttyS0</option>
+                  <option value="ttyS1">ttyS1</option>
+                  <option value="ttyS2">ttyS2</option>
+                  <option value="ttyS3">ttyS3</option>
+                  <option value="ttyS4">ttyS4</option>
+                  <option value="ttyS5">ttyS5</option>
+                  <option value="ttyS6">ttyS6</option>
+                </select>
+                </select>
+                <label class="input-group-text" for="scalePort">Scale port</label>
+              </div>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="enablePrro">
+                <label class="form-check-label" for="enablePrro">Enable prro</label>
+              </div>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="enableTouch">
+                <label class="form-check-label" for="enableTouch">Enable touch screen</label>
+              </div>
+              <div class="input-group mb-3">
+                <select class="form-select" aria-label="Bpos acquirer" id="bposAcquirer">
+                  <option selected>Select acquirer</option>
+                  <option value="ПриватБанк">ПриватБанк</option>
+                  <option value="ОщадБанк">ОщадБанк</option>
+                </select>
+                </select>
+                <label class="input-group-text" for="bposAcquirer">Bpos acquirer</label>
+              </div>
+             </div>
+
+            <div class="tab-pane fade" id="nav-pos-2" role="tabpanel" aria-labelledby="nav-profile-tab">
+
+
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Address shop">
+                <label for="exampleFormControlInput1">Address shop</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="exampleFormControlInput2" placeholder="ID Shop">
+                <label for="exampleFormControlInput2">ID Shop</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="exampleFormControlInput2" placeholder="ID Shop">
+                <label for="exampleFormControlInput2">Pos count</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="exampleFormControlInput2" placeholder="ID Shop">
+                <label for="exampleFormControlInput2">IP Address</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="ID Shop">
+                <label for="exampleFormControlInput2">Fishka token</label>
+              </div>
+
+
+            </div>
+            <div class="tab-pane fade" id="nav-pos-3" role="tabpanel" aria-labelledby="nav-profile-tab">
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Address shop">
+                <label for="exampleFormControlInput1">Address shop</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="exampleFormControlInput2" placeholder="ID Shop">
+                <label for="exampleFormControlInput2">ID Shop</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="exampleFormControlInput2" placeholder="ID Shop">
+                <label for="exampleFormControlInput2">Pos count</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="exampleFormControlInput2" placeholder="ID Shop">
+                <label for="exampleFormControlInput2">IP Address</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="ID Shop">
+                <label for="exampleFormControlInput2">Fishka token</label>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Address shop">
+                <label for="exampleFormControlInput1">Address shop</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="exampleFormControlInput2" placeholder="ID Shop">
+                <label for="exampleFormControlInput2">ID Shop</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="exampleFormControlInput2" placeholder="ID Shop">
+                <label for="exampleFormControlInput2">Pos count</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="exampleFormControlInput2" placeholder="ID Shop">
+                <label for="exampleFormControlInput2">IP Address</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="ID Shop">
+                <label for="exampleFormControlInput2">Fishka token</label>
+              </div>
+            </div>
+          </div>
+              
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary"  onclick="getInputs()">Save changes</button>
+        </div>
+      </div>
+       <!-- Modal
+    </div>
+
+ 
+  </div>
+  -->

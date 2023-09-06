@@ -1,0 +1,162 @@
+{% extends 'base.html' %}
+{% block active_inventory %}active{% endblock %}}
+{% block main %}
+
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  
+  #myInput {
+    background-image: url('/css/searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+  }
+  
+  </style>
+
+<div class="grid-container">
+    <div class="column side">
+      
+      <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+    </div>
+    <div class="column middle">
+      <table id="myTable" class="sortable">
+        <tr>
+          <th>IP</th>
+          <th>Shop number</th>
+          <th>Shop address</th>
+        </tr>
+        {% for value in data_for_template %}
+        
+        <tr id="{{ value['id'] }}" onclick="view_shop_info(this.id)"> 
+          <td>{{ value["base_ip"] }}</td>
+          <td>{{ value["shop_number"] }}</td>
+          <td>{{ value["name"] }}</td>
+        </tr>
+        {% endfor %}
+      </table>
+    </div>
+
+  </div>
+  
+<div id="id01" class="modal">
+  
+  <div class="modal-content animate">
+    <div class="modal-title">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <h3>Information about shop</h3>
+    </div>
+
+    <div class="container" id="shop-info">
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button id="save-button" onclick="save()">Save</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+<script>
+  async function view_shop_info(clicked_id) {
+    console.log(clicked_id)
+    const container = document.getElementById("shop-info")
+
+    let response = await fetch('/inventory/shop/' + clicked_id);
+    let json;    
+    if (response.ok) { // если HTTP-статус в диапазоне 200-299
+      // получаем тело ответа (см. про этот метод ниже)
+      json = await response.json();
+      
+    } else {
+      alert("Ошибка HTTP: " + response.status);
+    }
+
+    //Clear old blocks from container
+    while (container.hasChildNodes()) {
+      container.removeChild(container.lastChild);
+    }
+    for (const item in json) {
+      addNodeOfItem(container, json[item])
+    }
+    document.getElementById('id01').style.display='block'
+    //document.getElementById("info-" + clicked_id).style.display = "block";
+    }
+
+  function addNodeOfItem(container, data) {
+    var input = document.createElement("input");
+    input.type = "checkbox";
+    input.name = "item-" + data.id_item;
+    input.checked = data.active;
+
+    var label = document.createElement("label");
+    label.for = "item-" + data.id_item;
+    label.appendChild(document.createTextNode(data.host))
+    console.log(data)
+    container.appendChild(label)
+    container.appendChild(input)
+    container.appendChild(document.createElement("br"))
+  }
+
+  function save() {
+    inputs = document.getElementById("shop-info").querySelectorAll('[name^=item-]')
+    //inputs = document.getElementById("shop-info").getElementsByTagName("input");
+    inputs.forEach(element => {
+     updateItems(element.name.split('-')[1], element.checked)
+  });
+  }
+  
+  async function updateItems(id, active) {
+    data = {'active': active}
+    let response = await fetch('/inventory/item/' + id, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json;charset=utf-8'
+      },
+      body: JSON.stringify(data)
+    });
+    if (response.ok) {
+      let result = await response.json();
+      console.log(result);
+    }
+  }
+
+  function myFunction() {
+    var input, filter, table, tr, td, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("myTable");
+    tr = table.getElementsByTagName("tr");
+    for (i = 0; i < tr.length; i++) {
+      //last elemet is number of column
+      td = tr[i].getElementsByTagName("td")[2];
+      if (td) {
+        txtValue = td.textContent || td.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          tr[i].style.display = "";
+        } else {
+          tr[i].style.display = "none";
+        }
+      }       
+    }
+  }
+  </script>
+
+{% endblock %}

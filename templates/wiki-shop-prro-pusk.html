@@ -1,0 +1,257 @@
+{% extends 'base.html' %}
+{% block active_lost_check %}active{% endblock %}}
+{% block main %}
+
+<main class="container-fluid px-4 overflow-hidden bg-dark" >
+  <div class="row g-5">
+    <div class="col col-lg-3">
+      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal">
+        Edit phones
+      </button>
+
+      <a href="{{url_for('inventory_shop.get_wiki_list_shops')}}" class="btn btn-outline-primary" >Каса звичайна</a>
+      <a href="{{url_for('inventory_shop.get_wiki_list_shops_prro')}}" class="btn btn-outline-success" >Каса пРРО</a>
+      <button class="btn btn-outline-warning" >ПК</button>
+
+
+    </div>
+    <div class="col-md-8">
+      <div class="table-responsive shadow-sm">
+        <table class="table table-dark">
+          <thead class="table-dark">
+            <tr>
+              <th>IP</th>
+              <th>ID shop</th>
+              <th>Shop name</th>
+              <th>Work phone</th>
+              <th>Personal phone</th>
+              <th>Network</th>
+              <th>Router</th>
+              {% for item in range(remote_con_len)  %}
+              <th>guac</th>
+              {% endfor %}
+
+
+            </tr>
+          </thead>
+          <tbody>
+            {% for item in data %}
+            {% if prro and item["is_have_prro"] == True %}
+            <tr>
+              <td>{{ item["ip"] }}</td>
+              <td>{{ item["shop_number"] }}</td>
+              <td>{{ item["shop_name"] }}</td>
+              {% if item["phones"] and item["phones"]|length == 1 %}
+              <td>{{ item["phones"][0] }}</td>
+              <td>Немає</td>
+             {% elif  item["phones"] %}
+             {% for phone in item["phones"] %}
+             <td>{{ phone }}</td>
+             {% endfor %}
+             {% else %}
+             <td>Немає</td>
+             <td>Немає</td>
+             {% endif %}
+              <td><a class="is-external-link" href="http://{{ item["provider"]["host"] }}/" target="_blank">{{ item["provider"]["name"] }}</a></td>
+              <td><a class="is-external-link btn btn-outline-secondary" style="width: 38px;" href="http://{{ item["router"] }}/" target="_blank">R</a></td>
+              {% for pos in item["pos"] %}
+              {% if pos["is_prro"] %}
+              <td><a class="is-external-link btn btn-outline-success" style="width: 38px;" href="https://192.168.1.14:8443/#/client/{{ pos["vnc_code"]
+                  }}.{{ pos["ssh_code"] }}" target="_blank">{{ pos["host"].split('.')[-1] }}</a></td>
+              {% else %}
+              <td><a class="is-external-link btn btn-outline-primary" style="width: 38px;" href="https://192.168.1.14:8443/#/client/{{ pos["vnc_code"]
+                  }}.{{ pos["ssh_code"] }}" target="_blank">{{ pos["host"].split('.')[-1] }}</a></td>
+              {% endif %}
+              {% endfor %}
+
+
+              {% for pos in item["pc"] %}
+
+              <td><a class="is-external-link btn btn-outline-warning" style="width: 38px;" href="https://192.168.1.14:8443/#/client/{{ pos["vnc_code"] }}"
+                  target="_blank">{{ pos["host"].split('.')[-1] }}</a></td>
+              {% endfor %}
+            </tr>
+            {% elif not prro %}
+            <tr>
+              <td>{{ item["ip"] }}</td>
+              <td>{{ item["shop_number"] }}</td>
+              <td>{{ item["shop_name"] }}</td>
+              {% if item["phones"] and item["phones"]|length == 1 %}
+              <td>{{ item["phones"][0] }}</td>
+              <td>Немає</td>
+             {% elif  item["phones"] %}
+             {% for phone in item["phones"] %}
+             <td>{{ phone }}</td>
+             {% endfor %}
+             {% else %}
+             <td>Немає</td>
+             <td>Немає</td>
+             {% endif %}
+             <td><a class="is-external-link" href="http://{{ item["provider"]["host"] }}/" target="_blank">{{ item["provider"]["name"] }}</a></td>
+             <td><a class="is-external-link btn btn-outline-secondary" style="width: 38px;" href="http://{{ item["router"] }}/" target="_blank">R</a></td>
+              {% for pos in item["pos"] %}
+              {% if pos["is_prro"] %}
+              <td><a class="is-external-link btn btn-outline-success" style="width: 38px;" href="https://192.168.1.14:8443/#/client/{{ pos["vnc_code"]
+                  }}.{{ pos["ssh_code"] }}" target="_blank">{{ pos["host"].split('.')[-1] }}</a></td>
+              {% else %}
+              <td><a class="is-external-link btn btn-outline-primary" style="width: 38px;" href="https://192.168.1.14:8443/#/client/{{ pos["vnc_code"]
+                  }}.{{ pos["ssh_code"] }}" target="_blank">{{ pos["host"].split('.')[-1] }}</a></td>
+              {% endif %}
+              {% endfor %}
+
+
+              {% for pos in item["pc"] %}
+
+              <td><a class="is-external-link btn btn-outline-warning" style="width: 38px;" href="https://192.168.1.14:8443/#/client/{{ pos["vnc_code"] }}"
+                  target="_blank">{{ pos["host"].split('.')[-1] }}</a></td>
+              {% endfor %}
+            </tr>
+            {% endif %}
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Edit phones</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <form  id="form-search">
+            <div class="modal-body" id="div-form">
+
+              <label for="exampleDataList" class="form-label">Select shop</label>
+              <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search..." onchange="view_shop_info()">
+              <datalist id="datalistOptions" onchange="update_form()">
+                {% for item in data %}
+                <option value="{{ item["shop_number"] }}">{{ item["shop_name"] }}</option>
+                {% endfor %}
+              </datalist>
+              <div id="shop-info">
+                
+              </div>
+             
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success" onclick="addInput()">Add</button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-success" data-bs-dismiss="modal"  onclick="save()">Save</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+</main>
+<script>
+  function update_form() {
+    var x = document.getElementById("exampleDataList").value;
+    document.getElementById("shop-info").innerHTML += "You selected: " + x;
+  }
+
+  async function view_shop_info() {
+    var clicked_id = document.getElementById("exampleDataList").value;
+    if (!isNaN(clicked_id)) {
+    //document.getElementById("div-form").innerHTML += "You selected: " + x;
+    console.log(clicked_id)
+    const container = document.getElementById("shop-info")
+
+    let response = await fetch('/api/shops/phones/' + clicked_id);
+    let json;    
+    if (response.ok) { // если HTTP-статус в диапазоне 200-299
+      // получаем тело ответа (см. про этот метод ниже)
+      json = await response.json();
+      
+    } else {
+      alert("Ошибка HTTP: " + response.status);
+    }
+
+    //Clear old blocks from container
+    while (container.hasChildNodes()) {
+      container.removeChild(container.lastChild);
+    }
+    for (const item in json.numbers_list) {
+      console.log(json.numbers_list[item], json.id_shop)
+      addNodeOfItem(container, json.numbers_list[item], json.id_shop)
+    }}
+    
+    }
+
+    function delete_input() {
+      //buttonD.style.color = "red";
+      this.parentNode.remove();//parentNode.removeChild(buttonD.parentNode);
+    };
+
+    function addNodeOfItem(container, data, id_shop) {
+      var input = document.createElement("input");
+      input.type = "checkbox";
+      input.name = "item-" + data + "-" + id_shop;
+      input.checked = true;
+  
+      var div = document.createElement("div");
+      textInput = document.createElement("input");
+      textInput.type = "text";
+      textInput.value = data;
+      textInput.name = "item-" + data + "-" + id_shop;
+      div.append(textInput)
+      console.log(data)
+      
+      buttonD = document.createElement("button");
+      buttonD.id = "button-" + data;
+      buttonD.type = "button";
+      buttonD.classList.add("btn");
+      buttonD.classList.add("btn-danger");
+      buttonD.innerHTML  = "Delete";
+      buttonD.addEventListener('click', delete_input);
+      div.appendChild(buttonD)
+      container.appendChild(div)
+      container.appendChild(document.createElement("br"))
+    }
+
+    function save() {
+      inputs = document.getElementById("shop-info").querySelectorAll('[name^=item-]')
+      //inputs = document.getElementById("shop-info").getElementsByTagName("input");
+      listPhones = []
+      inputs.forEach(element => {
+        console.log(element.name.split('-')[2], element.value)
+        listPhones.push(element.value)        
+        });
+      updateItems(inputs[0].name.split('-')[2], listPhones)
+    }
+
+    function addInput_(){
+      const container = document.getElementById("shop-info")
+      var label = document.createElement("label");
+      textInput = document.createElement("input");
+      textInput.type = "text";
+      textInput.name = "item-new-0";
+      label.appendChild(textInput)
+      container.appendChild(label)
+      container.appendChild(document.createElement("br"))
+    }
+
+    function addInput(){
+      const container = document.getElementById("shop-info")
+      addNodeOfItem(container, "Немає", "new")
+    }
+    
+    async function updateItems(id, numbers) {
+      data = {'id_shop': id,
+              'numbers_list': numbers}
+      console.log(data)
+      let response = await fetch('/api/shops/phones', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json;charset=utf-8'
+        },
+        body: JSON.stringify(data)
+      });
+      if (response.ok) {
+        let result = await response.json();
+        console.log(result);
+      }
+    }
+</script>
+{% endblock %}

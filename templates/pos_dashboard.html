@@ -1,0 +1,140 @@
+{% extends 'base.html' %}
+{% block active_pos_dashboard %}active{% endblock %}
+{% block main %}
+
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  
+  #myInput {
+    background-image: url('/css/searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+  }
+  
+  </style>
+
+<div class="grid-container">
+    <div class="column side">
+      
+      <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+    </div>
+    <div class="table-responsive">
+      <table id="myTable" class="table table-light table-hover sortable table-bordered ">
+        <thead class="table-dark">
+          <th >Shop name</th>
+          <th>ip</th>
+          <th>Id pos</th>
+          <th>Id Shop</th>
+          <th>Status</th>
+        </thead>
+        <tbody>
+        {% for metric, value in zip(data_for_template["metric"], data_for_template["value"]) %}
+        {% if value == "0" %}
+        <tr class="table-danger"> 
+          <td>{{ metric["shop_name"] }}</td>
+          <td><a href="{{url_for('edit_config.edit_custom', ip_address_pos=metric['instance'])}}">{{ metric["instance"] }}</a></td>
+          <td>{{ metric["id_pos"] }}</td>
+          <td>{{ metric["id_shop"] }}</td>
+          <td>Down</td>
+        </tr>
+        {% else %}
+        <tr> 
+            <td>{{ metric["shop_name"] }}</td>
+            <td><a href="{{url_for('edit_config.edit_custom', ip_address_pos=metric['instance'])}}">{{ metric["instance"] }}</a></td>
+            <td>{{ metric["id_pos"] }}</td>
+            <td>{{ metric["id_shop"] }}</td>
+            <td>Up</td>
+          </tr>
+        {% endif %}
+        {% endfor %}
+      </tbody>
+      </table>
+    </div>
+
+  </div>
+  
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/departments" method="post">
+    <div class="modal-title">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <h3>Add new department</h3>
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Name of department</b></label>
+      <input type="text" placeholder="Enter name" name="dname" required>
+  
+      <button type="submit">Create</button>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+<script>
+  function myFunction() {
+    var input, filter, table, tr, td, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("myTable");
+    tr = table.getElementsByTagName("tr");
+    for (i = 0; i < tr.length; i++) {
+      td = tr[i].getElementsByTagName("td")[0];
+      if (td) {
+        txtValue = td.textContent || td.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          tr[i].style.display = "";
+        } else {
+          tr[i].style.display = "none";
+        }
+      }       
+    }
+  }
+  </script>
+          <script>
+            const eventSource = new EventSource('http://localhost:8888/api/sse');
+
+
+// Event listener for receiving SSE events
+eventSource.onmessage = function (event) {
+  const eventData = JSON.parse(event.data);
+  console.log('Received event:', eventData);
+  alert("The server says " + eventData.message);
+  // Handle the event data
+  // ...
+};
+
+// Event listener for handling SSE errors
+eventSource.onerror = function (error) {
+  console.error('SSE error:', error);
+};
+
+// Event listener for closing the SSE connection
+eventSource.onclose = function () {
+  console.log('SSE connection closed');
+};
+            </script>
+
+{% endblock %}
