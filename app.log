@@ -1544,3 +1544,10 @@
 2023-09-06 15:59:59,941 [INFO]  * Debugger PIN: 490-768-130
 2023-09-06 16:00:00,986 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
 2023-09-06 16:00:01,221 [INFO]  * Restarting with stat
+2023-09-06 18:02:43,962 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-06 18:02:43,964 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-06 18:02:43,965 [INFO] Added job "get_aler" to job store "default"
+2023-09-06 18:02:43,965 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-06 18:02:43,965 [INFO] Scheduler started
+2023-09-06 18:02:43,966 [DEBUG] Looking for jobs to run
+2023-09-06 18:02:43,976 [DEBUG] Next wakeup is due at 2023-09-06 18:04:43.962715+03:00 (in 119.985946 seconds)
