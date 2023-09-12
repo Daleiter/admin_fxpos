@@ -10,11 +10,12 @@ class ShopsCD(db.Model):
     __tablename__ = 'shops'
     code_shop = Column(Integer(),  nullable=False, primary_key=True)
     name_shop = Column(Integer())
+    address = Column(String(),  nullable=False)
     sign_activity = Column(Integer())
    
     def __repr__(self) -> str:
-        return "<shops(code_shop='%s', name_shop='%s')>" % (
-                            self.code_shop, self.name_shop, self.sign_activity)
+        return "<shops(code_shop='%s', name_shop='%s', address='%s', sign_activity='%s')>" % (
+                            self.code_shop, self.name_shop, self.address, self.sign_activity)
 
     def as_dict(self):
         return {c.name: getattr(self, c.name) for c in self.__table__.columns}
@@ -24,15 +25,15 @@ class WorkplaceCD(db.Model):
     __table_args__ = {'schema': 'pos'}
     __bind_key__ = 'cashdesk_db'
     __tablename__ = 'workplace'
-    version_row_r  = Column(Integer(), primary_key=True)
-    code_shop = Column(Integer(), ForeignKey(ShopsCD.code_shop),  nullable=False)
-    id_workplace = Column(Integer())
+    #version_row_r  = Column(Integer(), primary_key=True)
+    code_shop = Column(Integer(), ForeignKey(ShopsCD.code_shop),  nullable=False, primary_key=True)
+    id_workplace = Column(Integer(), primary_key=True)
     sign_activity = Column(Integer())
     shop = db.relationship("ShopsCD") #, back_populates="items"
 
     def __repr__(self) -> str:
-        return "<workplace(version_row_r='%s', code_shop='%s', id_workplace='%s', sign_activity='%s')>" % (
-                            self.version_row_r, self.code_shop, self.id_workplace, self.sign_activity)
+        return "<workplace(code_shop='%s', id_workplace='%s', sign_activity='%s')>" % (
+                            self.code_shop, self.id_workplace, self.sign_activity)
 
     def as_dict(self):
         return {c.name: getattr(self, c.name) for c in self.__table__.columns}
@@ -47,6 +48,7 @@ class shops_shema(ma.SQLAlchemyAutoSchema):
     
     code_shop = auto_field()
     name_shop = auto_field()
+    address = auto_field()
     sign_activity = auto_field()
 
 class workplacecd_schema(ma.SQLAlchemyAutoSchema):
@@ -57,7 +59,6 @@ class workplacecd_schema(ma.SQLAlchemyAutoSchema):
         include_relationships = True
         sqla_session = db.session
     
-    version_row_r = auto_field()
     code_shop = auto_field()
     id_workplace = auto_field()
     sign_activity = auto_field()

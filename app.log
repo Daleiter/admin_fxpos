@@ -6124,3 +6124,695 @@
 2023-09-12 15:41:10,232 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 700
 2023-09-12 15:41:10,235 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.999.100 test_shop_dev більше 15хв.!'}, 'endsAt': '2023-09-12T12:44:44.309Z', 'fingerprint': 'e200b4b450a5e37a', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-08-14T14:12:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-12T15:40:44.326+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '999', 'instance': '192.168.999.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'test_shop_dev', 'team': 'slaves'}}
 2023-09-12 15:41:10,240 [INFO] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 15:43:10 EEST)" executed successfully
+2023-09-12 15:42:49,944 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-12 15:42:49,946 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-12 15:42:49,947 [INFO] Added job "get_aler" to job store "default"
+2023-09-12 15:42:49,947 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-12 15:42:49,947 [INFO] Scheduler started
+2023-09-12 15:42:49,948 [DEBUG] Looking for jobs to run
+2023-09-12 15:42:49,958 [DEBUG] Next wakeup is due at 2023-09-12 15:44:49.944728+03:00 (in 119.986415 seconds)
+2023-09-12 15:42:49,969 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8888
+ * Running on http://10.69.8.107:8888
+2023-09-12 15:42:49,970 [INFO] [33mPress CTRL+C to quit[0m
+2023-09-12 15:42:49,970 [INFO]  * Restarting with stat
+2023-09-12 15:42:50,740 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-12 15:42:50,742 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-12 15:42:50,743 [INFO] Added job "get_aler" to job store "default"
+2023-09-12 15:42:50,743 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-12 15:42:50,743 [INFO] Scheduler started
+2023-09-12 15:42:50,744 [DEBUG] Looking for jobs to run
+2023-09-12 15:42:50,754 [DEBUG] Next wakeup is due at 2023-09-12 15:44:50.740717+03:00 (in 119.986263 seconds)
+2023-09-12 15:42:50,768 [WARNING]  * Debugger is active!
+2023-09-12 15:42:50,768 [INFO]  * Debugger PIN: 490-768-130
+2023-09-12 15:43:27,904 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-12 15:43:28,143 [INFO]  * Restarting with stat
+2023-09-12 15:43:29,171 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-12 15:43:29,175 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-12 15:43:29,176 [INFO] Added job "get_aler" to job store "default"
+2023-09-12 15:43:29,177 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-12 15:43:29,177 [INFO] Scheduler started
+2023-09-12 15:43:29,177 [DEBUG] Looking for jobs to run
+2023-09-12 15:43:29,188 [DEBUG] Next wakeup is due at 2023-09-12 15:45:29.171294+03:00 (in 119.983224 seconds)
+2023-09-12 15:43:29,200 [WARNING]  * Debugger is active!
+2023-09-12 15:43:29,201 [INFO]  * Debugger PIN: 490-768-130
+2023-09-12 15:43:41,711 [INFO] 10.69.8.107 - - [12/Sep/2023 15:43:41] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-12 15:44:49,954 [DEBUG] Looking for jobs to run
+2023-09-12 15:44:49,956 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 15:46:49 EEST)" (scheduled at 2023-09-12 15:44:49.944728+03:00)
+2023-09-12 15:44:49,956 [DEBUG] Next wakeup is due at 2023-09-12 15:46:49.944728+03:00 (in 119.989877 seconds)
+2023-09-12 15:44:49,966 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-12 15:44:50,405 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 700
+2023-09-12 15:44:50,487 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.999.100 test_shop_dev більше 15хв.!'}, 'endsAt': '2023-09-12T12:48:44.309Z', 'fingerprint': 'e200b4b450a5e37a', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-08-14T14:12:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-12T15:44:44.325+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '999', 'instance': '192.168.999.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'test_shop_dev', 'team': 'slaves'}}
+2023-09-12 15:44:50,512 [INFO] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 15:46:49 EEST)" executed successfully
+2023-09-12 15:45:29,181 [DEBUG] Looking for jobs to run
+2023-09-12 15:45:29,183 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 15:45:29 EEST)" (scheduled at 2023-09-12 15:45:29.171294+03:00)
+2023-09-12 15:45:29,183 [DEBUG] Next wakeup is due at 2023-09-12 15:47:29.171294+03:00 (in 119.988995 seconds)
+2023-09-12 15:45:29,190 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-12 15:45:29,193 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 700
+2023-09-12 15:45:29,210 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.999.100 test_shop_dev більше 15хв.!'}, 'endsAt': '2023-09-12T12:48:44.309Z', 'fingerprint': 'e200b4b450a5e37a', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-08-14T14:12:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-12T15:44:44.325+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '999', 'instance': '192.168.999.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'test_shop_dev', 'team': 'slaves'}}
+2023-09-12 15:45:29,229 [INFO] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 15:47:29 EEST)" executed successfully
+2023-09-12 15:46:49,949 [DEBUG] Looking for jobs to run
+2023-09-12 15:46:49,949 [DEBUG] Next wakeup is due at 2023-09-12 15:48:49.944728+03:00 (in 119.995323 seconds)
+2023-09-12 15:46:49,949 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 15:48:49 EEST)" (scheduled at 2023-09-12 15:46:49.944728+03:00)
+2023-09-12 15:46:49,951 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-12 15:46:49,954 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 700
+2023-09-12 15:46:49,959 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.999.100 test_shop_dev більше 15хв.!'}, 'endsAt': '2023-09-12T12:50:44.309Z', 'fingerprint': 'e200b4b450a5e37a', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-08-14T14:12:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-12T15:46:44.325+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '999', 'instance': '192.168.999.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'test_shop_dev', 'team': 'slaves'}}
+2023-09-12 15:46:49,963 [INFO] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 15:48:49 EEST)" executed successfully
+2023-09-12 15:46:51,953 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-12 15:46:52,187 [INFO]  * Restarting with stat
+2023-09-12 15:46:52,968 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-12 15:46:52,970 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-12 15:46:52,970 [INFO] Added job "get_aler" to job store "default"
+2023-09-12 15:46:52,971 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-12 15:46:52,971 [INFO] Scheduler started
+2023-09-12 15:46:52,971 [DEBUG] Looking for jobs to run
+2023-09-12 15:46:52,982 [DEBUG] Next wakeup is due at 2023-09-12 15:48:52.968415+03:00 (in 119.986350 seconds)
+2023-09-12 15:46:52,995 [WARNING]  * Debugger is active!
+2023-09-12 15:46:52,995 [INFO]  * Debugger PIN: 490-768-130
+2023-09-12 15:46:58,693 [INFO] 10.69.8.107 - - [12/Sep/2023 15:46:58] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-12 15:48:02,553 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-12 15:48:02,899 [INFO]  * Restarting with stat
+2023-09-12 15:48:03,723 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-12 15:48:03,726 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-12 15:48:03,726 [INFO] Added job "get_aler" to job store "default"
+2023-09-12 15:48:03,727 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-12 15:48:03,727 [INFO] Scheduler started
+2023-09-12 15:48:03,727 [DEBUG] Looking for jobs to run
+2023-09-12 15:48:03,738 [DEBUG] Next wakeup is due at 2023-09-12 15:50:03.723275+03:00 (in 119.985091 seconds)
+2023-09-12 15:48:03,753 [WARNING]  * Debugger is active!
+2023-09-12 15:48:03,754 [INFO]  * Debugger PIN: 490-768-130
+2023-09-12 15:48:08,541 [INFO] 10.69.8.107 - - [12/Sep/2023 15:48:08] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-12 15:48:14,714 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-12 15:48:15,054 [INFO]  * Restarting with stat
+2023-09-12 15:48:15,879 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-12 15:48:15,881 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-12 15:48:15,881 [INFO] Added job "get_aler" to job store "default"
+2023-09-12 15:48:15,882 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-12 15:48:15,882 [INFO] Scheduler started
+2023-09-12 15:48:15,882 [DEBUG] Looking for jobs to run
+2023-09-12 15:48:15,887 [DEBUG] Next wakeup is due at 2023-09-12 15:50:15.879372+03:00 (in 119.991551 seconds)
+2023-09-12 15:48:15,905 [WARNING]  * Debugger is active!
+2023-09-12 15:48:15,905 [INFO]  * Debugger PIN: 490-768-130
+2023-09-12 15:48:20,128 [INFO] 10.69.8.107 - - [12/Sep/2023 15:48:20] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-12 15:48:37,748 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-12 15:48:37,972 [INFO]  * Restarting with stat
+2023-09-12 15:48:38,841 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-12 15:48:38,843 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-12 15:48:38,844 [INFO] Added job "get_aler" to job store "default"
+2023-09-12 15:48:38,844 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-12 15:48:38,844 [INFO] Scheduler started
+2023-09-12 15:48:38,844 [DEBUG] Looking for jobs to run
+2023-09-12 15:48:38,855 [DEBUG] Next wakeup is due at 2023-09-12 15:50:38.840990+03:00 (in 119.985768 seconds)
+2023-09-12 15:48:38,868 [WARNING]  * Debugger is active!
+2023-09-12 15:48:38,868 [INFO]  * Debugger PIN: 490-768-130
+2023-09-12 15:48:49,945 [DEBUG] Looking for jobs to run
+2023-09-12 15:48:49,946 [DEBUG] Next wakeup is due at 2023-09-12 15:50:49.944728+03:00 (in 119.998536 seconds)
+2023-09-12 15:48:49,947 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 15:50:49 EEST)" (scheduled at 2023-09-12 15:48:49.944728+03:00)
+2023-09-12 15:48:49,951 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-12 15:48:49,963 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 700
+2023-09-12 15:48:49,971 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.999.100 test_shop_dev більше 15хв.!'}, 'endsAt': '2023-09-12T12:52:44.309Z', 'fingerprint': 'e200b4b450a5e37a', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-08-14T14:12:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-12T15:48:44.324+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '999', 'instance': '192.168.999.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'test_shop_dev', 'team': 'slaves'}}
+2023-09-12 15:48:49,983 [INFO] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 15:50:49 EEST)" executed successfully
+2023-09-12 15:48:57,445 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-12 15:48:57,647 [INFO]  * Restarting with stat
+2023-09-12 15:48:58,568 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-12 15:48:58,570 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-12 15:48:58,570 [INFO] Added job "get_aler" to job store "default"
+2023-09-12 15:48:58,571 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-12 15:48:58,571 [INFO] Scheduler started
+2023-09-12 15:48:58,571 [DEBUG] Looking for jobs to run
+2023-09-12 15:48:58,581 [DEBUG] Next wakeup is due at 2023-09-12 15:50:58.568255+03:00 (in 119.986389 seconds)
+2023-09-12 15:48:58,596 [WARNING]  * Debugger is active!
+2023-09-12 15:48:58,597 [INFO]  * Debugger PIN: 490-768-130
+2023-09-12 15:49:03,994 [INFO] 10.69.8.107 - - [12/Sep/2023 15:49:03] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-12 15:49:10,191 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-12 15:49:10,525 [INFO]  * Restarting with stat
+2023-09-12 15:49:11,344 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-12 15:49:11,346 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-12 15:49:11,346 [INFO] Added job "get_aler" to job store "default"
+2023-09-12 15:49:11,346 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-12 15:49:11,346 [INFO] Scheduler started
+2023-09-12 15:49:11,347 [DEBUG] Looking for jobs to run
+2023-09-12 15:49:11,352 [DEBUG] Next wakeup is due at 2023-09-12 15:51:11.344061+03:00 (in 119.991446 seconds)
+2023-09-12 15:49:11,371 [WARNING]  * Debugger is active!
+2023-09-12 15:49:11,371 [INFO]  * Debugger PIN: 490-768-130
+2023-09-12 15:49:12,726 [INFO] 10.69.8.107 - - [12/Sep/2023 15:49:12] "[35m[1mGET /api/dbsync HTTP/1.1[0m" 500 -
+2023-09-12 15:49:12,752 [INFO] 10.69.8.107 - - [12/Sep/2023 15:49:12] "[36mGET /api/dbsync?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-09-12 15:49:12,754 [INFO] 10.69.8.107 - - [12/Sep/2023 15:49:12] "[36mGET /api/dbsync?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-09-12 15:49:12,839 [INFO] 10.69.8.107 - - [12/Sep/2023 15:49:12] "[36mGET /api/dbsync?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-12 15:49:12,886 [INFO] 10.69.8.107 - - [12/Sep/2023 15:49:12] "[36mGET /api/dbsync?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-12 15:49:36,153 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-12 15:49:36,385 [INFO]  * Restarting with stat
+2023-09-12 15:49:37,299 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-12 15:49:37,301 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-12 15:49:37,301 [INFO] Added job "get_aler" to job store "default"
+2023-09-12 15:49:37,302 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-12 15:49:37,302 [INFO] Scheduler started
+2023-09-12 15:49:37,302 [DEBUG] Looking for jobs to run
+2023-09-12 15:49:37,312 [DEBUG] Next wakeup is due at 2023-09-12 15:51:37.299291+03:00 (in 119.986427 seconds)
+2023-09-12 15:49:37,331 [WARNING]  * Debugger is active!
+2023-09-12 15:49:37,331 [INFO]  * Debugger PIN: 490-768-130
+2023-09-12 15:49:41,526 [INFO] 10.69.8.107 - - [12/Sep/2023 15:49:41] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-12 15:49:44,645 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-12 15:49:45,054 [INFO]  * Restarting with stat
+2023-09-12 15:49:45,901 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-12 15:49:45,903 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-12 15:49:45,904 [INFO] Added job "get_aler" to job store "default"
+2023-09-12 15:49:45,904 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-12 15:49:45,904 [INFO] Scheduler started
+2023-09-12 15:49:45,905 [DEBUG] Looking for jobs to run
+2023-09-12 15:49:45,910 [DEBUG] Next wakeup is due at 2023-09-12 15:51:45.901765+03:00 (in 119.991230 seconds)
+2023-09-12 15:49:45,932 [WARNING]  * Debugger is active!
+2023-09-12 15:49:45,932 [INFO]  * Debugger PIN: 490-768-130
+2023-09-12 15:49:46,064 [INFO] 10.69.8.107 - - [12/Sep/2023 15:49:46] "[35m[1mGET /api/dbsync HTTP/1.1[0m" 500 -
+2023-09-12 15:49:46,096 [INFO] 10.69.8.107 - - [12/Sep/2023 15:49:46] "[36mGET /api/dbsync?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-09-12 15:49:46,121 [INFO] 10.69.8.107 - - [12/Sep/2023 15:49:46] "[36mGET /api/dbsync?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-09-12 15:49:46,150 [INFO] 10.69.8.107 - - [12/Sep/2023 15:49:46] "[36mGET /api/dbsync?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-12 15:49:46,198 [INFO] 10.69.8.107 - - [12/Sep/2023 15:49:46] "[36mGET /api/dbsync?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-12 15:49:55,270 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-12 15:49:55,573 [INFO]  * Restarting with stat
+2023-09-12 15:49:56,555 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-12 15:49:56,558 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-12 15:49:56,559 [INFO] Added job "get_aler" to job store "default"
+2023-09-12 15:49:56,560 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-12 15:49:56,560 [INFO] Scheduler started
+2023-09-12 15:49:56,560 [DEBUG] Looking for jobs to run
+2023-09-12 15:49:56,571 [DEBUG] Next wakeup is due at 2023-09-12 15:51:56.555876+03:00 (in 119.984518 seconds)
+2023-09-12 15:49:56,587 [WARNING]  * Debugger is active!
+2023-09-12 15:49:56,588 [INFO]  * Debugger PIN: 490-768-130
+2023-09-12 15:49:57,779 [INFO] 10.69.8.107 - - [12/Sep/2023 15:49:57] "[35m[1mGET /api/dbsync HTTP/1.1[0m" 500 -
+2023-09-12 15:49:57,835 [INFO] 10.69.8.107 - - [12/Sep/2023 15:49:57] "[36mGET /api/dbsync?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-09-12 15:49:57,837 [INFO] 10.69.8.107 - - [12/Sep/2023 15:49:57] "[36mGET /api/dbsync?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-09-12 15:49:57,895 [INFO] 10.69.8.107 - - [12/Sep/2023 15:49:57] "[36mGET /api/dbsync?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-12 15:49:57,938 [INFO] 10.69.8.107 - - [12/Sep/2023 15:49:57] "[36mGET /api/dbsync?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-12 15:50:13,220 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-12 15:50:13,531 [INFO]  * Restarting with stat
+2023-09-12 15:50:14,438 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-12 15:50:14,440 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-12 15:50:14,440 [INFO] Added job "get_aler" to job store "default"
+2023-09-12 15:50:14,440 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-12 15:50:14,441 [INFO] Scheduler started
+2023-09-12 15:50:14,441 [DEBUG] Looking for jobs to run
+2023-09-12 15:50:14,452 [DEBUG] Next wakeup is due at 2023-09-12 15:52:14.438010+03:00 (in 119.985080 seconds)
+2023-09-12 15:50:14,470 [WARNING]  * Debugger is active!
+2023-09-12 15:50:14,470 [INFO]  * Debugger PIN: 490-768-130
+2023-09-12 15:50:17,960 [INFO] 10.69.8.107 - - [12/Sep/2023 15:50:17] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-12 15:50:34,487 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-12 15:50:34,755 [INFO]  * Restarting with stat
+2023-09-12 15:50:35,633 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-12 15:50:35,635 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-12 15:50:35,636 [INFO] Added job "get_aler" to job store "default"
+2023-09-12 15:50:35,636 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-12 15:50:35,636 [INFO] Scheduler started
+2023-09-12 15:50:35,637 [DEBUG] Looking for jobs to run
+2023-09-12 15:50:35,647 [DEBUG] Next wakeup is due at 2023-09-12 15:52:35.633879+03:00 (in 119.986400 seconds)
+2023-09-12 15:50:35,657 [WARNING]  * Debugger is active!
+2023-09-12 15:50:35,657 [INFO]  * Debugger PIN: 490-768-130
+2023-09-12 15:50:38,765 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-12 15:50:39,111 [INFO]  * Restarting with stat
+2023-09-12 15:50:40,123 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-12 15:50:40,125 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-12 15:50:40,126 [INFO] Added job "get_aler" to job store "default"
+2023-09-12 15:50:40,127 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-12 15:50:40,127 [INFO] Scheduler started
+2023-09-12 15:50:40,127 [DEBUG] Looking for jobs to run
+2023-09-12 15:50:40,138 [DEBUG] Next wakeup is due at 2023-09-12 15:52:40.123070+03:00 (in 119.985066 seconds)
+2023-09-12 15:50:40,153 [WARNING]  * Debugger is active!
+2023-09-12 15:50:40,153 [INFO]  * Debugger PIN: 490-768-130
+2023-09-12 15:50:43,877 [INFO] 10.69.8.107 - - [12/Sep/2023 15:50:43] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-12 15:50:49,946 [DEBUG] Looking for jobs to run
+2023-09-12 15:50:49,947 [DEBUG] Next wakeup is due at 2023-09-12 15:52:49.944728+03:00 (in 119.997977 seconds)
+2023-09-12 15:50:49,948 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 15:52:49 EEST)" (scheduled at 2023-09-12 15:50:49.944728+03:00)
+2023-09-12 15:50:49,953 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-12 15:50:49,957 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 700
+2023-09-12 15:50:49,971 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.999.100 test_shop_dev більше 15хв.!'}, 'endsAt': '2023-09-12T12:54:44.309Z', 'fingerprint': 'e200b4b450a5e37a', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-08-14T14:12:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-12T15:50:44.324+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '999', 'instance': '192.168.999.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'test_shop_dev', 'team': 'slaves'}}
+2023-09-12 15:50:49,981 [INFO] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 15:52:49 EEST)" executed successfully
+2023-09-12 15:51:05,581 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-12 15:51:05,959 [INFO]  * Restarting with stat
+2023-09-12 15:51:07,144 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-12 15:51:07,147 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-12 15:51:07,147 [INFO] Added job "get_aler" to job store "default"
+2023-09-12 15:51:07,147 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-12 15:51:07,148 [INFO] Scheduler started
+2023-09-12 15:51:07,148 [DEBUG] Looking for jobs to run
+2023-09-12 15:51:07,159 [DEBUG] Next wakeup is due at 2023-09-12 15:53:07.144392+03:00 (in 119.984677 seconds)
+2023-09-12 15:51:07,171 [WARNING]  * Debugger is active!
+2023-09-12 15:51:07,171 [INFO]  * Debugger PIN: 490-768-130
+2023-09-12 15:51:12,238 [INFO] 10.69.8.107 - - [12/Sep/2023 15:51:12] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-12 15:52:49,947 [DEBUG] Looking for jobs to run
+2023-09-12 15:52:49,948 [DEBUG] Next wakeup is due at 2023-09-12 15:54:49.944728+03:00 (in 119.997297 seconds)
+2023-09-12 15:52:49,948 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 15:54:49 EEST)" (scheduled at 2023-09-12 15:52:49.944728+03:00)
+2023-09-12 15:52:49,952 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-12 15:52:49,955 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 700
+2023-09-12 15:52:49,962 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.999.100 test_shop_dev більше 15хв.!'}, 'endsAt': '2023-09-12T12:56:44.309Z', 'fingerprint': 'e200b4b450a5e37a', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-08-14T14:12:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-12T15:52:44.318+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '999', 'instance': '192.168.999.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'test_shop_dev', 'team': 'slaves'}}
+2023-09-12 15:52:49,971 [INFO] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 15:54:49 EEST)" executed successfully
+2023-09-12 15:53:07,154 [DEBUG] Looking for jobs to run
+2023-09-12 15:53:07,156 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 15:55:07 EEST)" (scheduled at 2023-09-12 15:53:07.144392+03:00)
+2023-09-12 15:53:07,157 [DEBUG] Next wakeup is due at 2023-09-12 15:55:07.144392+03:00 (in 119.988996 seconds)
+2023-09-12 15:53:07,163 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-12 15:53:07,167 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 700
+2023-09-12 15:53:07,183 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.999.100 test_shop_dev більше 15хв.!'}, 'endsAt': '2023-09-12T12:56:44.309Z', 'fingerprint': 'e200b4b450a5e37a', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-08-14T14:12:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-12T15:52:44.318+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '999', 'instance': '192.168.999.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'test_shop_dev', 'team': 'slaves'}}
+2023-09-12 15:53:07,201 [INFO] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 15:55:07 EEST)" executed successfully
+2023-09-12 15:54:49,946 [DEBUG] Looking for jobs to run
+2023-09-12 15:54:49,947 [DEBUG] Next wakeup is due at 2023-09-12 15:56:49.944728+03:00 (in 119.997676 seconds)
+2023-09-12 15:54:49,948 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 15:56:49 EEST)" (scheduled at 2023-09-12 15:54:49.944728+03:00)
+2023-09-12 15:54:49,952 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-12 15:54:49,955 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 700
+2023-09-12 15:54:49,963 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.999.100 test_shop_dev більше 15хв.!'}, 'endsAt': '2023-09-12T12:58:44.309Z', 'fingerprint': 'e200b4b450a5e37a', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-08-14T14:12:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-12T15:54:44.324+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '999', 'instance': '192.168.999.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'test_shop_dev', 'team': 'slaves'}}
+2023-09-12 15:54:49,972 [INFO] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 15:56:49 EEST)" executed successfully
+2023-09-12 15:55:07,148 [DEBUG] Looking for jobs to run
+2023-09-12 15:55:07,149 [DEBUG] Next wakeup is due at 2023-09-12 15:57:07.144392+03:00 (in 119.995862 seconds)
+2023-09-12 15:55:07,149 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 15:57:07 EEST)" (scheduled at 2023-09-12 15:55:07.144392+03:00)
+2023-09-12 15:55:07,153 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-12 15:55:07,157 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 700
+2023-09-12 15:55:07,166 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.999.100 test_shop_dev більше 15хв.!'}, 'endsAt': '2023-09-12T12:58:44.309Z', 'fingerprint': 'e200b4b450a5e37a', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-08-14T14:12:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-12T15:54:44.324+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '999', 'instance': '192.168.999.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'test_shop_dev', 'team': 'slaves'}}
+2023-09-12 15:55:07,178 [INFO] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 15:57:07 EEST)" executed successfully
+2023-09-12 15:56:49,946 [DEBUG] Looking for jobs to run
+2023-09-12 15:56:49,947 [DEBUG] Next wakeup is due at 2023-09-12 15:58:49.944728+03:00 (in 119.997896 seconds)
+2023-09-12 15:56:49,947 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 15:58:49 EEST)" (scheduled at 2023-09-12 15:56:49.944728+03:00)
+2023-09-12 15:56:49,951 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-12 15:56:49,954 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 700
+2023-09-12 15:56:49,961 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.999.100 test_shop_dev більше 15хв.!'}, 'endsAt': '2023-09-12T13:00:44.309Z', 'fingerprint': 'e200b4b450a5e37a', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-08-14T14:12:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-12T15:56:44.325+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '999', 'instance': '192.168.999.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'test_shop_dev', 'team': 'slaves'}}
+2023-09-12 15:56:49,969 [INFO] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 15:58:49 EEST)" executed successfully
+2023-09-12 15:57:07,146 [DEBUG] Looking for jobs to run
+2023-09-12 15:57:07,147 [DEBUG] Next wakeup is due at 2023-09-12 15:59:07.144392+03:00 (in 119.997722 seconds)
+2023-09-12 15:57:07,147 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 15:59:07 EEST)" (scheduled at 2023-09-12 15:57:07.144392+03:00)
+2023-09-12 15:57:07,152 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-12 15:57:07,155 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 700
+2023-09-12 15:57:07,162 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.999.100 test_shop_dev більше 15хв.!'}, 'endsAt': '2023-09-12T13:00:44.309Z', 'fingerprint': 'e200b4b450a5e37a', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-08-14T14:12:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-12T15:56:44.325+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '999', 'instance': '192.168.999.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'test_shop_dev', 'team': 'slaves'}}
+2023-09-12 15:57:07,169 [INFO] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 15:59:07 EEST)" executed successfully
+2023-09-12 15:57:27,666 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-12 15:57:27,903 [INFO]  * Restarting with stat
+2023-09-12 15:57:28,742 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-12 15:57:28,744 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-12 15:57:28,745 [INFO] Added job "get_aler" to job store "default"
+2023-09-12 15:57:28,745 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-12 15:57:28,745 [INFO] Scheduler started
+2023-09-12 15:57:28,745 [DEBUG] Looking for jobs to run
+2023-09-12 15:57:28,756 [DEBUG] Next wakeup is due at 2023-09-12 15:59:28.742628+03:00 (in 119.986462 seconds)
+2023-09-12 15:57:28,766 [WARNING]  * Debugger is active!
+2023-09-12 15:57:28,767 [INFO]  * Debugger PIN: 490-768-130
+2023-09-12 15:57:36,812 [INFO] 10.69.8.107 - - [12/Sep/2023 15:57:36] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-12 15:58:27,324 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-12 15:58:27,552 [INFO]  * Restarting with stat
+2023-09-12 15:58:28,609 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-12 15:58:28,611 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-12 15:58:28,611 [INFO] Added job "get_aler" to job store "default"
+2023-09-12 15:58:28,612 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-12 15:58:28,612 [INFO] Scheduler started
+2023-09-12 15:58:28,612 [DEBUG] Looking for jobs to run
+2023-09-12 15:58:28,617 [DEBUG] Next wakeup is due at 2023-09-12 16:00:28.608889+03:00 (in 119.991098 seconds)
+2023-09-12 15:58:28,639 [WARNING]  * Debugger is active!
+2023-09-12 15:58:28,640 [INFO]  * Debugger PIN: 490-768-130
+2023-09-12 15:58:32,120 [INFO] 10.69.8.107 - - [12/Sep/2023 15:58:32] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-12 15:58:49,946 [DEBUG] Looking for jobs to run
+2023-09-12 15:58:49,947 [DEBUG] Next wakeup is due at 2023-09-12 16:00:49.944728+03:00 (in 119.998070 seconds)
+2023-09-12 15:58:49,948 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:00:49 EEST)" (scheduled at 2023-09-12 15:58:49.944728+03:00)
+2023-09-12 15:58:49,954 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-12 15:58:49,966 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 700
+2023-09-12 15:58:49,973 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.999.100 test_shop_dev більше 15хв.!'}, 'endsAt': '2023-09-12T13:02:44.309Z', 'fingerprint': 'e200b4b450a5e37a', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-08-14T14:12:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-12T15:58:44.327+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '999', 'instance': '192.168.999.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'test_shop_dev', 'team': 'slaves'}}
+2023-09-12 15:58:49,982 [INFO] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:00:49 EEST)" executed successfully
+2023-09-12 15:59:15,510 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-12 15:59:15,830 [INFO]  * Restarting with stat
+2023-09-12 15:59:16,671 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-12 15:59:16,673 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-12 15:59:16,673 [INFO] Added job "get_aler" to job store "default"
+2023-09-12 15:59:16,673 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-12 15:59:16,674 [INFO] Scheduler started
+2023-09-12 15:59:16,674 [DEBUG] Looking for jobs to run
+2023-09-12 15:59:16,684 [DEBUG] Next wakeup is due at 2023-09-12 16:01:16.671100+03:00 (in 119.986377 seconds)
+2023-09-12 15:59:16,699 [WARNING]  * Debugger is active!
+2023-09-12 15:59:16,700 [INFO]  * Debugger PIN: 490-768-130
+2023-09-12 15:59:20,680 [INFO] 10.69.8.107 - - [12/Sep/2023 15:59:20] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-12 16:00:15,407 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-12 16:00:15,703 [INFO]  * Restarting with stat
+2023-09-12 16:00:16,813 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-12 16:00:16,815 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-12 16:00:16,816 [INFO] Added job "get_aler" to job store "default"
+2023-09-12 16:00:16,816 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-12 16:00:16,816 [INFO] Scheduler started
+2023-09-12 16:00:16,817 [DEBUG] Looking for jobs to run
+2023-09-12 16:00:16,828 [DEBUG] Next wakeup is due at 2023-09-12 16:02:16.813758+03:00 (in 119.985762 seconds)
+2023-09-12 16:00:16,845 [WARNING]  * Debugger is active!
+2023-09-12 16:00:16,846 [INFO]  * Debugger PIN: 490-768-130
+2023-09-12 16:00:41,256 [INFO] 10.69.8.107 - - [12/Sep/2023 16:00:41] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-12 16:00:49,946 [DEBUG] Looking for jobs to run
+2023-09-12 16:00:49,947 [DEBUG] Next wakeup is due at 2023-09-12 16:02:49.944728+03:00 (in 119.998024 seconds)
+2023-09-12 16:00:49,947 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:02:49 EEST)" (scheduled at 2023-09-12 16:00:49.944728+03:00)
+2023-09-12 16:00:49,951 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-12 16:00:49,954 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 700
+2023-09-12 16:00:49,962 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.999.100 test_shop_dev більше 15хв.!'}, 'endsAt': '2023-09-12T13:04:44.309Z', 'fingerprint': 'e200b4b450a5e37a', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-08-14T14:12:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-12T16:00:44.323+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '999', 'instance': '192.168.999.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'test_shop_dev', 'team': 'slaves'}}
+2023-09-12 16:00:49,972 [INFO] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:02:49 EEST)" executed successfully
+2023-09-12 16:02:16,820 [DEBUG] Looking for jobs to run
+2023-09-12 16:02:16,822 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:02:16 EEST)" (scheduled at 2023-09-12 16:02:16.813758+03:00)
+2023-09-12 16:02:16,823 [DEBUG] Next wakeup is due at 2023-09-12 16:04:16.813758+03:00 (in 119.992561 seconds)
+2023-09-12 16:02:16,829 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-12 16:02:16,832 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 700
+2023-09-12 16:02:16,848 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.999.100 test_shop_dev більше 15хв.!'}, 'endsAt': '2023-09-12T13:04:44.309Z', 'fingerprint': 'e200b4b450a5e37a', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-08-14T14:12:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-12T16:00:44.323+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '999', 'instance': '192.168.999.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'test_shop_dev', 'team': 'slaves'}}
+2023-09-12 16:02:16,868 [INFO] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:04:16 EEST)" executed successfully
+2023-09-12 16:02:49,946 [DEBUG] Looking for jobs to run
+2023-09-12 16:02:49,947 [DEBUG] Next wakeup is due at 2023-09-12 16:04:49.944728+03:00 (in 119.997816 seconds)
+2023-09-12 16:02:49,948 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:04:49 EEST)" (scheduled at 2023-09-12 16:02:49.944728+03:00)
+2023-09-12 16:02:49,951 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-12 16:02:49,955 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 700
+2023-09-12 16:02:49,962 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.999.100 test_shop_dev більше 15хв.!'}, 'endsAt': '2023-09-12T13:06:44.309Z', 'fingerprint': 'e200b4b450a5e37a', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-08-14T14:12:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-12T16:02:44.325+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '999', 'instance': '192.168.999.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'test_shop_dev', 'team': 'slaves'}}
+2023-09-12 16:02:49,971 [INFO] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:04:49 EEST)" executed successfully
+2023-09-12 16:04:16,817 [DEBUG] Looking for jobs to run
+2023-09-12 16:04:16,818 [DEBUG] Next wakeup is due at 2023-09-12 16:06:16.813758+03:00 (in 119.996239 seconds)
+2023-09-12 16:04:16,819 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:06:16 EEST)" (scheduled at 2023-09-12 16:04:16.813758+03:00)
+2023-09-12 16:04:16,821 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-12 16:04:16,824 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 700
+2023-09-12 16:04:16,832 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.999.100 test_shop_dev більше 15хв.!'}, 'endsAt': '2023-09-12T13:06:44.309Z', 'fingerprint': 'e200b4b450a5e37a', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-08-14T14:12:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-12T16:02:44.325+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '999', 'instance': '192.168.999.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'test_shop_dev', 'team': 'slaves'}}
+2023-09-12 16:04:16,836 [INFO] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:06:16 EEST)" executed successfully
+2023-09-12 16:04:49,946 [DEBUG] Looking for jobs to run
+2023-09-12 16:04:49,946 [DEBUG] Next wakeup is due at 2023-09-12 16:06:49.944728+03:00 (in 119.998143 seconds)
+2023-09-12 16:04:49,946 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:06:49 EEST)" (scheduled at 2023-09-12 16:04:49.944728+03:00)
+2023-09-12 16:04:49,948 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-12 16:04:49,950 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 700
+2023-09-12 16:04:49,955 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.999.100 test_shop_dev більше 15хв.!'}, 'endsAt': '2023-09-12T13:08:44.309Z', 'fingerprint': 'e200b4b450a5e37a', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-08-14T14:12:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-12T16:04:44.325+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '999', 'instance': '192.168.999.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'test_shop_dev', 'team': 'slaves'}}
+2023-09-12 16:04:49,958 [INFO] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:06:49 EEST)" executed successfully
+2023-09-12 16:06:16,815 [DEBUG] Looking for jobs to run
+2023-09-12 16:06:16,816 [DEBUG] Next wakeup is due at 2023-09-12 16:08:16.813758+03:00 (in 119.997924 seconds)
+2023-09-12 16:06:16,816 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:08:16 EEST)" (scheduled at 2023-09-12 16:06:16.813758+03:00)
+2023-09-12 16:06:16,821 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-12 16:06:16,824 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 700
+2023-09-12 16:06:16,832 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.999.100 test_shop_dev більше 15хв.!'}, 'endsAt': '2023-09-12T13:08:44.309Z', 'fingerprint': 'e200b4b450a5e37a', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-08-14T14:12:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-12T16:04:44.325+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '999', 'instance': '192.168.999.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'test_shop_dev', 'team': 'slaves'}}
+2023-09-12 16:06:16,841 [INFO] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:08:16 EEST)" executed successfully
+2023-09-12 16:06:49,945 [DEBUG] Looking for jobs to run
+2023-09-12 16:06:49,946 [DEBUG] Next wakeup is due at 2023-09-12 16:08:49.944728+03:00 (in 119.998957 seconds)
+2023-09-12 16:06:49,946 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:08:49 EEST)" (scheduled at 2023-09-12 16:06:49.944728+03:00)
+2023-09-12 16:06:49,950 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-12 16:06:49,955 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 700
+2023-09-12 16:06:49,963 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.999.100 test_shop_dev більше 15хв.!'}, 'endsAt': '2023-09-12T13:10:44.309Z', 'fingerprint': 'e200b4b450a5e37a', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-08-14T14:12:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-12T16:06:44.323+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '999', 'instance': '192.168.999.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'test_shop_dev', 'team': 'slaves'}}
+2023-09-12 16:06:49,970 [INFO] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:08:49 EEST)" executed successfully
+2023-09-12 16:08:16,738 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-12 16:08:17,052 [INFO]  * Restarting with stat
+2023-09-12 16:08:17,958 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-12 16:08:17,960 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-12 16:08:17,961 [INFO] Added job "get_aler" to job store "default"
+2023-09-12 16:08:17,961 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-12 16:08:17,961 [INFO] Scheduler started
+2023-09-12 16:08:17,962 [DEBUG] Looking for jobs to run
+2023-09-12 16:08:17,967 [DEBUG] Next wakeup is due at 2023-09-12 16:10:17.958722+03:00 (in 119.991463 seconds)
+2023-09-12 16:08:17,985 [WARNING]  * Debugger is active!
+2023-09-12 16:08:17,985 [INFO]  * Debugger PIN: 490-768-130
+2023-09-12 16:08:18,390 [INFO] 10.69.8.107 - - [12/Sep/2023 16:08:18] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-12 16:08:49,945 [DEBUG] Looking for jobs to run
+2023-09-12 16:08:49,946 [DEBUG] Next wakeup is due at 2023-09-12 16:10:49.944728+03:00 (in 119.998293 seconds)
+2023-09-12 16:08:49,947 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:10:49 EEST)" (scheduled at 2023-09-12 16:08:49.944728+03:00)
+2023-09-12 16:08:49,952 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-12 16:08:49,956 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 700
+2023-09-12 16:08:49,964 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.999.100 test_shop_dev більше 15хв.!'}, 'endsAt': '2023-09-12T13:12:44.309Z', 'fingerprint': 'e200b4b450a5e37a', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-08-14T14:12:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-12T16:08:44.324+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '999', 'instance': '192.168.999.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'test_shop_dev', 'team': 'slaves'}}
+2023-09-12 16:08:49,975 [INFO] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:10:49 EEST)" executed successfully
+2023-09-12 16:10:17,969 [DEBUG] Looking for jobs to run
+2023-09-12 16:10:17,971 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:12:17 EEST)" (scheduled at 2023-09-12 16:10:17.958722+03:00)
+2023-09-12 16:10:17,971 [DEBUG] Next wakeup is due at 2023-09-12 16:12:17.958722+03:00 (in 119.988678 seconds)
+2023-09-12 16:10:17,978 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-12 16:10:17,981 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 700
+2023-09-12 16:10:17,999 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.999.100 test_shop_dev більше 15хв.!'}, 'endsAt': '2023-09-12T13:12:44.309Z', 'fingerprint': 'e200b4b450a5e37a', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-08-14T14:12:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-12T16:08:44.324+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '999', 'instance': '192.168.999.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'test_shop_dev', 'team': 'slaves'}}
+2023-09-12 16:10:18,015 [INFO] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:12:17 EEST)" executed successfully
+2023-09-12 16:10:49,946 [DEBUG] Looking for jobs to run
+2023-09-12 16:10:49,948 [DEBUG] Next wakeup is due at 2023-09-12 16:12:49.944728+03:00 (in 119.997587 seconds)
+2023-09-12 16:10:49,949 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:12:49 EEST)" (scheduled at 2023-09-12 16:10:49.944728+03:00)
+2023-09-12 16:10:49,954 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-12 16:10:49,958 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 700
+2023-09-12 16:10:49,969 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.999.100 test_shop_dev більше 15хв.!'}, 'endsAt': '2023-09-12T13:14:44.309Z', 'fingerprint': 'e200b4b450a5e37a', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-08-14T14:12:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-12T16:10:44.324+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '999', 'instance': '192.168.999.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'test_shop_dev', 'team': 'slaves'}}
+2023-09-12 16:10:49,979 [INFO] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:12:49 EEST)" executed successfully
+2023-09-12 16:11:58,247 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/models/db_model_cashdesk_shop.py', reloading
+2023-09-12 16:11:58,473 [INFO]  * Restarting with stat
+2023-09-12 16:11:59,273 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-12 16:11:59,275 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-12 16:11:59,276 [INFO] Added job "get_aler" to job store "default"
+2023-09-12 16:11:59,276 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-12 16:11:59,276 [INFO] Scheduler started
+2023-09-12 16:11:59,276 [DEBUG] Looking for jobs to run
+2023-09-12 16:11:59,287 [DEBUG] Next wakeup is due at 2023-09-12 16:13:59.273418+03:00 (in 119.986178 seconds)
+2023-09-12 16:11:59,300 [WARNING]  * Debugger is active!
+2023-09-12 16:11:59,300 [INFO]  * Debugger PIN: 490-768-130
+2023-09-12 16:12:49,947 [DEBUG] Looking for jobs to run
+2023-09-12 16:12:49,948 [DEBUG] Next wakeup is due at 2023-09-12 16:14:49.944728+03:00 (in 119.996841 seconds)
+2023-09-12 16:12:49,949 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:14:49 EEST)" (scheduled at 2023-09-12 16:12:49.944728+03:00)
+2023-09-12 16:12:49,952 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-12 16:12:49,955 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 700
+2023-09-12 16:12:49,963 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.999.100 test_shop_dev більше 15хв.!'}, 'endsAt': '2023-09-12T13:16:44.309Z', 'fingerprint': 'e200b4b450a5e37a', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-08-14T14:12:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-12T16:12:44.322+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '999', 'instance': '192.168.999.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'test_shop_dev', 'team': 'slaves'}}
+2023-09-12 16:12:49,973 [INFO] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:14:49 EEST)" executed successfully
+2023-09-12 16:13:59,278 [DEBUG] Looking for jobs to run
+2023-09-12 16:13:59,280 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:13:59 EEST)" (scheduled at 2023-09-12 16:13:59.273418+03:00)
+2023-09-12 16:13:59,281 [DEBUG] Next wakeup is due at 2023-09-12 16:15:59.273418+03:00 (in 119.994058 seconds)
+2023-09-12 16:13:59,287 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-12 16:13:59,291 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 700
+2023-09-12 16:13:59,355 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.999.100 test_shop_dev більше 15хв.!'}, 'endsAt': '2023-09-12T13:16:44.309Z', 'fingerprint': 'e200b4b450a5e37a', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-08-14T14:12:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-12T16:12:44.322+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '999', 'instance': '192.168.999.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'test_shop_dev', 'team': 'slaves'}}
+2023-09-12 16:13:59,364 [INFO] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:15:59 EEST)" executed successfully
+2023-09-12 16:14:49,946 [DEBUG] Looking for jobs to run
+2023-09-12 16:14:49,947 [DEBUG] Next wakeup is due at 2023-09-12 16:16:49.944728+03:00 (in 119.997913 seconds)
+2023-09-12 16:14:49,947 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:16:49 EEST)" (scheduled at 2023-09-12 16:14:49.944728+03:00)
+2023-09-12 16:14:49,951 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-12 16:14:49,954 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 700
+2023-09-12 16:14:49,960 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.999.100 test_shop_dev більше 15хв.!'}, 'endsAt': '2023-09-12T13:18:44.309Z', 'fingerprint': 'e200b4b450a5e37a', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-08-14T14:12:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-12T16:14:44.323+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '999', 'instance': '192.168.999.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'test_shop_dev', 'team': 'slaves'}}
+2023-09-12 16:14:49,969 [INFO] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:16:49 EEST)" executed successfully
+2023-09-12 16:15:59,277 [DEBUG] Looking for jobs to run
+2023-09-12 16:15:59,278 [DEBUG] Next wakeup is due at 2023-09-12 16:17:59.273418+03:00 (in 119.995913 seconds)
+2023-09-12 16:15:59,278 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:17:59 EEST)" (scheduled at 2023-09-12 16:15:59.273418+03:00)
+2023-09-12 16:15:59,282 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-12 16:15:59,286 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 700
+2023-09-12 16:15:59,294 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.999.100 test_shop_dev більше 15хв.!'}, 'endsAt': '2023-09-12T13:18:44.309Z', 'fingerprint': 'e200b4b450a5e37a', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-08-14T14:12:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-12T16:14:44.323+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '999', 'instance': '192.168.999.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'test_shop_dev', 'team': 'slaves'}}
+2023-09-12 16:15:59,306 [INFO] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:17:59 EEST)" executed successfully
+2023-09-12 16:16:49,946 [DEBUG] Looking for jobs to run
+2023-09-12 16:16:49,947 [DEBUG] Next wakeup is due at 2023-09-12 16:18:49.944728+03:00 (in 119.998196 seconds)
+2023-09-12 16:16:49,947 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:18:49 EEST)" (scheduled at 2023-09-12 16:16:49.944728+03:00)
+2023-09-12 16:16:49,951 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-12 16:16:49,954 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 700
+2023-09-12 16:16:49,960 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.999.100 test_shop_dev більше 15хв.!'}, 'endsAt': '2023-09-12T13:20:44.309Z', 'fingerprint': 'e200b4b450a5e37a', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-08-14T14:12:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-12T16:16:44.325+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '999', 'instance': '192.168.999.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'test_shop_dev', 'team': 'slaves'}}
+2023-09-12 16:16:49,970 [INFO] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:18:49 EEST)" executed successfully
+2023-09-12 16:17:59,275 [DEBUG] Looking for jobs to run
+2023-09-12 16:17:59,276 [DEBUG] Next wakeup is due at 2023-09-12 16:19:59.273418+03:00 (in 119.997840 seconds)
+2023-09-12 16:17:59,277 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:19:59 EEST)" (scheduled at 2023-09-12 16:17:59.273418+03:00)
+2023-09-12 16:17:59,283 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-12 16:17:59,287 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 700
+2023-09-12 16:17:59,296 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.999.100 test_shop_dev більше 15хв.!'}, 'endsAt': '2023-09-12T13:20:44.309Z', 'fingerprint': 'e200b4b450a5e37a', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-08-14T14:12:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-12T16:16:44.325+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '999', 'instance': '192.168.999.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'test_shop_dev', 'team': 'slaves'}}
+2023-09-12 16:17:59,306 [INFO] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:19:59 EEST)" executed successfully
+2023-09-12 16:18:49,946 [DEBUG] Looking for jobs to run
+2023-09-12 16:18:49,947 [DEBUG] Next wakeup is due at 2023-09-12 16:20:49.944728+03:00 (in 119.997984 seconds)
+2023-09-12 16:18:49,947 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:20:49 EEST)" (scheduled at 2023-09-12 16:18:49.944728+03:00)
+2023-09-12 16:18:49,951 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-12 16:18:49,955 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 700
+2023-09-12 16:18:49,961 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.999.100 test_shop_dev більше 15хв.!'}, 'endsAt': '2023-09-12T13:22:44.309Z', 'fingerprint': 'e200b4b450a5e37a', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-08-14T14:12:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-12T16:18:44.324+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '999', 'instance': '192.168.999.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'test_shop_dev', 'team': 'slaves'}}
+2023-09-12 16:18:49,968 [INFO] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:20:49 EEST)" executed successfully
+2023-09-12 16:19:59,274 [DEBUG] Looking for jobs to run
+2023-09-12 16:19:59,276 [DEBUG] Next wakeup is due at 2023-09-12 16:21:59.273418+03:00 (in 119.998052 seconds)
+2023-09-12 16:19:59,276 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:21:59 EEST)" (scheduled at 2023-09-12 16:19:59.273418+03:00)
+2023-09-12 16:19:59,280 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-12 16:19:59,283 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 700
+2023-09-12 16:19:59,290 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.999.100 test_shop_dev більше 15хв.!'}, 'endsAt': '2023-09-12T13:22:44.309Z', 'fingerprint': 'e200b4b450a5e37a', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-08-14T14:12:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-12T16:18:44.324+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '999', 'instance': '192.168.999.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'test_shop_dev', 'team': 'slaves'}}
+2023-09-12 16:19:59,299 [INFO] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:21:59 EEST)" executed successfully
+2023-09-12 16:20:49,946 [DEBUG] Looking for jobs to run
+2023-09-12 16:20:49,947 [DEBUG] Next wakeup is due at 2023-09-12 16:22:49.944728+03:00 (in 119.997989 seconds)
+2023-09-12 16:20:49,947 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:22:49 EEST)" (scheduled at 2023-09-12 16:20:49.944728+03:00)
+2023-09-12 16:20:49,951 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-12 16:20:49,954 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 700
+2023-09-12 16:20:49,961 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.999.100 test_shop_dev більше 15хв.!'}, 'endsAt': '2023-09-12T13:24:44.309Z', 'fingerprint': 'e200b4b450a5e37a', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-08-14T14:12:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-12T16:20:44.324+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '999', 'instance': '192.168.999.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'test_shop_dev', 'team': 'slaves'}}
+2023-09-12 16:20:49,972 [INFO] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:22:49 EEST)" executed successfully
+2023-09-12 16:21:59,275 [DEBUG] Looking for jobs to run
+2023-09-12 16:21:59,276 [DEBUG] Next wakeup is due at 2023-09-12 16:23:59.273418+03:00 (in 119.998041 seconds)
+2023-09-12 16:21:59,276 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:23:59 EEST)" (scheduled at 2023-09-12 16:21:59.273418+03:00)
+2023-09-12 16:21:59,284 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-12 16:21:59,290 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 700
+2023-09-12 16:21:59,303 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.999.100 test_shop_dev більше 15хв.!'}, 'endsAt': '2023-09-12T13:24:44.309Z', 'fingerprint': 'e200b4b450a5e37a', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-08-14T14:12:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-12T16:20:44.324+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '999', 'instance': '192.168.999.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'test_shop_dev', 'team': 'slaves'}}
+2023-09-12 16:21:59,320 [INFO] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:23:59 EEST)" executed successfully
+2023-09-12 16:22:38,059 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/models/db_model_cashdesk_shop.py', reloading
+2023-09-12 16:22:38,323 [INFO]  * Restarting with stat
+2023-09-12 16:22:39,169 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-12 16:22:39,171 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-12 16:22:39,172 [INFO] Added job "get_aler" to job store "default"
+2023-09-12 16:22:39,172 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-12 16:22:39,172 [INFO] Scheduler started
+2023-09-12 16:22:39,173 [DEBUG] Looking for jobs to run
+2023-09-12 16:22:39,183 [DEBUG] Next wakeup is due at 2023-09-12 16:24:39.169689+03:00 (in 119.986270 seconds)
+2023-09-12 16:22:39,193 [WARNING]  * Debugger is active!
+2023-09-12 16:22:39,194 [INFO]  * Debugger PIN: 490-768-130
+2023-09-12 16:22:42,287 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/models/db_model_cashdesk_shop.py', reloading
+2023-09-12 16:22:42,516 [INFO]  * Restarting with stat
+2023-09-12 16:23:02,174 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-12 16:23:02,176 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-12 16:23:02,176 [INFO] Added job "get_aler" to job store "default"
+2023-09-12 16:23:02,177 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-12 16:23:02,177 [INFO] Scheduler started
+2023-09-12 16:23:02,177 [DEBUG] Looking for jobs to run
+2023-09-12 16:23:02,182 [DEBUG] Next wakeup is due at 2023-09-12 16:25:02.174283+03:00 (in 119.991474 seconds)
+2023-09-12 16:23:02,203 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8888
+ * Running on http://10.69.8.107:8888
+2023-09-12 16:23:02,203 [INFO] [33mPress CTRL+C to quit[0m
+2023-09-12 16:23:02,204 [INFO]  * Restarting with stat
+2023-09-12 16:23:03,032 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-12 16:23:03,034 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-12 16:23:03,034 [INFO] Added job "get_aler" to job store "default"
+2023-09-12 16:23:03,035 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-12 16:23:03,035 [INFO] Scheduler started
+2023-09-12 16:23:03,035 [DEBUG] Looking for jobs to run
+2023-09-12 16:23:03,046 [DEBUG] Next wakeup is due at 2023-09-12 16:25:03.032387+03:00 (in 119.986319 seconds)
+2023-09-12 16:23:03,059 [WARNING]  * Debugger is active!
+2023-09-12 16:23:03,059 [INFO]  * Debugger PIN: 490-768-130
+2023-09-12 16:23:30,923 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-12 16:23:31,170 [INFO]  * Restarting with stat
+2023-09-12 16:23:31,945 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-12 16:23:31,950 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-12 16:23:31,951 [INFO] Added job "get_aler" to job store "default"
+2023-09-12 16:23:31,951 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-12 16:23:31,952 [INFO] Scheduler started
+2023-09-12 16:23:31,952 [DEBUG] Looking for jobs to run
+2023-09-12 16:23:31,959 [DEBUG] Next wakeup is due at 2023-09-12 16:25:31.945636+03:00 (in 119.986105 seconds)
+2023-09-12 16:23:31,981 [WARNING]  * Debugger is active!
+2023-09-12 16:23:31,982 [INFO]  * Debugger PIN: 490-768-130
+2023-09-12 16:23:44,994 [INFO] 10.69.8.107 - - [12/Sep/2023 16:23:44] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-12 16:24:01,640 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-12 16:24:01,642 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-12 16:24:01,643 [INFO] Added job "get_aler" to job store "default"
+2023-09-12 16:24:01,643 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-12 16:24:01,643 [INFO] Scheduler started
+2023-09-12 16:24:01,643 [DEBUG] Looking for jobs to run
+2023-09-12 16:24:01,654 [DEBUG] Next wakeup is due at 2023-09-12 16:26:01.640572+03:00 (in 119.986328 seconds)
+2023-09-12 16:24:01,671 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8888
+ * Running on http://10.69.8.107:8888
+2023-09-12 16:24:01,671 [INFO] [33mPress CTRL+C to quit[0m
+2023-09-12 16:24:01,671 [INFO]  * Restarting with stat
+2023-09-12 16:24:02,511 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-12 16:24:02,516 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-12 16:24:02,516 [INFO] Added job "get_aler" to job store "default"
+2023-09-12 16:24:02,517 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-12 16:24:02,517 [INFO] Scheduler started
+2023-09-12 16:24:02,517 [DEBUG] Looking for jobs to run
+2023-09-12 16:24:02,527 [DEBUG] Next wakeup is due at 2023-09-12 16:26:02.511857+03:00 (in 119.984039 seconds)
+2023-09-12 16:24:02,540 [WARNING]  * Debugger is active!
+2023-09-12 16:24:02,541 [INFO]  * Debugger PIN: 490-768-130
+2023-09-12 16:25:30,440 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-12 16:25:30,726 [INFO]  * Restarting with stat
+2023-09-12 16:25:31,708 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-12 16:25:31,710 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-12 16:25:31,711 [INFO] Added job "get_aler" to job store "default"
+2023-09-12 16:25:31,711 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-12 16:25:31,711 [INFO] Scheduler started
+2023-09-12 16:25:31,712 [DEBUG] Looking for jobs to run
+2023-09-12 16:25:31,722 [DEBUG] Next wakeup is due at 2023-09-12 16:27:31.708295+03:00 (in 119.985962 seconds)
+2023-09-12 16:25:31,738 [WARNING]  * Debugger is active!
+2023-09-12 16:25:31,738 [INFO]  * Debugger PIN: 490-768-130
+2023-09-12 16:25:32,820 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/models/db_model_cashdesk_shop.py', reloading
+2023-09-12 16:25:33,126 [INFO]  * Restarting with stat
+2023-09-12 16:25:34,552 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-12 16:25:34,554 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-12 16:25:34,554 [INFO] Added job "get_aler" to job store "default"
+2023-09-12 16:25:34,555 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-12 16:25:34,555 [INFO] Scheduler started
+2023-09-12 16:25:34,555 [DEBUG] Looking for jobs to run
+2023-09-12 16:25:34,565 [DEBUG] Next wakeup is due at 2023-09-12 16:27:34.552192+03:00 (in 119.986352 seconds)
+2023-09-12 16:25:34,578 [WARNING]  * Debugger is active!
+2023-09-12 16:25:34,578 [INFO]  * Debugger PIN: 490-768-130
+2023-09-12 16:25:40,450 [INFO] 10.69.8.107 - - [12/Sep/2023 16:25:40] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-12 16:26:01,651 [DEBUG] Looking for jobs to run
+2023-09-12 16:26:01,652 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:26:01 EEST)" (scheduled at 2023-09-12 16:26:01.640572+03:00)
+2023-09-12 16:26:01,653 [DEBUG] Next wakeup is due at 2023-09-12 16:28:01.640572+03:00 (in 119.988818 seconds)
+2023-09-12 16:26:01,660 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-12 16:26:01,663 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 700
+2023-09-12 16:26:01,725 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.999.100 test_shop_dev більше 15хв.!'}, 'endsAt': '2023-09-12T13:28:44.309Z', 'fingerprint': 'e200b4b450a5e37a', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-08-14T14:12:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-12T16:24:44.326+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '999', 'instance': '192.168.999.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'test_shop_dev', 'team': 'slaves'}}
+2023-09-12 16:26:01,737 [INFO] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:28:01 EEST)" executed successfully
+2023-09-12 16:27:34,558 [DEBUG] Looking for jobs to run
+2023-09-12 16:27:34,559 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:27:34 EEST)" (scheduled at 2023-09-12 16:27:34.552192+03:00)
+2023-09-12 16:27:34,560 [DEBUG] Next wakeup is due at 2023-09-12 16:29:34.552192+03:00 (in 119.993669 seconds)
+2023-09-12 16:27:34,564 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-12 16:27:34,567 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 700
+2023-09-12 16:27:34,574 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.999.100 test_shop_dev більше 15хв.!'}, 'endsAt': '2023-09-12T13:30:44.309Z', 'fingerprint': 'e200b4b450a5e37a', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-08-14T14:12:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-12T16:26:44.323+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '999', 'instance': '192.168.999.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'test_shop_dev', 'team': 'slaves'}}
+2023-09-12 16:27:34,581 [INFO] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:29:34 EEST)" executed successfully
+2023-09-12 16:28:01,643 [DEBUG] Looking for jobs to run
+2023-09-12 16:28:01,645 [DEBUG] Next wakeup is due at 2023-09-12 16:30:01.640572+03:00 (in 119.996220 seconds)
+2023-09-12 16:28:01,645 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:30:01 EEST)" (scheduled at 2023-09-12 16:28:01.640572+03:00)
+2023-09-12 16:28:01,650 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-12 16:28:01,654 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 700
+2023-09-12 16:28:01,661 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.999.100 test_shop_dev більше 15хв.!'}, 'endsAt': '2023-09-12T13:30:44.309Z', 'fingerprint': 'e200b4b450a5e37a', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-08-14T14:12:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-12T16:26:44.323+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '999', 'instance': '192.168.999.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'test_shop_dev', 'team': 'slaves'}}
+2023-09-12 16:28:01,665 [INFO] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:30:01 EEST)" executed successfully
+2023-09-12 16:29:34,555 [DEBUG] Looking for jobs to run
+2023-09-12 16:29:34,557 [DEBUG] Next wakeup is due at 2023-09-12 16:31:34.552192+03:00 (in 119.995890 seconds)
+2023-09-12 16:29:34,557 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:31:34 EEST)" (scheduled at 2023-09-12 16:29:34.552192+03:00)
+2023-09-12 16:29:34,561 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-12 16:29:34,563 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 700
+2023-09-12 16:29:34,568 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.999.100 test_shop_dev більше 15хв.!'}, 'endsAt': '2023-09-12T13:32:44.309Z', 'fingerprint': 'e200b4b450a5e37a', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-08-14T14:12:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-12T16:28:44.325+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '999', 'instance': '192.168.999.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'test_shop_dev', 'team': 'slaves'}}
+2023-09-12 16:29:34,571 [INFO] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:31:34 EEST)" executed successfully
+2023-09-12 16:30:01,642 [DEBUG] Looking for jobs to run
+2023-09-12 16:30:01,643 [DEBUG] Next wakeup is due at 2023-09-12 16:32:01.640572+03:00 (in 119.997701 seconds)
+2023-09-12 16:30:01,643 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:32:01 EEST)" (scheduled at 2023-09-12 16:30:01.640572+03:00)
+2023-09-12 16:30:01,648 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-12 16:30:01,650 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 700
+2023-09-12 16:30:01,654 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.999.100 test_shop_dev більше 15хв.!'}, 'endsAt': '2023-09-12T13:32:44.309Z', 'fingerprint': 'e200b4b450a5e37a', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-08-14T14:12:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-12T16:28:44.325+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '999', 'instance': '192.168.999.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'test_shop_dev', 'team': 'slaves'}}
+2023-09-12 16:30:01,657 [INFO] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:32:01 EEST)" executed successfully
+2023-09-12 16:31:34,554 [DEBUG] Looking for jobs to run
+2023-09-12 16:31:34,555 [DEBUG] Next wakeup is due at 2023-09-12 16:33:34.552192+03:00 (in 119.997526 seconds)
+2023-09-12 16:31:34,555 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:33:34 EEST)" (scheduled at 2023-09-12 16:31:34.552192+03:00)
+2023-09-12 16:31:34,559 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-12 16:31:34,563 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 700
+2023-09-12 16:31:34,568 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.999.100 test_shop_dev більше 15хв.!'}, 'endsAt': '2023-09-12T13:34:44.309Z', 'fingerprint': 'e200b4b450a5e37a', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-08-14T14:12:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-12T16:30:44.325+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '999', 'instance': '192.168.999.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'test_shop_dev', 'team': 'slaves'}}
+2023-09-12 16:31:34,572 [INFO] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:33:34 EEST)" executed successfully
+2023-09-12 16:32:01,642 [DEBUG] Looking for jobs to run
+2023-09-12 16:32:01,642 [DEBUG] Next wakeup is due at 2023-09-12 16:34:01.640572+03:00 (in 119.998132 seconds)
+2023-09-12 16:32:01,643 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:34:01 EEST)" (scheduled at 2023-09-12 16:32:01.640572+03:00)
+2023-09-12 16:32:01,645 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-12 16:32:01,648 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 700
+2023-09-12 16:32:01,654 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.999.100 test_shop_dev більше 15хв.!'}, 'endsAt': '2023-09-12T13:34:44.309Z', 'fingerprint': 'e200b4b450a5e37a', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-08-14T14:12:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-12T16:30:44.325+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '999', 'instance': '192.168.999.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'test_shop_dev', 'team': 'slaves'}}
+2023-09-12 16:32:01,661 [INFO] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:34:01 EEST)" executed successfully
+2023-09-12 16:33:34,554 [DEBUG] Looking for jobs to run
+2023-09-12 16:33:34,555 [DEBUG] Next wakeup is due at 2023-09-12 16:35:34.552192+03:00 (in 119.997591 seconds)
+2023-09-12 16:33:34,555 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:35:34 EEST)" (scheduled at 2023-09-12 16:33:34.552192+03:00)
+2023-09-12 16:33:34,559 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-12 16:33:34,563 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 700
+2023-09-12 16:33:34,568 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.999.100 test_shop_dev більше 15хв.!'}, 'endsAt': '2023-09-12T13:36:44.309Z', 'fingerprint': 'e200b4b450a5e37a', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-08-14T14:12:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-12T16:32:44.326+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '999', 'instance': '192.168.999.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'test_shop_dev', 'team': 'slaves'}}
+2023-09-12 16:33:34,571 [INFO] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:35:34 EEST)" executed successfully
+2023-09-12 16:34:01,641 [DEBUG] Looking for jobs to run
+2023-09-12 16:34:01,643 [DEBUG] Next wakeup is due at 2023-09-12 16:36:01.640572+03:00 (in 119.998176 seconds)
+2023-09-12 16:34:01,643 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:36:01 EEST)" (scheduled at 2023-09-12 16:34:01.640572+03:00)
+2023-09-12 16:34:01,647 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-12 16:34:01,649 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 700
+2023-09-12 16:34:01,654 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.999.100 test_shop_dev більше 15хв.!'}, 'endsAt': '2023-09-12T13:36:44.309Z', 'fingerprint': 'e200b4b450a5e37a', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-08-14T14:12:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-12T16:32:44.326+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '999', 'instance': '192.168.999.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'test_shop_dev', 'team': 'slaves'}}
+2023-09-12 16:34:01,657 [INFO] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:36:01 EEST)" executed successfully
+2023-09-12 16:35:34,554 [DEBUG] Looking for jobs to run
+2023-09-12 16:35:34,555 [DEBUG] Next wakeup is due at 2023-09-12 16:37:34.552192+03:00 (in 119.997698 seconds)
+2023-09-12 16:35:34,555 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:37:34 EEST)" (scheduled at 2023-09-12 16:35:34.552192+03:00)
+2023-09-12 16:35:34,559 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-12 16:35:34,562 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 700
+2023-09-12 16:35:34,566 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.999.100 test_shop_dev більше 15хв.!'}, 'endsAt': '2023-09-12T13:38:44.309Z', 'fingerprint': 'e200b4b450a5e37a', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-08-14T14:12:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-12T16:34:44.325+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '999', 'instance': '192.168.999.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'test_shop_dev', 'team': 'slaves'}}
+2023-09-12 16:35:34,569 [INFO] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:37:34 EEST)" executed successfully
+2023-09-12 16:36:01,642 [DEBUG] Looking for jobs to run
+2023-09-12 16:36:01,643 [DEBUG] Next wakeup is due at 2023-09-12 16:38:01.640572+03:00 (in 119.997830 seconds)
+2023-09-12 16:36:01,643 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:38:01 EEST)" (scheduled at 2023-09-12 16:36:01.640572+03:00)
+2023-09-12 16:36:01,648 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-12 16:36:01,652 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 700
+2023-09-12 16:36:01,656 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.999.100 test_shop_dev більше 15хв.!'}, 'endsAt': '2023-09-12T13:38:44.309Z', 'fingerprint': 'e200b4b450a5e37a', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-08-14T14:12:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-12T16:34:44.325+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '999', 'instance': '192.168.999.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'test_shop_dev', 'team': 'slaves'}}
+2023-09-12 16:36:01,659 [INFO] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:38:01 EEST)" executed successfully
+2023-09-12 16:37:34,554 [DEBUG] Looking for jobs to run
+2023-09-12 16:37:34,555 [DEBUG] Next wakeup is due at 2023-09-12 16:39:34.552192+03:00 (in 119.997462 seconds)
+2023-09-12 16:37:34,555 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:39:34 EEST)" (scheduled at 2023-09-12 16:37:34.552192+03:00)
+2023-09-12 16:37:34,559 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-12 16:37:34,562 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 700
+2023-09-12 16:37:34,567 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.999.100 test_shop_dev більше 15хв.!'}, 'endsAt': '2023-09-12T13:40:44.309Z', 'fingerprint': 'e200b4b450a5e37a', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-08-14T14:12:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-12T16:36:44.324+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '999', 'instance': '192.168.999.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'test_shop_dev', 'team': 'slaves'}}
+2023-09-12 16:37:34,572 [INFO] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:39:34 EEST)" executed successfully
+2023-09-12 16:38:01,642 [DEBUG] Looking for jobs to run
+2023-09-12 16:38:01,642 [DEBUG] Next wakeup is due at 2023-09-12 16:40:01.640572+03:00 (in 119.998023 seconds)
+2023-09-12 16:38:01,643 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:40:01 EEST)" (scheduled at 2023-09-12 16:38:01.640572+03:00)
+2023-09-12 16:38:01,644 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-12 16:38:01,647 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 700
+2023-09-12 16:38:01,651 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.999.100 test_shop_dev більше 15хв.!'}, 'endsAt': '2023-09-12T13:40:44.309Z', 'fingerprint': 'e200b4b450a5e37a', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-08-14T14:12:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-12T16:36:44.324+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '999', 'instance': '192.168.999.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'test_shop_dev', 'team': 'slaves'}}
+2023-09-12 16:38:01,655 [INFO] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:40:01 EEST)" executed successfully
+2023-09-12 16:39:34,553 [DEBUG] Looking for jobs to run
+2023-09-12 16:39:34,554 [DEBUG] Next wakeup is due at 2023-09-12 16:41:34.552192+03:00 (in 119.997990 seconds)
+2023-09-12 16:39:34,555 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:41:34 EEST)" (scheduled at 2023-09-12 16:39:34.552192+03:00)
+2023-09-12 16:39:34,559 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-12 16:39:34,562 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 700
+2023-09-12 16:39:34,569 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.999.100 test_shop_dev більше 15хв.!'}, 'endsAt': '2023-09-12T13:42:44.309Z', 'fingerprint': 'e200b4b450a5e37a', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-08-14T14:12:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-12T16:38:44.325+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '999', 'instance': '192.168.999.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'test_shop_dev', 'team': 'slaves'}}
+2023-09-12 16:39:34,572 [INFO] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:41:34 EEST)" executed successfully
+2023-09-12 16:40:01,641 [DEBUG] Looking for jobs to run
+2023-09-12 16:40:01,642 [DEBUG] Next wakeup is due at 2023-09-12 16:42:01.640572+03:00 (in 119.998611 seconds)
+2023-09-12 16:40:01,642 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:42:01 EEST)" (scheduled at 2023-09-12 16:40:01.640572+03:00)
+2023-09-12 16:40:01,647 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-12 16:40:01,650 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 700
+2023-09-12 16:40:01,657 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.999.100 test_shop_dev більше 15хв.!'}, 'endsAt': '2023-09-12T13:42:44.309Z', 'fingerprint': 'e200b4b450a5e37a', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-08-14T14:12:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-12T16:38:44.325+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '999', 'instance': '192.168.999.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'test_shop_dev', 'team': 'slaves'}}
+2023-09-12 16:40:01,666 [INFO] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-12 16:42:01 EEST)" executed successfully

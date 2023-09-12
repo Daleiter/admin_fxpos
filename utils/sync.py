@@ -1,6 +1,7 @@
 from models.db_model import Shops, Items, Item_types, Items_attributes
 from models.db_model_cashdesk_shop import ShopsCD, WorkplaceCD
 from models.db_model import Items
+from rest.init_db import db
 
 class DBSync:
     def __init__(self):
@@ -23,42 +24,33 @@ class DBSync:
         # elements_not_in_list2 = set2 - set1
         # result_list = list(elements_not_in_list2)
         # print(result_list)
-        
+        # shop = Shops()
+        # shop.name = json_data['shopAddress']
+        # shop.shop_number = json_data['idShop']
+        # shop.base_ip = json_data['ipAddress']
+        # shop.active = True
+        # db.session.add(shop)
+        # db.session.commit()
+        # db.session.refresh(shop)
 # __________POS__________
 
         posescd = WorkplaceCD.query.filter(WorkplaceCD.sign_activity==1).all()
-        # id_type = Item_types.query.filter(Item_types.type=='pos').one()
-        poses = Items.query.filter(Items.id_type==1, Items.active==True).all()
-        nemapos = []
+        id_type = Item_types.query.filter(Item_types.type=='pos').one()
+        poses = Items.query.filter(Items.id_type==id_type.id_type, Items.active==True).all()
+        poscd = []
         pos = []
         for i in posescd:
+            poscd.append(i)
             for j in poses:
                 id_workplace = None
                 for att in j.attributes:
                     if att.id_attribute == 3:
                         id_workplace = att.value
-                            # print('i',i.code_shop)
-                            # print('j',j.shop.shop_number)
-                            # print('i id',i.id_workplace)
-                            # print('id',id_workplace)
-
                 if i.code_shop == j.shop.shop_number and str(i.id_workplace) == id_workplace:
-                    pass
-                else:
-                    print(i)
-            #print(i.code_shop)
-        # for i in q:
-        #     if i.shop.id == 2:
-        #             print(i)
-        # for i in q:
-        #         for att in i.attributes:
-        #             if att.id_attribute == 3:
-        #                 print(att)
-
-
-        #     con = GuacamoleConnection()
-        #     id_pos = "None"
-        #     if type == 'pos':
-        #         for att in i.attributes:
-        #             if att.id_attribute == 3:
-        #                 id_pos = att.value
+                    pos.append(i)
+        set1 = set(pos)
+        set2 = set(poscd)
+        elements_not_in_poscd = set2 - set1
+        nemapos = list(elements_not_in_poscd)
+        for posi in nemapos:
+            print(posi.shop.name_shop, posi.id_workplace)
