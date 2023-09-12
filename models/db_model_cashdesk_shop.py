@@ -10,10 +10,11 @@ class ShopsCD(db.Model):
     __tablename__ = 'shops'
     code_shop = Column(Integer(),  nullable=False, primary_key=True)
     name_shop = Column(Integer(), default=False, primary_key=True)
+    sign_activity = Column(Integer(), default=False, primary_key=True)
    
     def __repr__(self) -> str:
         return "<shops(code_shop='%s', name_shop='%s')>" % (
-                            self.code_shop, self.name_shop)
+                            self.code_shop, self.name_shop, self.sign_activity)
 
     def as_dict(self):
         return {c.name: getattr(self, c.name) for c in self.__table__.columns}
@@ -29,4 +30,5 @@ class shops_shema(ma.SQLAlchemyAutoSchema):
     
     code_shop = auto_field()
     name_shop = auto_field()
+    sign_activity = auto_field()
 
