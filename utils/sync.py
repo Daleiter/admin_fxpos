@@ -13,61 +13,70 @@ class DBSync:
 # __________SHOP__________
         rk =[]
         rkcd =[]
-        shops = Shops.query.filter(Shops.active==True).order_by(Shops.base_ip.asc()).all()
-        shopscd = ShopsCD.query.filter(ShopsCD.sign_activity==1).all()
-        # for shop in shops:
-        #     rk.append(shop.shop_number)
-        #     print(shop)
-        #     break
-        # for shopcd in shopscd:
-        #    rkcd.append(shopcd.code_shop)
-        #    print(shopcd)
-        #    break
-        
+        shops = Shops.query.all()
+        shopscd = ShopsCD.query.all()
         for shopcd in shopscd:
             rkcd.append(shopcd)
             for shop in shops:            
                 if shop.shop_number == shopcd.code_shop:
                     rk.append(shopcd)
+                    if shop.active != shopcd.sign_activity:
+                        shop.active = shopcd.sign_activity
+                        db.session.commit()
+                        db.session.refresh(shop)
 
         set1 = set(rk)
         set2 = set(rkcd)
         elements_not_in_shop = set2 - set1
-        nemashop = list(elements_not_in_shop)
+        nemashop = (list(elements_not_in_shop))
+        print(nemashop)
         for shopi in nemashop:
-            # print(shopi)
-            # print(shopi.code_shop, shopi.name_shop)
-            
             shop = Shops()
-            # shop.name = json_data['shopAddress']
-            # shop.shop_number = json_data['idShop']
-            # shop.base_ip = json_data['ipAddress']
             shop.name = shopi.name_shop
             shop.shop_number = shopi.code_shop
             shop.base_ip = shopi.address
-            shop.active = True
+            shop.active = shopi.sign_activity
             db.session.add(shop)
             db.session.commit()
             db.session.refresh(shop)
+
+
 # __________POS__________
 
-        # posescd = WorkplaceCD.query.filter(WorkplaceCD.sign_activity==1).all()
+
+
+        # posescd = WorkplaceCD.query.all()#.filter(WorkplaceCD.sign_activity==1).all()
         # id_type = Item_types.query.filter(Item_types.type=='pos').one()
-        # poses = Items.query.filter(Items.id_type==id_type.id_type, Items.active==True).all()
+        # poses = Items.query.filter(Items.id_type==id_type.id_type).all()#, Items.active==True).all()
         # poscd = []
         # pos = []
-        # for i in posescd:
-        #     poscd.append(i)
-        #     for j in poses:
+        # for index_poscd in posescd:
+        #     poscd.append(index_poscd)
+        #     for index_pos in poses:
         #         id_workplace = None
-        #         for att in j.attributes:
+        #         for att in index_pos.attributes:
         #             if att.id_attribute == 3:
         #                 id_workplace = att.value
-        #         if i.code_shop == j.shop.shop_number and str(i.id_workplace) == id_workplace:
-        #             pos.append(i)
+        #         if index_poscd.code_shop == index_pos.shop.shop_number and str(index_poscd.id_workplace) == id_workplace:
+        #             pos.append(index_poscd)
+        #             if index_poscd.sign_activity != index_pos.active:
+        #                 index_pos.active = index_poscd.sign_activity
+        #                 db.session.commit()
+        #                 db.session.refresh(index_pos)
+        #                 #print(i.sign_activity, j.active, j.shop.shop_number, id_workplace)
         # set1 = set(pos)
         # set2 = set(poscd)
         # elements_not_in_poscd = set2 - set1
         # nemapos = list(elements_not_in_poscd)
+        # print(nemapos)
         # for posi in nemapos:
-        #     print(posi.shop.name_shop, posi.id_workplace)
+        #     for shop in shops:
+        #         if posi.code_shop == shop.shop_number:
+        #             item = Items()
+        #             item.host = f"192.168.{shop.base_ip}.{posi.id_workplace}"
+        #             item.active = posi.sign_activity
+        #             item.id_type = 1
+        #             item.id_shop = shop.id
+        #             db.session.add(item)
+        #             db.session.commit()
+        #             db.session.refresh(item)
