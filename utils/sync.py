@@ -45,34 +45,33 @@ class DBSync:
 
 
 
-        # posescd = WorkplaceCD.query.all()#.filter(WorkplaceCD.sign_activity==1).all()
-        # id_type = Item_types.query.filter(Item_types.type=='pos').one()
-        # poses = Items.query.filter(Items.id_type==id_type.id_type).all()#, Items.active==True).all()
-        # poscd = []
-        # pos = []
-        # for index_poscd in posescd:
-        #     poscd.append(index_poscd)
-        #     for index_pos in poses:
-        #         id_workplace = None
-        #         for att in index_pos.attributes:
-        #             if att.id_attribute == 3:
-        #                 id_workplace = att.value
-        #         if index_poscd.code_shop == index_pos.shop.shop_number and str(index_poscd.id_workplace) == id_workplace:
-        #             pos.append(index_poscd)
-        #             if index_poscd.sign_activity != index_pos.active:
-        #                 index_pos.active = index_poscd.sign_activity
-        #                 db.session.commit()
-        #                 db.session.refresh(index_pos)
-        #                 #print(i.sign_activity, j.active, j.shop.shop_number, id_workplace)
-        # set1 = set(pos)
-        # set2 = set(poscd)
-        # elements_not_in_poscd = set2 - set1
-        # nemapos = list(elements_not_in_poscd)
-        # print(nemapos)
+        posescd = WorkplaceCD.query.all()#.filter(WorkplaceCD.sign_activity==1).all()
+        id_type = Item_types.query.filter(Item_types.type=='pos').one()
+        poses = Items.query.filter(Items.id_type==id_type.id_type).all()#, Items.active==True).all()
+        poscd = []
+        pos = []
+        for index_poscd in posescd:
+            poscd.append(index_poscd)
+            for index_pos in poses:
+                id_workplace = None
+                for att in index_pos.attributes:
+                    if att.id_attribute == 3:
+                        id_workplace = att.value
+                if index_poscd.code_shop == index_pos.shop.shop_number and str(index_poscd.id_workplace) == id_workplace:
+                    pos.append(index_poscd)
+                    if index_poscd.sign_activity != index_pos.active:
+                        index_pos.active = index_poscd.sign_activity
+                        db.session.commit()
+                        # db.session.refresh(index_pos)
+                        #print(i.sign_activity, j.active, j.shop.shop_number, id_workplace)
+        set1 = set(pos)
+        set2 = set(poscd)
+        elements_not_in_poscd = set2 - set1
+        nemapos = list(elements_not_in_poscd)
+        print(nemapos)
         # for posi in nemapos:
         #     for shop in shops:
         #         if posi.code_shop == shop.shop_number:
-        #             item = Items()
         #             item.host = f"192.168.{shop.base_ip}.{posi.id_workplace}"
         #             item.active = posi.sign_activity
         #             item.id_type = 1
