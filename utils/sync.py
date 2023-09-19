@@ -142,7 +142,7 @@ class DBSync:
             for shop in shops:
                 if posi.code_shop == shop.shop_number:
                     #print(shop.shop_number, posi.id_workplace, is_workpace_prro(shop.shop_number, posi.id_workplace))
-                    item = add_item(f"192.168.{shop.base_ip}.{posi.id_workplace}", posi.sign_activity, 1, shop.id):
+                    item = add_item(f"192.168.{shop.base_ip}.{posi.id_workplace}", posi.sign_activity, 1, shop.id)
                     # item = Items()
                     # item.host = f"192.168.{shop.base_ip}.{posi.id_workplace}"
                     # item.active = posi.sign_activity

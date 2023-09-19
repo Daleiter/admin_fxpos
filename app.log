@@ -13487,3 +13487,38 @@
 2023-09-19 17:12:59,902 [INFO] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-19 17:14:59 EEST)" executed successfully
 2023-09-19 17:13:40,239 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
 2023-09-19 17:13:40,522 [INFO]  * Restarting with stat
+2023-09-19 17:18:44,959 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-19 17:18:44,961 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-19 17:18:44,961 [INFO] Added job "get_aler" to job store "default"
+2023-09-19 17:18:44,961 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-19 17:18:44,962 [INFO] Scheduler started
+2023-09-19 17:18:44,962 [DEBUG] Looking for jobs to run
+2023-09-19 17:18:44,972 [DEBUG] Next wakeup is due at 2023-09-19 17:20:44.959028+03:00 (in 119.986264 seconds)
+2023-09-19 17:18:44,992 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8888
+ * Running on http://10.69.8.220:8888
+2023-09-19 17:18:44,992 [INFO] [33mPress CTRL+C to quit[0m
+2023-09-19 17:18:44,993 [INFO]  * Restarting with stat
+2023-09-19 17:18:48,567 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-19 17:18:48,569 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-19 17:18:48,569 [INFO] Added job "get_aler" to job store "default"
+2023-09-19 17:18:48,570 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-19 17:18:48,570 [INFO] Scheduler started
+2023-09-19 17:18:48,570 [DEBUG] Looking for jobs to run
+2023-09-19 17:18:48,580 [DEBUG] Next wakeup is due at 2023-09-19 17:20:48.567075+03:00 (in 119.986168 seconds)
+2023-09-19 17:18:48,596 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8888
+ * Running on http://10.69.8.220:8888
+2023-09-19 17:18:48,597 [INFO] [33mPress CTRL+C to quit[0m
+2023-09-19 17:18:48,597 [INFO]  * Restarting with stat
+2023-09-19 17:18:49,405 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-19 17:18:49,407 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-19 17:18:49,407 [INFO] Added job "get_aler" to job store "default"
+2023-09-19 17:18:49,408 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-19 17:18:49,408 [INFO] Scheduler started
+2023-09-19 17:18:49,408 [DEBUG] Looking for jobs to run
+2023-09-19 17:18:49,414 [DEBUG] Next wakeup is due at 2023-09-19 17:20:49.405248+03:00 (in 119.990736 seconds)
+2023-09-19 17:18:49,432 [WARNING]  * Debugger is active!
+2023-09-19 17:18:49,434 [INFO]  * Debugger PIN: 528-864-763
