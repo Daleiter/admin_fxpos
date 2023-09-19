@@ -88,7 +88,7 @@ class DBSync:
             db.session.commit()
             db.session.refresh(shop)
             # add router
-            router = add_item(f"192.168.{shopi.address}.100", True, 6, shop.id)
+            router = add_item(f"192.168.{shopi.address}.100", shopi.sign_activity, 6, shop.id)
             # router = Items()
             # router.host = f"192.168.{shopi.address}.100"
             # router.active = True
@@ -98,7 +98,7 @@ class DBSync:
             # db.session.commit()
             # db.session.refresh(router)
             # Add router provider
-            router_prov = add_item(f"10.129.{shopi.address}.2", True, 9, shop.id)
+            router_prov = add_item(f"10.129.{shopi.address}.2", shopi.sign_activity, 9, shop.id)
             add_atributes(router_prov.id, 20, 'Gigatrans')
             # router_prov = Items()
             # router_prov.host = f"10.129.{shopi.address}.2"
@@ -108,7 +108,12 @@ class DBSync:
             # db.session.add(router_prov)
             # db.session.commit()
             # db.session.refresh(router_prov)
-            
+            printer = add_item(f"192.168.{shopi.address}.31", shopi.sign_activity, 13, shop.id)
+            price_printer = add_item(f"192.168.{shopi.address}.30", shopi.sign_activity, 13, shop.id)
+            raspberry = add_item(f"192.168.{shopi.address}.49", shopi.sign_activity, 12, shop.id)
+            director_pc = add_item(f"192.168.{shopi.address}.6", shopi.sign_activity, 4, shop.id)
+            add_atributes(director_pc.id, 25, 'XXXXXXXXXXXXXXXXXXXXXXXXX==')
+            switch = add_item(f"192.168.{shopi.address}.254", shopi.sign_activity, 5, shop.id)
             db.session.commit()
 
 
