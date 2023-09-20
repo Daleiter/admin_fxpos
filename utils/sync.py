@@ -89,38 +89,20 @@ class DBSync:
             db.session.refresh(shop)
             # add router
             router = add_item(f"192.168.{shopi.address}.100", shopi.sign_activity, 6, shop.id)
-            # router = Items()
-            # router.host = f"192.168.{shopi.address}.100"
-            # router.active = True
-            # router.id_type = 6
-            # router.id_shop = shop.id
-            # db.session.add(router)
-            # db.session.commit()
-            # db.session.refresh(router)
-            # Add router provider
             router_prov = add_item(f"10.129.{shopi.address}.2", shopi.sign_activity, 9, shop.id)
             add_atributes(router_prov.id, 20, 'Gigatrans')
-            # router_prov = Items()
-            # router_prov.host = f"10.129.{shopi.address}.2"
-            # router_prov.active = True
-            # router_prov.id_type = 9
-            # router_prov.id_shop = shop.id
-            # db.session.add(router_prov)
-            # db.session.commit()
-            # db.session.refresh(router_prov)
             printer = add_item(f"192.168.{shopi.address}.31", shopi.sign_activity, 13, shop.id)
             price_printer = add_item(f"192.168.{shopi.address}.30", shopi.sign_activity, 13, shop.id)
             raspberry = add_item(f"192.168.{shopi.address}.49", shopi.sign_activity, 12, shop.id)
             director_pc = add_item(f"192.168.{shopi.address}.6", shopi.sign_activity, 4, shop.id)
             add_atributes(director_pc.id, 25, 'XXXXXXXXXXXXXXXXXXXXXXXXX==')
             switch = add_item(f"192.168.{shopi.address}.254", shopi.sign_activity, 5, shop.id)
-            db.session.commit()
 
 
 
 # # __________POS__________
 
-
+        shops = Shops.query.all()
         poscd = []
         pos = []
         for index_poscd in posescd:
@@ -142,20 +124,11 @@ class DBSync:
         set2 = set(poscd)
         elements_not_in_poscd = set2 - set1
         nemapos = list(elements_not_in_poscd)
-        #print(nemapos)
         for posi in nemapos:
             for shop in shops:
                 if posi.code_shop == shop.shop_number:
                     #print(shop.shop_number, posi.id_workplace, is_workpace_prro(shop.shop_number, posi.id_workplace))
                     item = add_item(f"192.168.{shop.base_ip}.{posi.id_workplace}", posi.sign_activity, 1, shop.id)
-                    # item = Items()
-                    # item.host = f"192.168.{shop.base_ip}.{posi.id_workplace}"
-                    # item.active = posi.sign_activity
-                    # item.id_type = 1
-                    # item.id_shop = shop.id
-                    # db.session.add(item)
-                    # db.session.commit()
-                    # db.session.refresh(item)
                     add_atributes(item.id, 1, 'Ubuntu')
                     add_atributes(item.id, 2, f"pos-{shop.shop_number}-{posi.id_workplace}")
                     add_atributes(item.id, 3, str(posi.id_workplace))
