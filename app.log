@@ -15221,3 +15221,227 @@ Traceback (most recent call last):
   File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/sqlalchemy/engine/result.py", line 763, in _only_one_row
     raise exc.NoResultFound(
 sqlalchemy.exc.NoResultFound: No row was found when one was required
+2023-09-20 15:26:28,495 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-20 15:26:28,497 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-20 15:26:28,497 [INFO] Added job "get_aler" to job store "default"
+2023-09-20 15:26:28,498 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-20 15:26:28,498 [INFO] Scheduler started
+2023-09-20 15:26:28,498 [DEBUG] Looking for jobs to run
+2023-09-20 15:26:28,508 [DEBUG] Next wakeup is due at 2023-09-20 15:28:28.495144+03:00 (in 119.986324 seconds)
+2023-09-20 15:26:28,524 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8888
+ * Running on http://10.69.8.220:8888
+2023-09-20 15:26:28,524 [INFO] [33mPress CTRL+C to quit[0m
+2023-09-20 15:26:28,525 [INFO]  * Restarting with stat
+2023-09-20 15:26:29,399 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-20 15:26:29,401 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-20 15:26:29,401 [INFO] Added job "get_aler" to job store "default"
+2023-09-20 15:26:29,401 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-20 15:26:29,401 [INFO] Scheduler started
+2023-09-20 15:26:29,402 [DEBUG] Looking for jobs to run
+2023-09-20 15:26:29,412 [DEBUG] Next wakeup is due at 2023-09-20 15:28:29.398938+03:00 (in 119.986419 seconds)
+2023-09-20 15:26:29,425 [WARNING]  * Debugger is active!
+2023-09-20 15:26:29,426 [INFO]  * Debugger PIN: 528-864-763
+2023-09-20 15:27:00,879 [INFO] 127.0.0.1 - - [20/Sep/2023 15:27:00] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-20 15:28:12,445 [INFO] 127.0.0.1 - - [20/Sep/2023 15:28:12] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-20 15:28:28,505 [DEBUG] Looking for jobs to run
+2023-09-20 15:28:28,507 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-20 15:28:28 EEST)" (scheduled at 2023-09-20 15:28:28.495144+03:00)
+2023-09-20 15:28:28,507 [DEBUG] Next wakeup is due at 2023-09-20 15:30:28.495144+03:00 (in 119.988964 seconds)
+2023-09-20 15:28:28,514 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-20 15:28:28,518 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 1460
+2023-09-20 15:28:28,607 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.666.100 КАФЕ ЦЕНТРАЛЬНОГО ОФІСУ більше 15хв.!'}, 'endsAt': '2023-09-20T12:31:44.309Z', 'fingerprint': '8b3ee1758f608d75', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-09-19T14:13:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-20T15:27:44.331+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '453', 'instance': '192.168.666.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'КАФЕ ЦЕНТРАЛЬНОГО ОФІСУ', 'team': 'slaves'}}
+2023-09-20 15:28:28,618 [ERROR] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-20 15:30:28 EEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/views/app_all.py", line 60, in get_aler
+    handler.get_incedents()
+  File "/home/bodia/admin_fxpos/admin_fxpos/service/resources/incident_handler.py", line 27, in get_incedents
+    phones = Phones.query.filter(Phones.shop == id_shop).one()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/sqlalchemy/orm/query.py", line 2797, in one
+    return self._iter().one()  # type: ignore
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/sqlalchemy/engine/result.py", line 1825, in one
+    return self._only_one_row(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/sqlalchemy/engine/result.py", line 763, in _only_one_row
+    raise exc.NoResultFound(
+sqlalchemy.exc.NoResultFound: No row was found when one was required
+2023-09-20 15:28:29,410 [DEBUG] Looking for jobs to run
+2023-09-20 15:28:29,411 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-20 15:30:29 EEST)" (scheduled at 2023-09-20 15:28:29.398938+03:00)
+2023-09-20 15:28:29,411 [DEBUG] Next wakeup is due at 2023-09-20 15:30:29.398938+03:00 (in 119.988550 seconds)
+2023-09-20 15:28:29,418 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-20 15:28:29,423 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 1460
+2023-09-20 15:28:29,442 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.666.100 КАФЕ ЦЕНТРАЛЬНОГО ОФІСУ більше 15хв.!'}, 'endsAt': '2023-09-20T12:31:44.309Z', 'fingerprint': '8b3ee1758f608d75', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-09-19T14:13:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-20T15:27:44.331+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '453', 'instance': '192.168.666.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'КАФЕ ЦЕНТРАЛЬНОГО ОФІСУ', 'team': 'slaves'}}
+2023-09-20 15:28:29,458 [ERROR] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-20 15:30:29 EEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/views/app_all.py", line 60, in get_aler
+    handler.get_incedents()
+  File "/home/bodia/admin_fxpos/admin_fxpos/service/resources/incident_handler.py", line 27, in get_incedents
+    phones = Phones.query.filter(Phones.shop == id_shop).one()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/sqlalchemy/orm/query.py", line 2797, in one
+    return self._iter().one()  # type: ignore
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/sqlalchemy/engine/result.py", line 1825, in one
+    return self._only_one_row(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/sqlalchemy/engine/result.py", line 763, in _only_one_row
+    raise exc.NoResultFound(
+sqlalchemy.exc.NoResultFound: No row was found when one was required
+2023-09-20 15:30:28,498 [DEBUG] Looking for jobs to run
+2023-09-20 15:30:28,499 [DEBUG] Next wakeup is due at 2023-09-20 15:32:28.495144+03:00 (in 119.996167 seconds)
+2023-09-20 15:30:28,500 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-20 15:32:28 EEST)" (scheduled at 2023-09-20 15:30:28.495144+03:00)
+2023-09-20 15:30:28,504 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-20 15:30:28,509 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 1460
+2023-09-20 15:30:28,518 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.666.100 КАФЕ ЦЕНТРАЛЬНОГО ОФІСУ більше 15хв.!'}, 'endsAt': '2023-09-20T12:33:44.309Z', 'fingerprint': '8b3ee1758f608d75', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-09-19T14:13:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-20T15:29:44.329+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '453', 'instance': '192.168.666.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'КАФЕ ЦЕНТРАЛЬНОГО ОФІСУ', 'team': 'slaves'}}
+2023-09-20 15:30:28,529 [ERROR] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-20 15:32:28 EEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/views/app_all.py", line 60, in get_aler
+    handler.get_incedents()
+  File "/home/bodia/admin_fxpos/admin_fxpos/service/resources/incident_handler.py", line 27, in get_incedents
+    phones = Phones.query.filter(Phones.shop == id_shop).one()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/sqlalchemy/orm/query.py", line 2797, in one
+    return self._iter().one()  # type: ignore
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/sqlalchemy/engine/result.py", line 1825, in one
+    return self._only_one_row(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/sqlalchemy/engine/result.py", line 763, in _only_one_row
+    raise exc.NoResultFound(
+sqlalchemy.exc.NoResultFound: No row was found when one was required
+2023-09-20 15:30:29,402 [DEBUG] Looking for jobs to run
+2023-09-20 15:30:29,403 [DEBUG] Next wakeup is due at 2023-09-20 15:32:29.398938+03:00 (in 119.996184 seconds)
+2023-09-20 15:30:29,403 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-20 15:32:29 EEST)" (scheduled at 2023-09-20 15:30:29.398938+03:00)
+2023-09-20 15:30:29,407 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-20 15:30:29,411 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 1460
+2023-09-20 15:30:29,419 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.666.100 КАФЕ ЦЕНТРАЛЬНОГО ОФІСУ більше 15хв.!'}, 'endsAt': '2023-09-20T12:33:44.309Z', 'fingerprint': '8b3ee1758f608d75', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-09-19T14:13:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-20T15:29:44.329+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '453', 'instance': '192.168.666.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'КАФЕ ЦЕНТРАЛЬНОГО ОФІСУ', 'team': 'slaves'}}
+2023-09-20 15:30:29,430 [ERROR] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-20 15:32:29 EEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/views/app_all.py", line 60, in get_aler
+    handler.get_incedents()
+  File "/home/bodia/admin_fxpos/admin_fxpos/service/resources/incident_handler.py", line 27, in get_incedents
+    phones = Phones.query.filter(Phones.shop == id_shop).one()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/sqlalchemy/orm/query.py", line 2797, in one
+    return self._iter().one()  # type: ignore
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/sqlalchemy/engine/result.py", line 1825, in one
+    return self._only_one_row(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/sqlalchemy/engine/result.py", line 763, in _only_one_row
+    raise exc.NoResultFound(
+sqlalchemy.exc.NoResultFound: No row was found when one was required
+2023-09-20 15:32:28,497 [DEBUG] Looking for jobs to run
+2023-09-20 15:32:28,498 [DEBUG] Next wakeup is due at 2023-09-20 15:34:28.495144+03:00 (in 119.997511 seconds)
+2023-09-20 15:32:28,498 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-20 15:34:28 EEST)" (scheduled at 2023-09-20 15:32:28.495144+03:00)
+2023-09-20 15:32:28,502 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-20 15:32:28,506 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 1460
+2023-09-20 15:32:28,516 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.666.100 КАФЕ ЦЕНТРАЛЬНОГО ОФІСУ більше 15хв.!'}, 'endsAt': '2023-09-20T12:35:44.309Z', 'fingerprint': '8b3ee1758f608d75', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-09-19T14:13:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-20T15:31:44.330+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '453', 'instance': '192.168.666.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'КАФЕ ЦЕНТРАЛЬНОГО ОФІСУ', 'team': 'slaves'}}
+2023-09-20 15:32:28,528 [ERROR] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-20 15:34:28 EEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/views/app_all.py", line 60, in get_aler
+    handler.get_incedents()
+  File "/home/bodia/admin_fxpos/admin_fxpos/service/resources/incident_handler.py", line 27, in get_incedents
+    phones = Phones.query.filter(Phones.shop == id_shop).one()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/sqlalchemy/orm/query.py", line 2797, in one
+    return self._iter().one()  # type: ignore
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/sqlalchemy/engine/result.py", line 1825, in one
+    return self._only_one_row(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/sqlalchemy/engine/result.py", line 763, in _only_one_row
+    raise exc.NoResultFound(
+sqlalchemy.exc.NoResultFound: No row was found when one was required
+2023-09-20 15:32:29,400 [DEBUG] Looking for jobs to run
+2023-09-20 15:32:29,401 [DEBUG] Next wakeup is due at 2023-09-20 15:34:29.398938+03:00 (in 119.998024 seconds)
+2023-09-20 15:32:29,401 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-20 15:34:29 EEST)" (scheduled at 2023-09-20 15:32:29.398938+03:00)
+2023-09-20 15:32:29,406 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-20 15:32:29,410 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 1460
+2023-09-20 15:32:29,418 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.666.100 КАФЕ ЦЕНТРАЛЬНОГО ОФІСУ більше 15хв.!'}, 'endsAt': '2023-09-20T12:35:44.309Z', 'fingerprint': '8b3ee1758f608d75', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-09-19T14:13:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-20T15:31:44.330+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '453', 'instance': '192.168.666.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'КАФЕ ЦЕНТРАЛЬНОГО ОФІСУ', 'team': 'slaves'}}
+2023-09-20 15:32:29,427 [ERROR] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-20 15:34:29 EEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/views/app_all.py", line 60, in get_aler
+    handler.get_incedents()
+  File "/home/bodia/admin_fxpos/admin_fxpos/service/resources/incident_handler.py", line 27, in get_incedents
+    phones = Phones.query.filter(Phones.shop == id_shop).one()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/sqlalchemy/orm/query.py", line 2797, in one
+    return self._iter().one()  # type: ignore
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/sqlalchemy/engine/result.py", line 1825, in one
+    return self._only_one_row(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/sqlalchemy/engine/result.py", line 763, in _only_one_row
+    raise exc.NoResultFound(
+sqlalchemy.exc.NoResultFound: No row was found when one was required
+2023-09-20 15:34:28,496 [DEBUG] Looking for jobs to run
+2023-09-20 15:34:28,497 [DEBUG] Next wakeup is due at 2023-09-20 15:36:28.495144+03:00 (in 119.998009 seconds)
+2023-09-20 15:34:28,498 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-20 15:36:28 EEST)" (scheduled at 2023-09-20 15:34:28.495144+03:00)
+2023-09-20 15:34:28,502 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-20 15:34:28,506 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 1460
+2023-09-20 15:34:28,514 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.666.100 КАФЕ ЦЕНТРАЛЬНОГО ОФІСУ більше 15хв.!'}, 'endsAt': '2023-09-20T12:37:44.309Z', 'fingerprint': '8b3ee1758f608d75', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-09-19T14:13:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-20T15:33:44.330+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '453', 'instance': '192.168.666.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'КАФЕ ЦЕНТРАЛЬНОГО ОФІСУ', 'team': 'slaves'}}
+2023-09-20 15:34:28,526 [ERROR] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-20 15:36:28 EEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/views/app_all.py", line 60, in get_aler
+    handler.get_incedents()
+  File "/home/bodia/admin_fxpos/admin_fxpos/service/resources/incident_handler.py", line 27, in get_incedents
+    phones = Phones.query.filter(Phones.shop == id_shop).one()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/sqlalchemy/orm/query.py", line 2797, in one
+    return self._iter().one()  # type: ignore
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/sqlalchemy/engine/result.py", line 1825, in one
+    return self._only_one_row(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/sqlalchemy/engine/result.py", line 763, in _only_one_row
+    raise exc.NoResultFound(
+sqlalchemy.exc.NoResultFound: No row was found when one was required
+2023-09-20 15:34:29,400 [DEBUG] Looking for jobs to run
+2023-09-20 15:34:29,401 [DEBUG] Next wakeup is due at 2023-09-20 15:36:29.398938+03:00 (in 119.998074 seconds)
+2023-09-20 15:34:29,401 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-20 15:36:29 EEST)" (scheduled at 2023-09-20 15:34:29.398938+03:00)
+2023-09-20 15:34:29,406 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-20 15:34:29,410 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 1460
+2023-09-20 15:34:29,417 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.666.100 КАФЕ ЦЕНТРАЛЬНОГО ОФІСУ більше 15хв.!'}, 'endsAt': '2023-09-20T12:37:44.309Z', 'fingerprint': '8b3ee1758f608d75', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-09-19T14:13:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-20T15:33:44.330+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '453', 'instance': '192.168.666.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'КАФЕ ЦЕНТРАЛЬНОГО ОФІСУ', 'team': 'slaves'}}
+2023-09-20 15:34:29,429 [ERROR] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-20 15:36:29 EEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/views/app_all.py", line 60, in get_aler
+    handler.get_incedents()
+  File "/home/bodia/admin_fxpos/admin_fxpos/service/resources/incident_handler.py", line 27, in get_incedents
+    phones = Phones.query.filter(Phones.shop == id_shop).one()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/sqlalchemy/orm/query.py", line 2797, in one
+    return self._iter().one()  # type: ignore
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/sqlalchemy/engine/result.py", line 1825, in one
+    return self._only_one_row(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/sqlalchemy/engine/result.py", line 763, in _only_one_row
+    raise exc.NoResultFound(
+sqlalchemy.exc.NoResultFound: No row was found when one was required

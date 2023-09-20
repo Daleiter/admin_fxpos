@@ -40,6 +40,13 @@ class DBSync:
                     if shop.base_ip == ip:
                         return shop
         
+        def difference_set(set1=None, set2=None):
+            set1 = set(set1)
+            set2 = set(set2)
+            elements_not_in_shop = set2 - set1
+            elements_not_in_shop = (list(elements_not_in_shop))
+            return(elements_not_in_shop)
+
         def add_item(host, activity, id_type, shopid):
             item = Items()
             item.host = host
@@ -57,6 +64,12 @@ class DBSync:
             items_attributes.id_attribute = id_attribute
             items_attributes.value = value
             db.session.add(items_attributes)
+        
+        def update_active(cd_value, db_value):
+            if db_value.active != cd_value.sign_activity:
+                db_value.active = cd_value.sign_activity
+                db.session.commit()
+                db.session.refresh(db_value)
 
 
         print("----------------------RELOAD----------------------")
@@ -68,15 +81,9 @@ class DBSync:
             for shop in shops:            
                 if shop.shop_number == shopcd.code_shop:
                     rk.append(shopcd)
-                    if shop.active != shopcd.sign_activity:
-                        shop.active = shopcd.sign_activity
-                        db.session.commit()
-                        db.session.refresh(shop)
-
-        set1 = set(rk)
-        set2 = set(rkcd)
-        elements_not_in_shop = set2 - set1
-        nemashop = (list(elements_not_in_shop))
+                    #Update shop active in our DB
+                    update_active(shopcd, shop)
+        nemashop = difference_set(rk, rkcd)
         #print(nemashop)
         for shopi in nemashop:
             shop = Shops()
@@ -87,7 +94,7 @@ class DBSync:
             db.session.add(shop)
             db.session.commit()
             db.session.refresh(shop)
-            # add router
+            # add items
             router = add_item(f"192.168.{shopi.address}.100", shopi.sign_activity, 6, shop.id)
             router_prov = add_item(f"10.129.{shopi.address}.2", shopi.sign_activity, 9, shop.id)
             add_atributes(router_prov.id, 20, 'Gigatrans')
@@ -115,15 +122,8 @@ class DBSync:
                 if index_poscd.code_shop == index_pos.shop.shop_number and str(index_poscd.id_workplace) == id_workplace:
                     pos.append(index_poscd)
                     #Update pos active in our DB
-                    if index_poscd.sign_activity != index_pos.active:
-                        index_pos.active = index_poscd.sign_activity
-                        db.session.commit()
-                        db.session.refresh(index_pos)
-                        #print(i.sign_activity, j.active, j.shop.shop_number, id_workplace)
-        set1 = set(pos)
-        set2 = set(poscd)
-        elements_not_in_poscd = set2 - set1
-        nemapos = list(elements_not_in_poscd)
+                    update_active(index_poscd, index_pos)
+        nemapos = difference_set(pos, poscd)
         for posi in nemapos:
             for shop in shops:
                 if posi.code_shop == shop.shop_number:
