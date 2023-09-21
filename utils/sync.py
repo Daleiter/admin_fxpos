@@ -16,9 +16,9 @@ class DBSync:
         tokens = WorkplaceOptions.query.filter(WorkplaceOptions.code_option==55).all()
         shops = Shops.query.all()
         shopscd = ShopsCD.query.all()
-        posescd = WorkplaceCD.query.all()#.filter(WorkplaceCD.sign_activity==1).all()
+        posescd = WorkplaceCD.query.all()
         id_type = Item_types.query.filter(Item_types.type=='pos').one()
-        poses = Items.query.filter(Items.id_type==id_type.id_type).all()#, Items.active==True).all()
+        poses = Items.query.filter(Items.id_type==id_type.id_type).all()
 
 
         def is_workpace_prro(shop,workplace=0, tokens=tokens):

@@ -59,16 +59,20 @@ def get_aler():
         handler = IncidentHandler()
         handler.get_incedents()
 
+
 def send_exice_reoprt():
     print("Run task.... [send_exice_reoprt]")
     q = QueryRunner()
     RepotUtil(q.run_query('exice'), ["ter_dyr@lvivkholod.com", "reg_dir@lvivkholod.com"])
     
-
+def run_dbsync():
+    with app.app_context():
+        DBSync().run()
 
 sched = BackgroundScheduler(daemon=True)
-sched.add_job(get_aler,'interval',seconds=120)
-sched.add_job(send_exice_reoprt, 'cron' , year="*", month="*", day="*", hour="8", minute="28", second="5")
+#sched.add_job(get_aler,'interval',seconds=120)
+sched.add_job(run_dbsync,'interval',seconds=10)
+#sched.add_job(send_exice_reoprt, 'cron' , year="*", month="*", day="*", hour="8", minute="28", second="5")
 sched.start()
 # api resourses
 api.add_resource(ShopList, '/api/shops', '/api/shops')
@@ -104,6 +108,7 @@ app.register_blueprint(quickcodes_dpos)
 
 @app.route('/api/dbsync', methods=['GET'])
 def db_sync():
+    
     """Run db synchronization"""
     s = DBSync()
     s.run()

@@ -15445,3 +15445,651 @@ Traceback (most recent call last):
   File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/sqlalchemy/engine/result.py", line 763, in _only_one_row
     raise exc.NoResultFound(
 sqlalchemy.exc.NoResultFound: No row was found when one was required
+2023-09-20 16:23:54,485 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-20 16:23:54,485 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-20 16:23:54,487 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-20 16:23:54,488 [INFO] Added job "get_aler" to job store "default"
+2023-09-20 16:23:54,488 [INFO] Added job "DBSync.run" to job store "default"
+2023-09-20 16:23:54,488 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-20 16:23:54,488 [INFO] Scheduler started
+2023-09-20 16:23:54,489 [DEBUG] Looking for jobs to run
+2023-09-20 16:23:54,499 [DEBUG] Next wakeup is due at 2023-09-20 16:25:54.485504+03:00 (in 119.985970 seconds)
+2023-09-20 16:23:54,517 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8888
+ * Running on http://10.69.8.220:8888
+2023-09-20 16:23:54,519 [INFO] [33mPress CTRL+C to quit[0m
+2023-09-20 16:23:54,519 [INFO]  * Restarting with stat
+2023-09-20 16:23:55,355 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-20 16:23:55,356 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-20 16:23:55,358 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-20 16:23:55,358 [INFO] Added job "get_aler" to job store "default"
+2023-09-20 16:23:55,359 [INFO] Added job "DBSync.run" to job store "default"
+2023-09-20 16:23:55,359 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-20 16:23:55,359 [INFO] Scheduler started
+2023-09-20 16:23:55,359 [DEBUG] Looking for jobs to run
+2023-09-20 16:23:55,365 [DEBUG] Next wakeup is due at 2023-09-20 16:25:55.355860+03:00 (in 119.990706 seconds)
+2023-09-20 16:23:55,390 [WARNING]  * Debugger is active!
+2023-09-20 16:23:55,391 [INFO]  * Debugger PIN: 528-864-763
+2023-09-20 16:24:00,605 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/views/app_all.py', reloading
+2023-09-20 16:24:00,912 [INFO]  * Restarting with stat
+2023-09-20 16:24:01,743 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-20 16:24:01,744 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-20 16:24:01,746 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-20 16:24:01,746 [INFO] Added job "get_aler" to job store "default"
+2023-09-20 16:24:01,746 [INFO] Added job "DBSync.run" to job store "default"
+2023-09-20 16:24:01,747 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-20 16:24:01,747 [INFO] Scheduler started
+2023-09-20 16:24:01,747 [DEBUG] Looking for jobs to run
+2023-09-20 16:24:01,758 [DEBUG] Next wakeup is due at 2023-09-20 16:24:11.744114+03:00 (in 9.986024 seconds)
+2023-09-20 16:24:01,773 [WARNING]  * Debugger is active!
+2023-09-20 16:24:01,773 [INFO]  * Debugger PIN: 528-864-763
+2023-09-20 16:24:11,749 [DEBUG] Looking for jobs to run
+2023-09-20 16:24:11,750 [INFO] Running job "DBSync.run (trigger: interval[0:00:10], next run at: 2023-09-20 16:24:21 EEST)" (scheduled at 2023-09-20 16:24:11.744114+03:00)
+2023-09-20 16:24:11,751 [DEBUG] Next wakeup is due at 2023-09-20 16:24:21.744114+03:00 (in 9.994156 seconds)
+2023-09-20 16:24:11,757 [ERROR] Job "DBSync.run (trigger: interval[0:00:10], next run at: 2023-09-20 16:24:21 EEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py", line 16, in run
+    tokens = WorkplaceOptions.query.filter(WorkplaceOptions.code_option==55).all()
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/flask_sqlalchemy/model.py", line 31, in __get__
+    cls, session=cls.__fsa__.session()  # type: ignore[arg-type]
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/sqlalchemy/orm/scoping.py", line 218, in __call__
+    sess = self.registry()
+           ^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/sqlalchemy/util/_collections.py", line 640, in __call__
+    key = self.scopefunc()
+          ^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/flask_sqlalchemy/session.py", line 102, in _app_ctx_id
+    return id(app_ctx._get_current_object())  # type: ignore[attr-defined]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/werkzeug/local.py", line 508, in _get_current_object
+    raise RuntimeError(unbound_message) from None
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2023-09-20 16:24:21,747 [DEBUG] Looking for jobs to run
+2023-09-20 16:24:21,748 [DEBUG] Next wakeup is due at 2023-09-20 16:24:31.744114+03:00 (in 9.995954 seconds)
+2023-09-20 16:24:21,749 [INFO] Running job "DBSync.run (trigger: interval[0:00:10], next run at: 2023-09-20 16:24:31 EEST)" (scheduled at 2023-09-20 16:24:21.744114+03:00)
+2023-09-20 16:24:21,751 [ERROR] Job "DBSync.run (trigger: interval[0:00:10], next run at: 2023-09-20 16:24:31 EEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py", line 16, in run
+    tokens = WorkplaceOptions.query.filter(WorkplaceOptions.code_option==55).all()
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/flask_sqlalchemy/model.py", line 31, in __get__
+    cls, session=cls.__fsa__.session()  # type: ignore[arg-type]
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/sqlalchemy/orm/scoping.py", line 218, in __call__
+    sess = self.registry()
+           ^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/sqlalchemy/util/_collections.py", line 640, in __call__
+    key = self.scopefunc()
+          ^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/flask_sqlalchemy/session.py", line 102, in _app_ctx_id
+    return id(app_ctx._get_current_object())  # type: ignore[attr-defined]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/werkzeug/local.py", line 508, in _get_current_object
+    raise RuntimeError(unbound_message) from None
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2023-09-20 16:24:31,746 [DEBUG] Looking for jobs to run
+2023-09-20 16:24:31,747 [DEBUG] Next wakeup is due at 2023-09-20 16:24:41.744114+03:00 (in 9.997411 seconds)
+2023-09-20 16:24:31,747 [INFO] Running job "DBSync.run (trigger: interval[0:00:10], next run at: 2023-09-20 16:24:41 EEST)" (scheduled at 2023-09-20 16:24:31.744114+03:00)
+2023-09-20 16:24:31,749 [ERROR] Job "DBSync.run (trigger: interval[0:00:10], next run at: 2023-09-20 16:24:41 EEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py", line 16, in run
+    tokens = WorkplaceOptions.query.filter(WorkplaceOptions.code_option==55).all()
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/flask_sqlalchemy/model.py", line 31, in __get__
+    cls, session=cls.__fsa__.session()  # type: ignore[arg-type]
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/sqlalchemy/orm/scoping.py", line 218, in __call__
+    sess = self.registry()
+           ^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/sqlalchemy/util/_collections.py", line 640, in __call__
+    key = self.scopefunc()
+          ^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/flask_sqlalchemy/session.py", line 102, in _app_ctx_id
+    return id(app_ctx._get_current_object())  # type: ignore[attr-defined]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/werkzeug/local.py", line 508, in _get_current_object
+    raise RuntimeError(unbound_message) from None
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2023-09-20 16:24:41,745 [DEBUG] Looking for jobs to run
+2023-09-20 16:24:41,746 [DEBUG] Next wakeup is due at 2023-09-20 16:24:51.744114+03:00 (in 9.998170 seconds)
+2023-09-20 16:24:41,746 [INFO] Running job "DBSync.run (trigger: interval[0:00:10], next run at: 2023-09-20 16:24:51 EEST)" (scheduled at 2023-09-20 16:24:41.744114+03:00)
+2023-09-20 16:24:41,746 [ERROR] Job "DBSync.run (trigger: interval[0:00:10], next run at: 2023-09-20 16:24:51 EEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py", line 16, in run
+    tokens = WorkplaceOptions.query.filter(WorkplaceOptions.code_option==55).all()
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/flask_sqlalchemy/model.py", line 31, in __get__
+    cls, session=cls.__fsa__.session()  # type: ignore[arg-type]
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/sqlalchemy/orm/scoping.py", line 218, in __call__
+    sess = self.registry()
+           ^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/sqlalchemy/util/_collections.py", line 640, in __call__
+    key = self.scopefunc()
+          ^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/flask_sqlalchemy/session.py", line 102, in _app_ctx_id
+    return id(app_ctx._get_current_object())  # type: ignore[attr-defined]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/werkzeug/local.py", line 508, in _get_current_object
+    raise RuntimeError(unbound_message) from None
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2023-09-20 16:25:08,422 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-20 16:25:08,424 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-20 16:25:08,425 [INFO] Added job "get_aler" to job store "default"
+2023-09-20 16:25:08,425 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-20 16:25:08,425 [INFO] Scheduler started
+2023-09-20 16:25:08,426 [DEBUG] Looking for jobs to run
+2023-09-20 16:25:08,426 [DEBUG] Next wakeup is due at 2023-09-20 16:27:08.422187+03:00 (in 119.995894 seconds)
+2023-09-20 16:25:08,457 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8888
+ * Running on http://10.69.8.220:8888
+2023-09-20 16:25:08,457 [INFO] [33mPress CTRL+C to quit[0m
+2023-09-20 16:25:08,457 [INFO]  * Restarting with stat
+2023-09-20 16:25:09,357 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-20 16:25:09,359 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-20 16:25:09,359 [INFO] Added job "get_aler" to job store "default"
+2023-09-20 16:25:09,360 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-20 16:25:09,360 [INFO] Scheduler started
+2023-09-20 16:25:09,360 [DEBUG] Looking for jobs to run
+2023-09-20 16:25:09,371 [DEBUG] Next wakeup is due at 2023-09-20 16:27:09.357277+03:00 (in 119.985743 seconds)
+2023-09-20 16:25:09,386 [WARNING]  * Debugger is active!
+2023-09-20 16:25:09,387 [INFO]  * Debugger PIN: 528-864-763
+2023-09-20 16:25:16,964 [INFO] 127.0.0.1 - - [20/Sep/2023 16:25:16] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-20 16:25:30,447 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/views/app_all.py', reloading
+2023-09-20 16:25:30,701 [INFO]  * Restarting with stat
+2023-09-20 16:25:31,693 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-20 16:25:31,694 [INFO] Added job "DBSync.run" to job store "default"
+2023-09-20 16:25:31,694 [INFO] Scheduler started
+2023-09-20 16:25:31,694 [DEBUG] Looking for jobs to run
+2023-09-20 16:25:31,707 [DEBUG] Next wakeup is due at 2023-09-20 16:25:41.693629+03:00 (in 9.986583 seconds)
+2023-09-20 16:25:31,721 [WARNING]  * Debugger is active!
+2023-09-20 16:25:31,721 [INFO]  * Debugger PIN: 528-864-763
+2023-09-20 16:25:41,704 [DEBUG] Looking for jobs to run
+2023-09-20 16:25:41,705 [INFO] Running job "DBSync.run (trigger: interval[0:00:10], next run at: 2023-09-20 16:25:41 EEST)" (scheduled at 2023-09-20 16:25:41.693629+03:00)
+2023-09-20 16:25:41,706 [DEBUG] Next wakeup is due at 2023-09-20 16:25:51.693629+03:00 (in 9.988741 seconds)
+2023-09-20 16:25:41,711 [ERROR] Job "DBSync.run (trigger: interval[0:00:10], next run at: 2023-09-20 16:25:51 EEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py", line 16, in run
+    tokens = WorkplaceOptions.query.filter(WorkplaceOptions.code_option==55).all()
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/flask_sqlalchemy/model.py", line 31, in __get__
+    cls, session=cls.__fsa__.session()  # type: ignore[arg-type]
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/sqlalchemy/orm/scoping.py", line 218, in __call__
+    sess = self.registry()
+           ^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/sqlalchemy/util/_collections.py", line 640, in __call__
+    key = self.scopefunc()
+          ^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/flask_sqlalchemy/session.py", line 102, in _app_ctx_id
+    return id(app_ctx._get_current_object())  # type: ignore[attr-defined]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/werkzeug/local.py", line 508, in _get_current_object
+    raise RuntimeError(unbound_message) from None
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2023-09-20 16:25:51,697 [DEBUG] Looking for jobs to run
+2023-09-20 16:25:51,697 [DEBUG] Next wakeup is due at 2023-09-20 16:26:01.693629+03:00 (in 9.996229 seconds)
+2023-09-20 16:25:51,698 [INFO] Running job "DBSync.run (trigger: interval[0:00:10], next run at: 2023-09-20 16:26:01 EEST)" (scheduled at 2023-09-20 16:25:51.693629+03:00)
+2023-09-20 16:25:51,700 [ERROR] Job "DBSync.run (trigger: interval[0:00:10], next run at: 2023-09-20 16:26:01 EEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py", line 16, in run
+    tokens = WorkplaceOptions.query.filter(WorkplaceOptions.code_option==55).all()
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/flask_sqlalchemy/model.py", line 31, in __get__
+    cls, session=cls.__fsa__.session()  # type: ignore[arg-type]
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/sqlalchemy/orm/scoping.py", line 218, in __call__
+    sess = self.registry()
+           ^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/sqlalchemy/util/_collections.py", line 640, in __call__
+    key = self.scopefunc()
+          ^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/flask_sqlalchemy/session.py", line 102, in _app_ctx_id
+    return id(app_ctx._get_current_object())  # type: ignore[attr-defined]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/werkzeug/local.py", line 508, in _get_current_object
+    raise RuntimeError(unbound_message) from None
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2023-09-20 16:26:01,695 [DEBUG] Looking for jobs to run
+2023-09-20 16:26:01,696 [DEBUG] Next wakeup is due at 2023-09-20 16:26:11.693629+03:00 (in 9.997904 seconds)
+2023-09-20 16:26:01,696 [INFO] Running job "DBSync.run (trigger: interval[0:00:10], next run at: 2023-09-20 16:26:11 EEST)" (scheduled at 2023-09-20 16:26:01.693629+03:00)
+2023-09-20 16:26:01,699 [ERROR] Job "DBSync.run (trigger: interval[0:00:10], next run at: 2023-09-20 16:26:11 EEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py", line 16, in run
+    tokens = WorkplaceOptions.query.filter(WorkplaceOptions.code_option==55).all()
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/flask_sqlalchemy/model.py", line 31, in __get__
+    cls, session=cls.__fsa__.session()  # type: ignore[arg-type]
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/sqlalchemy/orm/scoping.py", line 218, in __call__
+    sess = self.registry()
+           ^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/sqlalchemy/util/_collections.py", line 640, in __call__
+    key = self.scopefunc()
+          ^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/flask_sqlalchemy/session.py", line 102, in _app_ctx_id
+    return id(app_ctx._get_current_object())  # type: ignore[attr-defined]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/werkzeug/local.py", line 508, in _get_current_object
+    raise RuntimeError(unbound_message) from None
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2023-09-20 16:27:15,331 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-20 16:27:15,332 [INFO] Added job "DBSync.run" to job store "default"
+2023-09-20 16:27:15,332 [INFO] Scheduler started
+2023-09-20 16:27:15,332 [DEBUG] Looking for jobs to run
+2023-09-20 16:27:15,343 [DEBUG] Next wakeup is due at 2023-09-20 16:27:25.331676+03:00 (in 9.988411 seconds)
+2023-09-20 16:27:15,359 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8888
+ * Running on http://10.69.8.220:8888
+2023-09-20 16:27:15,359 [INFO] [33mPress CTRL+C to quit[0m
+2023-09-20 16:27:15,360 [INFO]  * Restarting with stat
+2023-09-20 16:27:16,198 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-20 16:27:16,199 [INFO] Added job "DBSync.run" to job store "default"
+2023-09-20 16:27:16,199 [INFO] Scheduler started
+2023-09-20 16:27:16,200 [DEBUG] Looking for jobs to run
+2023-09-20 16:27:16,210 [DEBUG] Next wakeup is due at 2023-09-20 16:27:26.198804+03:00 (in 9.988246 seconds)
+2023-09-20 16:27:16,225 [WARNING]  * Debugger is active!
+2023-09-20 16:27:16,225 [INFO]  * Debugger PIN: 528-864-763
+2023-09-20 16:27:25,342 [DEBUG] Looking for jobs to run
+2023-09-20 16:27:25,343 [INFO] Running job "DBSync.run (trigger: interval[0:00:10], next run at: 2023-09-20 16:27:25 EEST)" (scheduled at 2023-09-20 16:27:25.331676+03:00)
+2023-09-20 16:27:25,344 [DEBUG] Next wakeup is due at 2023-09-20 16:27:35.331676+03:00 (in 9.989004 seconds)
+2023-09-20 16:27:25,349 [ERROR] Job "DBSync.run (trigger: interval[0:00:10], next run at: 2023-09-20 16:27:35 EEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py", line 17, in run
+    shops = Shops.query.all()
+            ^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/flask_sqlalchemy/model.py", line 31, in __get__
+    cls, session=cls.__fsa__.session()  # type: ignore[arg-type]
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/sqlalchemy/orm/scoping.py", line 218, in __call__
+    sess = self.registry()
+           ^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/sqlalchemy/util/_collections.py", line 640, in __call__
+    key = self.scopefunc()
+          ^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/flask_sqlalchemy/session.py", line 102, in _app_ctx_id
+    return id(app_ctx._get_current_object())  # type: ignore[attr-defined]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/werkzeug/local.py", line 508, in _get_current_object
+    raise RuntimeError(unbound_message) from None
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2023-09-20 16:27:26,209 [DEBUG] Looking for jobs to run
+2023-09-20 16:27:26,210 [INFO] Running job "DBSync.run (trigger: interval[0:00:10], next run at: 2023-09-20 16:27:26 EEST)" (scheduled at 2023-09-20 16:27:26.198804+03:00)
+2023-09-20 16:27:26,211 [DEBUG] Next wakeup is due at 2023-09-20 16:27:36.198804+03:00 (in 9.989048 seconds)
+2023-09-20 16:27:26,217 [ERROR] Job "DBSync.run (trigger: interval[0:00:10], next run at: 2023-09-20 16:27:36 EEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py", line 17, in run
+    shops = Shops.query.all()
+            ^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/flask_sqlalchemy/model.py", line 31, in __get__
+    cls, session=cls.__fsa__.session()  # type: ignore[arg-type]
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/sqlalchemy/orm/scoping.py", line 218, in __call__
+    sess = self.registry()
+           ^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/sqlalchemy/util/_collections.py", line 640, in __call__
+    key = self.scopefunc()
+          ^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/flask_sqlalchemy/session.py", line 102, in _app_ctx_id
+    return id(app_ctx._get_current_object())  # type: ignore[attr-defined]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/werkzeug/local.py", line 508, in _get_current_object
+    raise RuntimeError(unbound_message) from None
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2023-09-20 17:32:52,966 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-20 17:32:52,966 [INFO] Added job "DBSync.run" to job store "default"
+2023-09-20 17:32:52,966 [INFO] Scheduler started
+2023-09-20 17:32:52,967 [DEBUG] Looking for jobs to run
+2023-09-20 17:32:52,977 [DEBUG] Next wakeup is due at 2023-09-20 17:33:02.965987+03:00 (in 9.988309 seconds)
+2023-09-20 17:32:52,991 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8888
+ * Running on http://10.69.8.220:8888
+2023-09-20 17:32:52,991 [INFO] [33mPress CTRL+C to quit[0m
+2023-09-20 17:32:52,992 [INFO]  * Restarting with stat
+2023-09-20 17:32:53,800 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-20 17:32:53,801 [INFO] Added job "DBSync.run" to job store "default"
+2023-09-20 17:32:53,801 [INFO] Scheduler started
+2023-09-20 17:32:53,802 [DEBUG] Looking for jobs to run
+2023-09-20 17:32:53,812 [DEBUG] Next wakeup is due at 2023-09-20 17:33:03.800781+03:00 (in 9.988276 seconds)
+2023-09-20 17:32:53,825 [WARNING]  * Debugger is active!
+2023-09-20 17:32:53,826 [INFO]  * Debugger PIN: 528-864-763
+2023-09-20 17:33:02,971 [DEBUG] Looking for jobs to run
+2023-09-20 17:33:02,973 [INFO] Running job "DBSync.run (trigger: interval[0:00:10], next run at: 2023-09-20 17:33:02 EEST)" (scheduled at 2023-09-20 17:33:02.965987+03:00)
+2023-09-20 17:33:02,973 [DEBUG] Next wakeup is due at 2023-09-20 17:33:12.965987+03:00 (in 9.993962 seconds)
+2023-09-20 17:33:02,978 [ERROR] Job "DBSync.run (trigger: interval[0:00:10], next run at: 2023-09-20 17:33:12 EEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py", line 16, in run
+    tokens = WorkplaceOptions.query.filter(WorkplaceOptions.code_option==55).all()
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/flask_sqlalchemy/model.py", line 31, in __get__
+    cls, session=cls.__fsa__.session()  # type: ignore[arg-type]
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/sqlalchemy/orm/scoping.py", line 218, in __call__
+    sess = self.registry()
+           ^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/sqlalchemy/util/_collections.py", line 640, in __call__
+    key = self.scopefunc()
+          ^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/flask_sqlalchemy/session.py", line 102, in _app_ctx_id
+    return id(app_ctx._get_current_object())  # type: ignore[attr-defined]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/werkzeug/local.py", line 508, in _get_current_object
+    raise RuntimeError(unbound_message) from None
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2023-09-20 17:33:03,811 [DEBUG] Looking for jobs to run
+2023-09-20 17:33:03,813 [INFO] Running job "DBSync.run (trigger: interval[0:00:10], next run at: 2023-09-20 17:33:03 EEST)" (scheduled at 2023-09-20 17:33:03.800781+03:00)
+2023-09-20 17:33:03,814 [DEBUG] Next wakeup is due at 2023-09-20 17:33:13.800781+03:00 (in 9.988523 seconds)
+2023-09-20 17:33:03,819 [ERROR] Job "DBSync.run (trigger: interval[0:00:10], next run at: 2023-09-20 17:33:13 EEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py", line 16, in run
+    tokens = WorkplaceOptions.query.filter(WorkplaceOptions.code_option==55).all()
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/flask_sqlalchemy/model.py", line 31, in __get__
+    cls, session=cls.__fsa__.session()  # type: ignore[arg-type]
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/sqlalchemy/orm/scoping.py", line 218, in __call__
+    sess = self.registry()
+           ^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/sqlalchemy/util/_collections.py", line 640, in __call__
+    key = self.scopefunc()
+          ^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/flask_sqlalchemy/session.py", line 102, in _app_ctx_id
+    return id(app_ctx._get_current_object())  # type: ignore[attr-defined]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/werkzeug/local.py", line 508, in _get_current_object
+    raise RuntimeError(unbound_message) from None
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2023-09-20 17:35:35,301 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-20 17:35:35,301 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-20 17:35:35,301 [INFO] Scheduler started
+2023-09-20 17:35:35,302 [DEBUG] Looking for jobs to run
+2023-09-20 17:35:35,312 [DEBUG] Next wakeup is due at 2023-09-20 17:35:45.300973+03:00 (in 9.988448 seconds)
+2023-09-20 17:35:35,329 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8888
+ * Running on http://10.69.8.220:8888
+2023-09-20 17:35:35,329 [INFO] [33mPress CTRL+C to quit[0m
+2023-09-20 17:35:35,330 [INFO]  * Restarting with stat
+2023-09-20 17:35:36,090 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-20 17:35:36,091 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-20 17:35:36,091 [INFO] Scheduler started
+2023-09-20 17:35:36,091 [DEBUG] Looking for jobs to run
+2023-09-20 17:35:36,097 [DEBUG] Next wakeup is due at 2023-09-20 17:35:46.090581+03:00 (in 9.993306 seconds)
+2023-09-20 17:35:36,116 [WARNING]  * Debugger is active!
+2023-09-20 17:35:36,116 [INFO]  * Debugger PIN: 528-864-763
+2023-09-20 17:35:45,311 [DEBUG] Looking for jobs to run
+2023-09-20 17:35:45,312 [INFO] Running job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:35:45 EEST)" (scheduled at 2023-09-20 17:35:45.300973+03:00)
+2023-09-20 17:35:45,318 [DEBUG] Next wakeup is due at 2023-09-20 17:35:55.300973+03:00 (in 9.989157 seconds)
+2023-09-20 17:35:46,101 [DEBUG] Looking for jobs to run
+2023-09-20 17:35:46,101 [INFO] Running job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:35:46 EEST)" (scheduled at 2023-09-20 17:35:46.090581+03:00)
+2023-09-20 17:35:46,102 [DEBUG] Next wakeup is due at 2023-09-20 17:35:56.090581+03:00 (in 9.989192 seconds)
+2023-09-20 17:35:48,827 [INFO] Job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:35:55 EEST)" executed successfully
+2023-09-20 17:35:49,201 [INFO] Job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:35:56 EEST)" executed successfully
+2023-09-20 17:35:55,317 [DEBUG] Looking for jobs to run
+2023-09-20 17:35:55,319 [DEBUG] Next wakeup is due at 2023-09-20 17:36:05.300973+03:00 (in 9.982505 seconds)
+2023-09-20 17:35:55,319 [INFO] Running job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:36:05 EEST)" (scheduled at 2023-09-20 17:35:55.300973+03:00)
+2023-09-20 17:35:56,096 [DEBUG] Looking for jobs to run
+2023-09-20 17:35:56,097 [DEBUG] Next wakeup is due at 2023-09-20 17:36:06.090581+03:00 (in 9.993740 seconds)
+2023-09-20 17:35:56,097 [INFO] Running job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:36:06 EEST)" (scheduled at 2023-09-20 17:35:56.090581+03:00)
+2023-09-20 17:35:58,894 [INFO] Job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:36:05 EEST)" executed successfully
+2023-09-20 17:35:59,222 [INFO] Job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:36:06 EEST)" executed successfully
+2023-09-20 17:37:02,962 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-20 17:37:02,962 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-20 17:37:02,962 [INFO] Scheduler started
+2023-09-20 17:37:02,963 [DEBUG] Looking for jobs to run
+2023-09-20 17:37:02,973 [DEBUG] Next wakeup is due at 2023-09-20 17:37:12.962068+03:00 (in 9.988465 seconds)
+2023-09-20 17:37:02,988 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8888
+ * Running on http://10.69.8.220:8888
+2023-09-20 17:37:02,988 [INFO] [33mPress CTRL+C to quit[0m
+2023-09-20 17:37:02,989 [INFO]  * Restarting with stat
+2023-09-20 17:37:04,045 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-20 17:37:04,046 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-20 17:37:04,046 [INFO] Scheduler started
+2023-09-20 17:37:04,047 [DEBUG] Looking for jobs to run
+2023-09-20 17:37:04,057 [DEBUG] Next wakeup is due at 2023-09-20 17:37:14.045845+03:00 (in 9.988374 seconds)
+2023-09-20 17:37:04,075 [WARNING]  * Debugger is active!
+2023-09-20 17:37:04,075 [INFO]  * Debugger PIN: 528-864-763
+2023-09-20 17:37:12,972 [DEBUG] Looking for jobs to run
+2023-09-20 17:37:12,976 [INFO] Running job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:37:12 EEST)" (scheduled at 2023-09-20 17:37:12.962068+03:00)
+2023-09-20 17:37:12,976 [DEBUG] Next wakeup is due at 2023-09-20 17:37:22.962068+03:00 (in 9.988612 seconds)
+2023-09-20 17:37:14,056 [DEBUG] Looking for jobs to run
+2023-09-20 17:37:14,057 [INFO] Running job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:37:14 EEST)" (scheduled at 2023-09-20 17:37:14.045845+03:00)
+2023-09-20 17:37:14,057 [DEBUG] Next wakeup is due at 2023-09-20 17:37:24.045845+03:00 (in 9.989227 seconds)
+2023-09-20 17:37:16,933 [INFO] Job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:37:22 EEST)" executed successfully
+2023-09-20 17:37:17,541 [INFO] Job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:37:24 EEST)" executed successfully
+2023-09-20 17:37:22,977 [DEBUG] Looking for jobs to run
+2023-09-20 17:37:22,978 [DEBUG] Next wakeup is due at 2023-09-20 17:37:32.962068+03:00 (in 9.984479 seconds)
+2023-09-20 17:37:22,978 [INFO] Running job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:37:32 EEST)" (scheduled at 2023-09-20 17:37:22.962068+03:00)
+2023-09-20 17:37:24,057 [DEBUG] Looking for jobs to run
+2023-09-20 17:37:24,058 [DEBUG] Next wakeup is due at 2023-09-20 17:37:34.045845+03:00 (in 9.988358 seconds)
+2023-09-20 17:37:24,059 [INFO] Running job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:37:34 EEST)" (scheduled at 2023-09-20 17:37:24.045845+03:00)
+2023-09-20 17:37:26,819 [INFO] Job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:37:32 EEST)" executed successfully
+2023-09-20 17:37:27,485 [INFO] Job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:37:34 EEST)" executed successfully
+2023-09-20 17:37:32,963 [DEBUG] Looking for jobs to run
+2023-09-20 17:37:32,965 [DEBUG] Next wakeup is due at 2023-09-20 17:37:42.962068+03:00 (in 9.997688 seconds)
+2023-09-20 17:37:32,965 [INFO] Running job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:37:42 EEST)" (scheduled at 2023-09-20 17:37:32.962068+03:00)
+2023-09-20 17:37:34,048 [DEBUG] Looking for jobs to run
+2023-09-20 17:37:34,049 [DEBUG] Next wakeup is due at 2023-09-20 17:37:44.045845+03:00 (in 9.997196 seconds)
+2023-09-20 17:37:34,050 [INFO] Running job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:37:44 EEST)" (scheduled at 2023-09-20 17:37:34.045845+03:00)
+2023-09-20 17:37:36,786 [INFO] Job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:37:42 EEST)" executed successfully
+2023-09-20 17:37:39,925 [INFO] Job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:37:44 EEST)" executed successfully
+2023-09-20 17:37:42,964 [DEBUG] Looking for jobs to run
+2023-09-20 17:37:42,964 [DEBUG] Next wakeup is due at 2023-09-20 17:37:52.962068+03:00 (in 9.997914 seconds)
+2023-09-20 17:37:42,964 [INFO] Running job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:37:52 EEST)" (scheduled at 2023-09-20 17:37:42.962068+03:00)
+2023-09-20 17:37:44,047 [DEBUG] Looking for jobs to run
+2023-09-20 17:37:44,048 [DEBUG] Next wakeup is due at 2023-09-20 17:37:54.045845+03:00 (in 9.997867 seconds)
+2023-09-20 17:37:44,048 [INFO] Running job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:37:54 EEST)" (scheduled at 2023-09-20 17:37:44.045845+03:00)
+2023-09-20 17:37:46,528 [INFO] Job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:37:52 EEST)" executed successfully
+2023-09-20 17:37:47,222 [INFO] Job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:37:54 EEST)" executed successfully
+2023-09-20 17:37:52,962 [DEBUG] Looking for jobs to run
+2023-09-20 17:37:52,963 [DEBUG] Next wakeup is due at 2023-09-20 17:38:02.962068+03:00 (in 9.998980 seconds)
+2023-09-20 17:37:52,963 [INFO] Running job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:38:02 EEST)" (scheduled at 2023-09-20 17:37:52.962068+03:00)
+2023-09-20 17:37:54,046 [DEBUG] Looking for jobs to run
+2023-09-20 17:37:54,047 [DEBUG] Next wakeup is due at 2023-09-20 17:38:04.045845+03:00 (in 9.998819 seconds)
+2023-09-20 17:37:54,047 [INFO] Running job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:38:04 EEST)" (scheduled at 2023-09-20 17:37:54.045845+03:00)
+2023-09-20 17:37:57,285 [INFO] Job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:38:02 EEST)" executed successfully
+2023-09-20 17:37:57,924 [INFO] Job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:38:04 EEST)" executed successfully
+2023-09-20 17:38:02,962 [DEBUG] Looking for jobs to run
+2023-09-20 17:38:02,963 [DEBUG] Next wakeup is due at 2023-09-20 17:38:12.962068+03:00 (in 9.998835 seconds)
+2023-09-20 17:38:02,964 [INFO] Running job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:38:12 EEST)" (scheduled at 2023-09-20 17:38:02.962068+03:00)
+2023-09-20 17:38:04,046 [DEBUG] Looking for jobs to run
+2023-09-20 17:38:04,046 [DEBUG] Next wakeup is due at 2023-09-20 17:38:14.045845+03:00 (in 9.999246 seconds)
+2023-09-20 17:38:04,046 [INFO] Running job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:38:14 EEST)" (scheduled at 2023-09-20 17:38:04.045845+03:00)
+2023-09-20 17:38:07,000 [INFO] Job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:38:12 EEST)" executed successfully
+2023-09-20 17:38:07,712 [INFO] Job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:38:14 EEST)" executed successfully
+2023-09-20 17:38:12,964 [DEBUG] Looking for jobs to run
+2023-09-20 17:38:12,965 [DEBUG] Next wakeup is due at 2023-09-20 17:38:22.962068+03:00 (in 9.997572 seconds)
+2023-09-20 17:38:12,965 [INFO] Running job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:38:22 EEST)" (scheduled at 2023-09-20 17:38:12.962068+03:00)
+2023-09-20 17:38:14,046 [DEBUG] Looking for jobs to run
+2023-09-20 17:38:14,047 [DEBUG] Next wakeup is due at 2023-09-20 17:38:24.045845+03:00 (in 9.998865 seconds)
+2023-09-20 17:38:14,048 [INFO] Running job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:38:24 EEST)" (scheduled at 2023-09-20 17:38:14.045845+03:00)
+2023-09-20 17:38:17,281 [INFO] Job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:38:22 EEST)" executed successfully
+2023-09-20 17:38:17,780 [INFO] Job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:38:24 EEST)" executed successfully
+2023-09-20 17:38:22,963 [DEBUG] Looking for jobs to run
+2023-09-20 17:38:22,965 [DEBUG] Next wakeup is due at 2023-09-20 17:38:32.962068+03:00 (in 9.997681 seconds)
+2023-09-20 17:38:22,965 [INFO] Running job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:38:32 EEST)" (scheduled at 2023-09-20 17:38:22.962068+03:00)
+2023-09-20 17:38:24,046 [DEBUG] Looking for jobs to run
+2023-09-20 17:38:24,047 [DEBUG] Next wakeup is due at 2023-09-20 17:38:34.045845+03:00 (in 9.998739 seconds)
+2023-09-20 17:38:24,047 [INFO] Running job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:38:34 EEST)" (scheduled at 2023-09-20 17:38:24.045845+03:00)
+2023-09-20 17:38:27,084 [INFO] Job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:38:32 EEST)" executed successfully
+2023-09-20 17:38:27,957 [INFO] Job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:38:34 EEST)" executed successfully
+2023-09-20 17:38:32,964 [DEBUG] Looking for jobs to run
+2023-09-20 17:38:32,966 [DEBUG] Next wakeup is due at 2023-09-20 17:38:42.962068+03:00 (in 9.997213 seconds)
+2023-09-20 17:38:32,966 [INFO] Running job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:38:42 EEST)" (scheduled at 2023-09-20 17:38:32.962068+03:00)
+2023-09-20 17:38:34,046 [DEBUG] Looking for jobs to run
+2023-09-20 17:38:34,046 [DEBUG] Next wakeup is due at 2023-09-20 17:38:44.045845+03:00 (in 9.999398 seconds)
+2023-09-20 17:38:34,046 [INFO] Running job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:38:44 EEST)" (scheduled at 2023-09-20 17:38:34.045845+03:00)
+2023-09-20 17:38:36,711 [INFO] Job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:38:42 EEST)" executed successfully
+2023-09-20 17:38:37,293 [INFO] Job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:38:44 EEST)" executed successfully
+2023-09-20 17:38:42,964 [DEBUG] Looking for jobs to run
+2023-09-20 17:38:42,965 [DEBUG] Next wakeup is due at 2023-09-20 17:38:52.962068+03:00 (in 9.996890 seconds)
+2023-09-20 17:38:42,966 [INFO] Running job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:38:52 EEST)" (scheduled at 2023-09-20 17:38:42.962068+03:00)
+2023-09-20 17:38:44,046 [DEBUG] Looking for jobs to run
+2023-09-20 17:38:44,047 [DEBUG] Next wakeup is due at 2023-09-20 17:38:54.045845+03:00 (in 9.998573 seconds)
+2023-09-20 17:38:44,049 [INFO] Running job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:38:54 EEST)" (scheduled at 2023-09-20 17:38:44.045845+03:00)
+2023-09-20 17:38:47,101 [INFO] Job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:38:52 EEST)" executed successfully
+2023-09-20 17:38:47,893 [INFO] Job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:38:54 EEST)" executed successfully
+2023-09-20 17:38:52,963 [DEBUG] Looking for jobs to run
+2023-09-20 17:38:52,964 [DEBUG] Next wakeup is due at 2023-09-20 17:39:02.962068+03:00 (in 9.998199 seconds)
+2023-09-20 17:38:52,964 [INFO] Running job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:39:02 EEST)" (scheduled at 2023-09-20 17:38:52.962068+03:00)
+2023-09-20 17:38:54,048 [DEBUG] Looking for jobs to run
+2023-09-20 17:38:54,049 [DEBUG] Next wakeup is due at 2023-09-20 17:39:04.045845+03:00 (in 9.996915 seconds)
+2023-09-20 17:38:54,049 [INFO] Running job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:39:04 EEST)" (scheduled at 2023-09-20 17:38:54.045845+03:00)
+2023-09-20 17:38:57,200 [INFO] Job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:39:02 EEST)" executed successfully
+2023-09-20 17:38:58,844 [INFO] Job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:39:04 EEST)" executed successfully
+2023-09-20 17:39:02,962 [DEBUG] Looking for jobs to run
+2023-09-20 17:39:02,962 [DEBUG] Next wakeup is due at 2023-09-20 17:39:12.962068+03:00 (in 9.999358 seconds)
+2023-09-20 17:39:02,962 [INFO] Running job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:39:12 EEST)" (scheduled at 2023-09-20 17:39:02.962068+03:00)
+2023-09-20 17:39:04,046 [DEBUG] Looking for jobs to run
+2023-09-20 17:39:04,047 [DEBUG] Next wakeup is due at 2023-09-20 17:39:14.045845+03:00 (in 9.998708 seconds)
+2023-09-20 17:39:04,047 [INFO] Running job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:39:14 EEST)" (scheduled at 2023-09-20 17:39:04.045845+03:00)
+2023-09-20 17:39:08,167 [INFO] Job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:39:12 EEST)" executed successfully
+2023-09-20 17:39:09,289 [INFO] Job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:39:14 EEST)" executed successfully
+2023-09-20 17:39:12,962 [DEBUG] Looking for jobs to run
+2023-09-20 17:39:12,962 [DEBUG] Next wakeup is due at 2023-09-20 17:39:22.962068+03:00 (in 9.999386 seconds)
+2023-09-20 17:39:12,962 [INFO] Running job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:39:22 EEST)" (scheduled at 2023-09-20 17:39:12.962068+03:00)
+2023-09-20 17:39:14,046 [DEBUG] Looking for jobs to run
+2023-09-20 17:39:14,047 [DEBUG] Next wakeup is due at 2023-09-20 17:39:24.045845+03:00 (in 9.998870 seconds)
+2023-09-20 17:39:14,047 [INFO] Running job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:39:24 EEST)" (scheduled at 2023-09-20 17:39:14.045845+03:00)
+2023-09-20 17:39:18,168 [INFO] Job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:39:22 EEST)" executed successfully
+2023-09-20 17:39:19,544 [INFO] Job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:39:24 EEST)" executed successfully
+2023-09-20 17:39:22,962 [DEBUG] Looking for jobs to run
+2023-09-20 17:39:22,962 [DEBUG] Next wakeup is due at 2023-09-20 17:39:32.962068+03:00 (in 9.999379 seconds)
+2023-09-20 17:39:22,962 [INFO] Running job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:39:32 EEST)" (scheduled at 2023-09-20 17:39:22.962068+03:00)
+2023-09-20 17:39:24,046 [DEBUG] Looking for jobs to run
+2023-09-20 17:39:24,046 [DEBUG] Next wakeup is due at 2023-09-20 17:39:34.045845+03:00 (in 9.999399 seconds)
+2023-09-20 17:39:24,046 [INFO] Running job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:39:34 EEST)" (scheduled at 2023-09-20 17:39:24.045845+03:00)
+2023-09-20 17:39:28,521 [INFO] Job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:39:34 EEST)" executed successfully
+2023-09-20 17:39:29,802 [INFO] Job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:39:32 EEST)" executed successfully
+2023-09-20 17:39:32,962 [DEBUG] Looking for jobs to run
+2023-09-20 17:39:32,962 [DEBUG] Next wakeup is due at 2023-09-20 17:39:42.962068+03:00 (in 9.999399 seconds)
+2023-09-20 17:39:32,962 [INFO] Running job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:39:42 EEST)" (scheduled at 2023-09-20 17:39:32.962068+03:00)
+2023-09-20 17:39:34,046 [DEBUG] Looking for jobs to run
+2023-09-20 17:39:34,046 [DEBUG] Next wakeup is due at 2023-09-20 17:39:44.045845+03:00 (in 9.999229 seconds)
+2023-09-20 17:39:34,046 [INFO] Running job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:39:44 EEST)" (scheduled at 2023-09-20 17:39:34.045845+03:00)
+2023-09-20 17:39:37,364 [INFO] Job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:39:42 EEST)" executed successfully
+2023-09-20 17:39:38,061 [INFO] Job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:39:44 EEST)" executed successfully
+2023-09-20 17:39:42,962 [DEBUG] Looking for jobs to run
+2023-09-20 17:39:42,962 [DEBUG] Next wakeup is due at 2023-09-20 17:39:52.962068+03:00 (in 9.999350 seconds)
+2023-09-20 17:39:42,963 [INFO] Running job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:39:52 EEST)" (scheduled at 2023-09-20 17:39:42.962068+03:00)
+2023-09-20 17:39:44,046 [DEBUG] Looking for jobs to run
+2023-09-20 17:39:44,046 [DEBUG] Next wakeup is due at 2023-09-20 17:39:54.045845+03:00 (in 9.999489 seconds)
+2023-09-20 17:39:44,046 [INFO] Running job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:39:54 EEST)" (scheduled at 2023-09-20 17:39:44.045845+03:00)
+2023-09-20 17:39:47,514 [INFO] Job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:39:52 EEST)" executed successfully
+2023-09-20 17:39:48,789 [INFO] Job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:39:54 EEST)" executed successfully
+2023-09-20 17:39:52,962 [DEBUG] Looking for jobs to run
+2023-09-20 17:39:52,962 [DEBUG] Next wakeup is due at 2023-09-20 17:40:02.962068+03:00 (in 9.999494 seconds)
+2023-09-20 17:39:52,962 [INFO] Running job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:40:02 EEST)" (scheduled at 2023-09-20 17:39:52.962068+03:00)
+2023-09-20 17:39:54,046 [DEBUG] Looking for jobs to run
+2023-09-20 17:39:54,046 [DEBUG] Next wakeup is due at 2023-09-20 17:40:04.045845+03:00 (in 9.999251 seconds)
+2023-09-20 17:39:54,046 [INFO] Running job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:40:04 EEST)" (scheduled at 2023-09-20 17:39:54.045845+03:00)
+2023-09-20 17:39:56,747 [INFO] Job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:40:02 EEST)" executed successfully
+2023-09-20 17:39:58,548 [INFO] Job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:40:04 EEST)" executed successfully
+2023-09-20 17:40:02,962 [DEBUG] Looking for jobs to run
+2023-09-20 17:40:02,962 [DEBUG] Next wakeup is due at 2023-09-20 17:40:12.962068+03:00 (in 9.999314 seconds)
+2023-09-20 17:40:02,963 [INFO] Running job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:40:12 EEST)" (scheduled at 2023-09-20 17:40:02.962068+03:00)
+2023-09-20 17:40:04,046 [DEBUG] Looking for jobs to run
+2023-09-20 17:40:04,046 [DEBUG] Next wakeup is due at 2023-09-20 17:40:14.045845+03:00 (in 9.999210 seconds)
+2023-09-20 17:40:04,046 [INFO] Running job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:40:14 EEST)" (scheduled at 2023-09-20 17:40:04.045845+03:00)
+2023-09-20 17:40:08,160 [INFO] Job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:40:12 EEST)" executed successfully
+2023-09-20 17:40:08,814 [INFO] Job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:40:14 EEST)" executed successfully
+2023-09-20 17:40:12,962 [DEBUG] Looking for jobs to run
+2023-09-20 17:40:12,963 [DEBUG] Next wakeup is due at 2023-09-20 17:40:22.962068+03:00 (in 9.999158 seconds)
+2023-09-20 17:40:12,963 [INFO] Running job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:40:22 EEST)" (scheduled at 2023-09-20 17:40:12.962068+03:00)
+2023-09-20 17:40:14,046 [DEBUG] Looking for jobs to run
+2023-09-20 17:40:14,046 [DEBUG] Next wakeup is due at 2023-09-20 17:40:24.045845+03:00 (in 9.999245 seconds)
+2023-09-20 17:40:14,046 [INFO] Running job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:40:24 EEST)" (scheduled at 2023-09-20 17:40:14.045845+03:00)
+2023-09-20 17:40:17,226 [INFO] Job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:40:22 EEST)" executed successfully
+2023-09-20 17:40:18,782 [INFO] Job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:40:24 EEST)" executed successfully
+2023-09-20 17:40:22,963 [DEBUG] Looking for jobs to run
+2023-09-20 17:40:22,963 [DEBUG] Next wakeup is due at 2023-09-20 17:40:32.962068+03:00 (in 9.998250 seconds)
+2023-09-20 17:40:22,964 [INFO] Running job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:40:32 EEST)" (scheduled at 2023-09-20 17:40:22.962068+03:00)
+2023-09-20 17:40:24,046 [DEBUG] Looking for jobs to run
+2023-09-20 17:40:24,046 [DEBUG] Next wakeup is due at 2023-09-20 17:40:34.045845+03:00 (in 9.999490 seconds)
+2023-09-20 17:40:24,046 [INFO] Running job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:40:34 EEST)" (scheduled at 2023-09-20 17:40:24.045845+03:00)
+2023-09-20 17:40:27,853 [INFO] Job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-20 17:40:32 EEST)" executed successfully
