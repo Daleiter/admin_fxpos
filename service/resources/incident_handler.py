@@ -24,7 +24,7 @@ class IncidentHandler():
             self.logger.debug(alert)
             incedent = Incedent()
             id_shop = Shops.query.filter(Shops.shop_number==alert["labels"]["id_shop"]).one()
-            phones = Phones.query.filter(Phones.shop == id_shop).one()
+            phones = Phones.query.filter(Phones.shop == id_shop).first()
             datetime_object = datetime.strptime(alert["startsAt"], '%Y-%m-%dT%H:%M:%S.%fZ')
             from_zone = tz.gettz('UTC')
             to_zone = tz.gettz('Europe/Kiev')

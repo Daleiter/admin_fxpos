@@ -70,9 +70,9 @@ def run_dbsync():
         DBSync().run()
 
 sched = BackgroundScheduler(daemon=True)
-#sched.add_job(get_aler,'interval',seconds=120)
-sched.add_job(run_dbsync,'interval',seconds=1800)
-#sched.add_job(send_exice_reoprt, 'cron' , year="*", month="*", day="*", hour="8", minute="28", second="5")
+sched.add_job(get_aler,'interval',seconds=120)
+sched.add_job(run_dbsync,'interval',seconds=app.config['SYNCDB_TIMEOUT'])
+sched.add_job(send_exice_reoprt, 'cron' , year="*", month="*", day="*", hour="8", minute="28", second="5")
 sched.start()
 # api resourses
 api.add_resource(ShopList, '/api/shops', '/api/shops')

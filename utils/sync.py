@@ -3,9 +3,11 @@ from models.db_model_cashdesk_shop import ShopsCD, WorkplaceCD
 from models.db_model_cashdesk import WorkplaceOptions
 from models.db_model import Items
 from rest.init_db import db
+from views.logger import get_logger
 
 class DBSync:
     def __init__(self):
+        self.logger = get_logger(__name__)
         pass
     
     
@@ -20,23 +22,13 @@ class DBSync:
 
 
         def is_workpace_prro(shop,workplace=0, tokens=tokens):
+            shop =str(shop)
+            workplace = str(workplace)
             for token in tokens:
-                if token.code_shop==shop and token.id_workplace==workplace and token.code_option==55:
+                if str(token.code_shop)==shop and str(token.id_workplace)==workplace and token.code_option==55:
                     if 'url' in token.value_option:
-                        return 1
-            return 0
-        
-        def get_shop_atributes(rk=-1,id=-1,ip=-1,shops=shops):
-            for shop in shops:
-                if rk != -1:
-                    if shop.shop_number == rk:
-                        return shop
-                if id != -1:
-                    if shop.id == id:
-                        return shop
-                if ip != -1:
-                    if shop.base_ip == ip:
-                        return shop
+                        return str(1)
+            return str(0)
         
         def difference_set(set1=None, set2=None):
             set1 = set(set1)
@@ -54,6 +46,7 @@ class DBSync:
             db.session.add(item)
             db.session.commit()
             db.session.refresh(item)
+            self.logger.debug(f"Add {item}")
             return item
 
         def add_atributes(itemid, id_attribute, value):
@@ -65,12 +58,23 @@ class DBSync:
         
         def update_active(cd_value, db_value):
             if db_value.active != cd_value.sign_activity:
+                self.logger.debug(f"{db_value} --> {cd_value}")
                 db_value.active = cd_value.sign_activity
                 db.session.commit()
                 db.session.refresh(db_value)
+        def update_prro_status(index_poscd, index_pos):
+            prro = is_workpace_prro(index_poscd.code_shop, index_poscd.id_workplace)
+            for attribute in index_pos.attributes:
+                if attribute.id_attribute==4:
+                    if attribute.value != prro:
+                        self.logger.debug(f"{prro} --> {attribute}")
+                        attribute.value = prro
+                        db.session.commit()
+                        db.session.refresh(attribute)
 
 
-        #print("----------------------RELOAD----------------------")
+
+        self.logger.debug("Sync pos and shop")
 # __________SHOP__________
         rk =[]
         rkcd =[]
@@ -92,6 +96,7 @@ class DBSync:
             db.session.add(shop)
             db.session.commit()
             db.session.refresh(shop)
+            self.logger.debug(f"Add {shop}")
             # add items
             router = add_item(f"192.168.{shopi.address}.100", shopi.sign_activity, 6, shop.id)
             router_prov = add_item(f"10.129.{shopi.address}.2", shopi.sign_activity, 9, shop.id)
@@ -119,7 +124,8 @@ class DBSync:
                         id_workplace = att.value
                 if index_poscd.code_shop == index_pos.shop.shop_number and str(index_poscd.id_workplace) == id_workplace:
                     pos.append(index_poscd)
-                    #Update pos active in our DB
+                    update_prro_status(index_poscd, index_pos)
+                    # Update pos active in our DB
                     update_active(index_poscd, index_pos)
         nemapos = difference_set(pos, poscd)
         for posi in nemapos:
