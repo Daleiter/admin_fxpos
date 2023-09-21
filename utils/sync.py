@@ -1,10 +1,8 @@
 from models.db_model import Shops, Items, Item_types, Items_attributes
 from models.db_model_cashdesk_shop import ShopsCD, WorkplaceCD
 from models.db_model_cashdesk import WorkplaceOptions
-from flask_restful import reqparse, request
 from models.db_model import Items
 from rest.init_db import db
-import json
 
 class DBSync:
     def __init__(self):
@@ -72,7 +70,7 @@ class DBSync:
                 db.session.refresh(db_value)
 
 
-        print("----------------------RELOAD----------------------")
+        #print("----------------------RELOAD----------------------")
 # __________SHOP__________
         rk =[]
         rkcd =[]
