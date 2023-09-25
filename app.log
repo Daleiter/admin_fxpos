@@ -23294,3 +23294,1050 @@ AttributeError: 'NoneType' object has no attribute 'numbers_list'
 2023-09-25 10:23:40,811 [INFO]  * Debugger PIN: 528-864-763
 2023-09-25 10:23:43,526 [DEBUG] Sync pos and shop
 2023-09-25 10:23:47,569 [INFO] 127.0.0.1 - - [25/Sep/2023 10:23:47] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-25 11:29:27,865 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 11:29:27,866 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 11:29:27,870 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 11:29:27,871 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 11:29:27,872 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 11:29:27,873 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 11:29:27,874 [INFO] Scheduler started
+2023-09-25 11:29:27,874 [DEBUG] Looking for jobs to run
+2023-09-25 11:29:27,880 [DEBUG] Next wakeup is due at 2023-09-25 11:31:27.865055+03:00 (in 119.984162 seconds)
+2023-09-25 11:29:27,927 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8888
+ * Running on http://10.69.8.220:8888
+2023-09-25 11:29:27,928 [INFO] [33mPress CTRL+C to quit[0m
+2023-09-25 11:29:27,929 [INFO]  * Restarting with stat
+2023-09-25 11:29:29,097 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 11:29:29,098 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 11:29:29,105 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 11:29:29,106 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 11:29:29,106 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 11:29:29,107 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 11:29:29,110 [INFO] Scheduler started
+2023-09-25 11:29:29,183 [DEBUG] Looking for jobs to run
+2023-09-25 11:29:29,184 [DEBUG] Next wakeup is due at 2023-09-25 11:31:29.096986+03:00 (in 119.912148 seconds)
+2023-09-25 11:29:29,263 [WARNING]  * Debugger is active!
+2023-09-25 11:29:29,264 [INFO]  * Debugger PIN: 528-864-763
+2023-09-25 11:29:44,486 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-25 11:29:44,768 [INFO]  * Restarting with stat
+2023-09-25 11:29:46,111 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 11:29:46,111 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 11:29:46,113 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 11:29:46,113 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 11:29:46,114 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 11:29:46,114 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 11:29:46,114 [INFO] Scheduler started
+2023-09-25 11:29:46,115 [DEBUG] Looking for jobs to run
+2023-09-25 11:29:46,121 [DEBUG] Next wakeup is due at 2023-09-25 11:31:46.110992+03:00 (in 119.989969 seconds)
+2023-09-25 11:29:46,151 [WARNING]  * Debugger is active!
+2023-09-25 11:29:46,151 [INFO]  * Debugger PIN: 528-864-763
+2023-09-25 11:29:54,435 [DEBUG] Sync pos and shop
+2023-09-25 11:29:58,377 [INFO] 127.0.0.1 - - [25/Sep/2023 11:29:58] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-25 11:30:41,671 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-25 11:30:41,893 [INFO]  * Restarting with stat
+2023-09-25 11:30:52,306 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 11:30:52,306 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 11:30:52,308 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 11:30:52,309 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 11:30:52,309 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 11:30:52,309 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 11:30:52,309 [INFO] Scheduler started
+2023-09-25 11:30:52,309 [DEBUG] Looking for jobs to run
+2023-09-25 11:30:52,320 [DEBUG] Next wakeup is due at 2023-09-25 11:32:52.306417+03:00 (in 119.986076 seconds)
+2023-09-25 11:30:52,333 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8888
+ * Running on http://10.69.8.220:8888
+2023-09-25 11:30:52,334 [INFO] [33mPress CTRL+C to quit[0m
+2023-09-25 11:30:52,334 [INFO]  * Restarting with stat
+2023-09-25 11:30:53,335 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 11:30:53,335 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 11:30:53,339 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 11:30:53,340 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 11:30:53,341 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 11:30:53,341 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 11:30:53,341 [INFO] Scheduler started
+2023-09-25 11:30:53,342 [DEBUG] Looking for jobs to run
+2023-09-25 11:30:53,352 [DEBUG] Next wakeup is due at 2023-09-25 11:32:53.334931+03:00 (in 119.982325 seconds)
+2023-09-25 11:30:53,375 [WARNING]  * Debugger is active!
+2023-09-25 11:30:53,376 [INFO]  * Debugger PIN: 528-864-763
+2023-09-25 11:30:53,490 [DEBUG] Sync pos and shop
+2023-09-25 11:30:53,495 [INFO] 127.0.0.1 - - [25/Sep/2023 11:30:53] "[35m[1mGET /api/dbsync HTTP/1.1[0m" 500 -
+2023-09-25 11:30:53,535 [INFO] 127.0.0.1 - - [25/Sep/2023 11:30:53] "[36mGET /api/dbsync?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-09-25 11:30:53,538 [INFO] 127.0.0.1 - - [25/Sep/2023 11:30:53] "[36mGET /api/dbsync?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-09-25 11:30:53,607 [INFO] 127.0.0.1 - - [25/Sep/2023 11:30:53] "[36mGET /api/dbsync?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-25 11:30:53,651 [INFO] 127.0.0.1 - - [25/Sep/2023 11:30:53] "[36mGET /api/dbsync?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-25 11:31:15,163 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-25 11:31:15,575 [INFO]  * Restarting with stat
+2023-09-25 11:31:16,549 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 11:31:16,550 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 11:31:16,553 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 11:31:16,554 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 11:31:16,554 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 11:31:16,555 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 11:31:16,555 [INFO] Scheduler started
+2023-09-25 11:31:16,555 [DEBUG] Looking for jobs to run
+2023-09-25 11:31:16,567 [DEBUG] Next wakeup is due at 2023-09-25 11:33:16.549401+03:00 (in 119.981948 seconds)
+2023-09-25 11:31:16,597 [WARNING]  * Debugger is active!
+2023-09-25 11:31:16,597 [INFO]  * Debugger PIN: 528-864-763
+2023-09-25 11:31:47,482 [DEBUG] Sync pos and shop
+2023-09-25 11:31:47,516 [INFO] 127.0.0.1 - - [25/Sep/2023 11:31:47] "[35m[1mGET /api/dbsync HTTP/1.1[0m" 500 -
+2023-09-25 11:31:47,588 [INFO] 127.0.0.1 - - [25/Sep/2023 11:31:47] "[36mGET /api/dbsync?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-09-25 11:31:47,606 [INFO] 127.0.0.1 - - [25/Sep/2023 11:31:47] "[36mGET /api/dbsync?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-09-25 11:31:47,644 [INFO] 127.0.0.1 - - [25/Sep/2023 11:31:47] "[36mGET /api/dbsync?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-25 11:31:47,681 [INFO] 127.0.0.1 - - [25/Sep/2023 11:31:47] "[36mGET /api/dbsync?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-25 11:31:55,073 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-25 11:31:55,494 [INFO]  * Restarting with stat
+2023-09-25 11:31:56,389 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 11:31:56,389 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 11:31:56,391 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 11:31:56,391 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 11:31:56,391 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 11:31:56,392 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 11:31:56,392 [INFO] Scheduler started
+2023-09-25 11:31:56,392 [DEBUG] Looking for jobs to run
+2023-09-25 11:31:56,403 [DEBUG] Next wakeup is due at 2023-09-25 11:33:56.389122+03:00 (in 119.986124 seconds)
+2023-09-25 11:31:56,420 [WARNING]  * Debugger is active!
+2023-09-25 11:31:56,421 [INFO]  * Debugger PIN: 528-864-763
+2023-09-25 11:31:56,546 [DEBUG] Sync pos and shop
+2023-09-25 11:31:56,552 [INFO] 127.0.0.1 - - [25/Sep/2023 11:31:56] "[35m[1mGET /api/dbsync HTTP/1.1[0m" 500 -
+2023-09-25 11:31:56,584 [INFO] 127.0.0.1 - - [25/Sep/2023 11:31:56] "[36mGET /api/dbsync?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-09-25 11:31:56,589 [INFO] 127.0.0.1 - - [25/Sep/2023 11:31:56] "[36mGET /api/dbsync?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-09-25 11:31:56,639 [INFO] 127.0.0.1 - - [25/Sep/2023 11:31:56] "[36mGET /api/dbsync?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-25 11:31:56,686 [INFO] 127.0.0.1 - - [25/Sep/2023 11:31:56] "[36mGET /api/dbsync?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-25 11:32:01,673 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-25 11:32:02,027 [INFO]  * Restarting with stat
+2023-09-25 11:32:03,220 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 11:32:03,220 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 11:32:03,222 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 11:32:03,223 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 11:32:03,223 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 11:32:03,223 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 11:32:03,223 [INFO] Scheduler started
+2023-09-25 11:32:03,224 [DEBUG] Looking for jobs to run
+2023-09-25 11:32:03,229 [DEBUG] Next wakeup is due at 2023-09-25 11:34:03.220556+03:00 (in 119.991238 seconds)
+2023-09-25 11:32:03,259 [WARNING]  * Debugger is active!
+2023-09-25 11:32:03,260 [INFO]  * Debugger PIN: 528-864-763
+2023-09-25 11:32:03,439 [DEBUG] Sync pos and shop
+2023-09-25 11:32:07,910 [INFO] 127.0.0.1 - - [25/Sep/2023 11:32:07] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-25 11:32:25,549 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-25 11:32:25,885 [INFO]  * Restarting with stat
+2023-09-25 11:32:26,962 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 11:32:26,963 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 11:32:26,964 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 11:32:26,965 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 11:32:26,965 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 11:32:26,965 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 11:32:26,965 [INFO] Scheduler started
+2023-09-25 11:32:26,966 [DEBUG] Looking for jobs to run
+2023-09-25 11:32:26,977 [DEBUG] Next wakeup is due at 2023-09-25 11:34:26.962739+03:00 (in 119.985560 seconds)
+2023-09-25 11:32:26,994 [WARNING]  * Debugger is active!
+2023-09-25 11:32:26,995 [INFO]  * Debugger PIN: 528-864-763
+2023-09-25 11:32:27,094 [DEBUG] Sync pos and shop
+2023-09-25 11:32:30,432 [INFO] 127.0.0.1 - - [25/Sep/2023 11:32:30] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-25 11:32:52,317 [DEBUG] Looking for jobs to run
+2023-09-25 11:32:52,318 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-25 11:34:52 EEST)" (scheduled at 2023-09-25 11:32:52.306417+03:00)
+2023-09-25 11:32:52,319 [DEBUG] Next wakeup is due at 2023-09-25 11:34:52.306417+03:00 (in 119.988833 seconds)
+2023-09-25 11:32:52,326 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-25 11:32:52,333 [ERROR] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-25 11:34:52 EEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connection.py", line 169, in _new_conn
+    conn = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/util/connection.py", line 96, in create_connection
+    raise err
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/util/connection.py", line 86, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 394, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connection.py", line 234, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3.11/http/client.py", line 1286, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.11/http/client.py", line 1332, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.11/http/client.py", line 1281, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.11/http/client.py", line 1041, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.11/http/client.py", line 979, in send
+    self.connect()
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connection.py", line 200, in connect
+    conn = self._new_conn()
+           ^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connection.py", line 181, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7fbf756aafd0>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/util/retry.py", line 573, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='192.168.1.200', port=9093): Max retries exceeded with url: /api/v2/alerts?filter=job=~%22routers%22 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fbf756aafd0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/views/app_all.py", line 60, in get_aler
+    handler.get_incedents()
+  File "/home/bodia/admin_fxpos/admin_fxpos/service/resources/incident_handler.py", line 15, in get_incedents
+    alerts = requests.get('http://192.168.1.200:9093/api/v2/alerts?filter=job=~%22routers%22').json()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='192.168.1.200', port=9093): Max retries exceeded with url: /api/v2/alerts?filter=job=~%22routers%22 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fbf756aafd0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2023-09-25 11:32:57,309 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-25 11:32:57,689 [INFO]  * Restarting with stat
+2023-09-25 11:32:58,892 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 11:32:58,892 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 11:32:58,894 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 11:32:58,894 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 11:32:58,895 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 11:32:58,895 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 11:32:58,895 [INFO] Scheduler started
+2023-09-25 11:32:58,895 [DEBUG] Looking for jobs to run
+2023-09-25 11:32:58,906 [DEBUG] Next wakeup is due at 2023-09-25 11:34:58.892217+03:00 (in 119.986051 seconds)
+2023-09-25 11:32:58,919 [WARNING]  * Debugger is active!
+2023-09-25 11:32:58,920 [INFO]  * Debugger PIN: 528-864-763
+2023-09-25 11:32:59,309 [DEBUG] Sync pos and shop
+2023-09-25 11:33:03,115 [INFO] 127.0.0.1 - - [25/Sep/2023 11:33:03] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-25 11:33:10,319 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-25 11:33:10,644 [INFO]  * Restarting with stat
+2023-09-25 11:33:11,586 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 11:33:11,586 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 11:33:11,588 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 11:33:11,589 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 11:33:11,589 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 11:33:11,589 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 11:33:11,589 [INFO] Scheduler started
+2023-09-25 11:33:11,590 [DEBUG] Looking for jobs to run
+2023-09-25 11:33:11,600 [DEBUG] Next wakeup is due at 2023-09-25 11:35:11.586351+03:00 (in 119.985908 seconds)
+2023-09-25 11:33:11,617 [WARNING]  * Debugger is active!
+2023-09-25 11:33:11,617 [INFO]  * Debugger PIN: 528-864-763
+2023-09-25 11:33:11,717 [DEBUG] Sync pos and shop
+2023-09-25 11:33:15,320 [INFO] 127.0.0.1 - - [25/Sep/2023 11:33:15] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-25 11:33:25,715 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-25 11:33:26,018 [INFO]  * Restarting with stat
+2023-09-25 11:33:26,921 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 11:33:26,921 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 11:33:26,923 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 11:33:26,923 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 11:33:26,923 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 11:33:26,924 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 11:33:26,924 [INFO] Scheduler started
+2023-09-25 11:33:26,924 [DEBUG] Looking for jobs to run
+2023-09-25 11:33:26,934 [DEBUG] Next wakeup is due at 2023-09-25 11:35:26.921068+03:00 (in 119.986150 seconds)
+2023-09-25 11:33:26,952 [WARNING]  * Debugger is active!
+2023-09-25 11:33:26,953 [INFO]  * Debugger PIN: 528-864-763
+2023-09-25 11:33:27,083 [DEBUG] Sync pos and shop
+2023-09-25 11:33:30,669 [INFO] 127.0.0.1 - - [25/Sep/2023 11:33:30] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-25 11:34:09,157 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-25 11:34:09,448 [INFO]  * Restarting with stat
+2023-09-25 11:34:10,796 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 11:34:10,796 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 11:34:10,800 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 11:34:10,802 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 11:34:10,803 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 11:34:10,804 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 11:34:10,804 [INFO] Scheduler started
+2023-09-25 11:34:10,806 [DEBUG] Looking for jobs to run
+2023-09-25 11:34:10,818 [DEBUG] Next wakeup is due at 2023-09-25 11:36:10.796080+03:00 (in 119.978154 seconds)
+2023-09-25 11:34:10,843 [WARNING]  * Debugger is active!
+2023-09-25 11:34:10,844 [INFO]  * Debugger PIN: 528-864-763
+2023-09-25 11:34:12,460 [DEBUG] Sync pos and shop
+2023-09-25 11:34:16,113 [INFO] 127.0.0.1 - - [25/Sep/2023 11:34:16] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-25 11:34:52,310 [DEBUG] Looking for jobs to run
+2023-09-25 11:34:52,311 [DEBUG] Next wakeup is due at 2023-09-25 11:36:52.306417+03:00 (in 119.995359 seconds)
+2023-09-25 11:34:52,312 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-25 11:36:52 EEST)" (scheduled at 2023-09-25 11:34:52.306417+03:00)
+2023-09-25 11:34:52,317 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-25 11:34:52,322 [ERROR] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-25 11:36:52 EEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connection.py", line 169, in _new_conn
+    conn = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/util/connection.py", line 96, in create_connection
+    raise err
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/util/connection.py", line 86, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 394, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connection.py", line 234, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3.11/http/client.py", line 1286, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.11/http/client.py", line 1332, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.11/http/client.py", line 1281, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.11/http/client.py", line 1041, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.11/http/client.py", line 979, in send
+    self.connect()
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connection.py", line 200, in connect
+    conn = self._new_conn()
+           ^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connection.py", line 181, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7fbf74538ed0>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/util/retry.py", line 573, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='192.168.1.200', port=9093): Max retries exceeded with url: /api/v2/alerts?filter=job=~%22routers%22 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fbf74538ed0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/views/app_all.py", line 60, in get_aler
+    handler.get_incedents()
+  File "/home/bodia/admin_fxpos/admin_fxpos/service/resources/incident_handler.py", line 15, in get_incedents
+    alerts = requests.get('http://192.168.1.200:9093/api/v2/alerts?filter=job=~%22routers%22').json()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='192.168.1.200', port=9093): Max retries exceeded with url: /api/v2/alerts?filter=job=~%22routers%22 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fbf74538ed0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2023-09-25 11:34:52,488 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-25 11:34:52,735 [INFO]  * Restarting with stat
+2023-09-25 11:34:53,544 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 11:34:53,544 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 11:34:53,546 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 11:34:53,546 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 11:34:53,546 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 11:34:53,547 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 11:34:53,547 [INFO] Scheduler started
+2023-09-25 11:34:53,547 [DEBUG] Looking for jobs to run
+2023-09-25 11:34:53,558 [DEBUG] Next wakeup is due at 2023-09-25 11:36:53.543922+03:00 (in 119.985948 seconds)
+2023-09-25 11:34:53,574 [WARNING]  * Debugger is active!
+2023-09-25 11:34:53,574 [INFO]  * Debugger PIN: 528-864-763
+2023-09-25 11:34:58,468 [DEBUG] Sync pos and shop
+2023-09-25 11:35:02,114 [INFO] 127.0.0.1 - - [25/Sep/2023 11:35:02] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-25 11:35:53,198 [DEBUG] Sync pos and shop
+2023-09-25 11:35:53,210 [DEBUG] <Shop(id='314', name='РК ДОБРОМИЛЬ ПЛ.РИНОК.22', base_ip='204', active='False', shop_number='726')> --> <shops(code_shop='726', name_shop='РК ДОБРОМИЛЬ ПЛ.РИНОК.22', address='220', sign_activity='0')>
+2023-09-25 11:36:02,808 [INFO] 127.0.0.1 - - [25/Sep/2023 11:36:02] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-25 11:36:52,307 [DEBUG] Looking for jobs to run
+2023-09-25 11:36:52,308 [DEBUG] Next wakeup is due at 2023-09-25 11:38:52.306417+03:00 (in 119.998236 seconds)
+2023-09-25 11:36:52,308 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-25 11:38:52 EEST)" (scheduled at 2023-09-25 11:36:52.306417+03:00)
+2023-09-25 11:36:52,310 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-25 11:36:52,313 [ERROR] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-25 11:38:52 EEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connection.py", line 169, in _new_conn
+    conn = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/util/connection.py", line 96, in create_connection
+    raise err
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/util/connection.py", line 86, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 394, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connection.py", line 234, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3.11/http/client.py", line 1286, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.11/http/client.py", line 1332, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.11/http/client.py", line 1281, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.11/http/client.py", line 1041, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.11/http/client.py", line 979, in send
+    self.connect()
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connection.py", line 200, in connect
+    conn = self._new_conn()
+           ^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connection.py", line 181, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7fbf7453b750>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/util/retry.py", line 573, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='192.168.1.200', port=9093): Max retries exceeded with url: /api/v2/alerts?filter=job=~%22routers%22 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fbf7453b750>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/views/app_all.py", line 60, in get_aler
+    handler.get_incedents()
+  File "/home/bodia/admin_fxpos/admin_fxpos/service/resources/incident_handler.py", line 15, in get_incedents
+    alerts = requests.get('http://192.168.1.200:9093/api/v2/alerts?filter=job=~%22routers%22').json()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='192.168.1.200', port=9093): Max retries exceeded with url: /api/v2/alerts?filter=job=~%22routers%22 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fbf7453b750>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2023-09-25 11:36:53,554 [DEBUG] Looking for jobs to run
+2023-09-25 11:36:53,555 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-25 11:38:53 EEST)" (scheduled at 2023-09-25 11:36:53.543922+03:00)
+2023-09-25 11:36:53,556 [DEBUG] Next wakeup is due at 2023-09-25 11:38:53.543922+03:00 (in 119.989066 seconds)
+2023-09-25 11:36:53,563 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-25 11:36:53,571 [ERROR] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-25 11:38:53 EEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connection.py", line 169, in _new_conn
+    conn = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/util/connection.py", line 96, in create_connection
+    raise err
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/util/connection.py", line 86, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 394, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connection.py", line 234, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3.11/http/client.py", line 1286, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.11/http/client.py", line 1332, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.11/http/client.py", line 1281, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.11/http/client.py", line 1041, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.11/http/client.py", line 979, in send
+    self.connect()
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connection.py", line 200, in connect
+    conn = self._new_conn()
+           ^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connection.py", line 181, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f2e81305cd0>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/util/retry.py", line 573, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='192.168.1.200', port=9093): Max retries exceeded with url: /api/v2/alerts?filter=job=~%22routers%22 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f2e81305cd0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/views/app_all.py", line 60, in get_aler
+    handler.get_incedents()
+  File "/home/bodia/admin_fxpos/admin_fxpos/service/resources/incident_handler.py", line 15, in get_incedents
+    alerts = requests.get('http://192.168.1.200:9093/api/v2/alerts?filter=job=~%22routers%22').json()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='192.168.1.200', port=9093): Max retries exceeded with url: /api/v2/alerts?filter=job=~%22routers%22 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f2e81305cd0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2023-09-25 11:37:45,113 [DEBUG] Sync pos and shop
+2023-09-25 11:37:45,222 [DEBUG] Add <Shop(id='318', name='РК ЛЬВІВ ВУЛ.СИХІВСЬКА.18', base_ip='996', active='False', shop_number='3')>
+2023-09-25 11:37:45,248 [DEBUG] Add <Item(id='2933', id_shop='318', host='192.168.996.100', id_type='6', active='False')>
+2023-09-25 11:37:45,276 [DEBUG] Add <Item(id='2934', id_shop='318', host='10.129.996.2', id_type='9', active='False')>
+2023-09-25 11:37:45,319 [DEBUG] Add <Item(id='2935', id_shop='318', host='192.168.996.31', id_type='13', active='False')>
+2023-09-25 11:37:45,343 [DEBUG] Add <Item(id='2936', id_shop='318', host='192.168.996.30', id_type='13', active='False')>
+2023-09-25 11:37:45,370 [DEBUG] Add <Item(id='2937', id_shop='318', host='192.168.996.49', id_type='12', active='False')>
+2023-09-25 11:37:45,399 [DEBUG] Add <Item(id='2938', id_shop='318', host='192.168.996.6', id_type='4', active='False')>
+2023-09-25 11:37:45,428 [DEBUG] Add <Item(id='2939', id_shop='318', host='192.168.996.254', id_type='5', active='False')>
+2023-09-25 11:37:53,626 [DEBUG] Add <Item(id='2940', id_shop='318', host='192.168.996.1', id_type='1', active='True')>
+2023-09-25 11:37:54,671 [INFO] 127.0.0.1 - - [25/Sep/2023 11:37:54] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-25 11:38:52,307 [DEBUG] Looking for jobs to run
+2023-09-25 11:38:52,308 [DEBUG] Next wakeup is due at 2023-09-25 11:40:52.306417+03:00 (in 119.998581 seconds)
+2023-09-25 11:38:52,308 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-25 11:40:52 EEST)" (scheduled at 2023-09-25 11:38:52.306417+03:00)
+2023-09-25 11:38:52,313 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-25 11:38:52,318 [ERROR] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-25 11:40:52 EEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connection.py", line 169, in _new_conn
+    conn = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/util/connection.py", line 96, in create_connection
+    raise err
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/util/connection.py", line 86, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 394, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connection.py", line 234, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3.11/http/client.py", line 1286, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.11/http/client.py", line 1332, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.11/http/client.py", line 1281, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.11/http/client.py", line 1041, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.11/http/client.py", line 979, in send
+    self.connect()
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connection.py", line 200, in connect
+    conn = self._new_conn()
+           ^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connection.py", line 181, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7fbf7454de90>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/util/retry.py", line 573, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='192.168.1.200', port=9093): Max retries exceeded with url: /api/v2/alerts?filter=job=~%22routers%22 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fbf7454de90>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/views/app_all.py", line 60, in get_aler
+    handler.get_incedents()
+  File "/home/bodia/admin_fxpos/admin_fxpos/service/resources/incident_handler.py", line 15, in get_incedents
+    alerts = requests.get('http://192.168.1.200:9093/api/v2/alerts?filter=job=~%22routers%22').json()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='192.168.1.200', port=9093): Max retries exceeded with url: /api/v2/alerts?filter=job=~%22routers%22 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fbf7454de90>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2023-09-25 11:38:53,547 [DEBUG] Looking for jobs to run
+2023-09-25 11:38:53,548 [DEBUG] Next wakeup is due at 2023-09-25 11:40:53.543922+03:00 (in 119.995899 seconds)
+2023-09-25 11:38:53,549 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-25 11:40:53 EEST)" (scheduled at 2023-09-25 11:38:53.543922+03:00)
+2023-09-25 11:38:53,554 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-25 11:38:53,559 [ERROR] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-25 11:40:53 EEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connection.py", line 169, in _new_conn
+    conn = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/util/connection.py", line 96, in create_connection
+    raise err
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/util/connection.py", line 86, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 394, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connection.py", line 234, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3.11/http/client.py", line 1286, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.11/http/client.py", line 1332, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.11/http/client.py", line 1281, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.11/http/client.py", line 1041, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.11/http/client.py", line 979, in send
+    self.connect()
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connection.py", line 200, in connect
+    conn = self._new_conn()
+           ^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connection.py", line 181, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f2e80f1ed90>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/util/retry.py", line 573, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='192.168.1.200', port=9093): Max retries exceeded with url: /api/v2/alerts?filter=job=~%22routers%22 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f2e80f1ed90>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/views/app_all.py", line 60, in get_aler
+    handler.get_incedents()
+  File "/home/bodia/admin_fxpos/admin_fxpos/service/resources/incident_handler.py", line 15, in get_incedents
+    alerts = requests.get('http://192.168.1.200:9093/api/v2/alerts?filter=job=~%22routers%22').json()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='192.168.1.200', port=9093): Max retries exceeded with url: /api/v2/alerts?filter=job=~%22routers%22 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f2e80f1ed90>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2023-09-25 11:40:52,308 [DEBUG] Looking for jobs to run
+2023-09-25 11:40:52,308 [DEBUG] Next wakeup is due at 2023-09-25 11:42:52.306417+03:00 (in 119.997988 seconds)
+2023-09-25 11:40:52,309 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-25 11:42:52 EEST)" (scheduled at 2023-09-25 11:40:52.306417+03:00)
+2023-09-25 11:40:52,313 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-25 11:40:52,318 [ERROR] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-25 11:42:52 EEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connection.py", line 169, in _new_conn
+    conn = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/util/connection.py", line 96, in create_connection
+    raise err
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/util/connection.py", line 86, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 394, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connection.py", line 234, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3.11/http/client.py", line 1286, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.11/http/client.py", line 1332, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.11/http/client.py", line 1281, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.11/http/client.py", line 1041, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.11/http/client.py", line 979, in send
+    self.connect()
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connection.py", line 200, in connect
+    conn = self._new_conn()
+           ^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connection.py", line 181, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7fbf756a27d0>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/util/retry.py", line 573, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='192.168.1.200', port=9093): Max retries exceeded with url: /api/v2/alerts?filter=job=~%22routers%22 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fbf756a27d0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/views/app_all.py", line 60, in get_aler
+    handler.get_incedents()
+  File "/home/bodia/admin_fxpos/admin_fxpos/service/resources/incident_handler.py", line 15, in get_incedents
+    alerts = requests.get('http://192.168.1.200:9093/api/v2/alerts?filter=job=~%22routers%22').json()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='192.168.1.200', port=9093): Max retries exceeded with url: /api/v2/alerts?filter=job=~%22routers%22 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fbf756a27d0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2023-09-25 11:40:53,545 [DEBUG] Looking for jobs to run
+2023-09-25 11:40:53,546 [DEBUG] Next wakeup is due at 2023-09-25 11:42:53.543922+03:00 (in 119.997788 seconds)
+2023-09-25 11:40:53,547 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-25 11:42:53 EEST)" (scheduled at 2023-09-25 11:40:53.543922+03:00)
+2023-09-25 11:40:53,551 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-25 11:40:53,556 [ERROR] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-25 11:42:53 EEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connection.py", line 169, in _new_conn
+    conn = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/util/connection.py", line 96, in create_connection
+    raise err
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/util/connection.py", line 86, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 394, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connection.py", line 234, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3.11/http/client.py", line 1286, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.11/http/client.py", line 1332, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.11/http/client.py", line 1281, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.11/http/client.py", line 1041, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.11/http/client.py", line 979, in send
+    self.connect()
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connection.py", line 200, in connect
+    conn = self._new_conn()
+           ^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connection.py", line 181, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f2e80f1d350>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/util/retry.py", line 573, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='192.168.1.200', port=9093): Max retries exceeded with url: /api/v2/alerts?filter=job=~%22routers%22 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f2e80f1d350>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/views/app_all.py", line 60, in get_aler
+    handler.get_incedents()
+  File "/home/bodia/admin_fxpos/admin_fxpos/service/resources/incident_handler.py", line 15, in get_incedents
+    alerts = requests.get('http://192.168.1.200:9093/api/v2/alerts?filter=job=~%22routers%22').json()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='192.168.1.200', port=9093): Max retries exceeded with url: /api/v2/alerts?filter=job=~%22routers%22 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f2e80f1d350>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2023-09-25 11:42:52,308 [DEBUG] Looking for jobs to run
+2023-09-25 11:42:52,308 [DEBUG] Next wakeup is due at 2023-09-25 11:44:52.306417+03:00 (in 119.998044 seconds)
+2023-09-25 11:42:52,309 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-25 11:44:52 EEST)" (scheduled at 2023-09-25 11:42:52.306417+03:00)
+2023-09-25 11:42:52,313 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-25 11:42:52,318 [ERROR] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-25 11:44:52 EEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connection.py", line 169, in _new_conn
+    conn = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/util/connection.py", line 96, in create_connection
+    raise err
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/util/connection.py", line 86, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 394, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connection.py", line 234, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3.11/http/client.py", line 1286, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.11/http/client.py", line 1332, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.11/http/client.py", line 1281, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.11/http/client.py", line 1041, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.11/http/client.py", line 979, in send
+    self.connect()
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connection.py", line 200, in connect
+    conn = self._new_conn()
+           ^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connection.py", line 181, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7fbf7454f510>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/util/retry.py", line 573, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='192.168.1.200', port=9093): Max retries exceeded with url: /api/v2/alerts?filter=job=~%22routers%22 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fbf7454f510>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/views/app_all.py", line 60, in get_aler
+    handler.get_incedents()
+  File "/home/bodia/admin_fxpos/admin_fxpos/service/resources/incident_handler.py", line 15, in get_incedents
+    alerts = requests.get('http://192.168.1.200:9093/api/v2/alerts?filter=job=~%22routers%22').json()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='192.168.1.200', port=9093): Max retries exceeded with url: /api/v2/alerts?filter=job=~%22routers%22 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fbf7454f510>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2023-09-25 11:42:53,545 [DEBUG] Looking for jobs to run
+2023-09-25 11:42:53,546 [DEBUG] Next wakeup is due at 2023-09-25 11:44:53.543922+03:00 (in 119.998121 seconds)
+2023-09-25 11:42:53,546 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-25 11:44:53 EEST)" (scheduled at 2023-09-25 11:42:53.543922+03:00)
+2023-09-25 11:42:53,550 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-25 11:42:53,556 [ERROR] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-25 11:44:53 EEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connection.py", line 169, in _new_conn
+    conn = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/util/connection.py", line 96, in create_connection
+    raise err
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/util/connection.py", line 86, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 394, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connection.py", line 234, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3.11/http/client.py", line 1286, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.11/http/client.py", line 1332, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.11/http/client.py", line 1281, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.11/http/client.py", line 1041, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.11/http/client.py", line 979, in send
+    self.connect()
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connection.py", line 200, in connect
+    conn = self._new_conn()
+           ^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connection.py", line 181, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f2e80f8d990>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/urllib3/util/retry.py", line 573, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='192.168.1.200', port=9093): Max retries exceeded with url: /api/v2/alerts?filter=job=~%22routers%22 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f2e80f8d990>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/views/app_all.py", line 60, in get_aler
+    handler.get_incedents()
+  File "/home/bodia/admin_fxpos/admin_fxpos/service/resources/incident_handler.py", line 15, in get_incedents
+    alerts = requests.get('http://192.168.1.200:9093/api/v2/alerts?filter=job=~%22routers%22').json()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='192.168.1.200', port=9093): Max retries exceeded with url: /api/v2/alerts?filter=job=~%22routers%22 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f2e80f8d990>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2023-09-25 11:43:25,991 [DEBUG] Sync pos and shop
+2023-09-25 11:43:30,963 [INFO] 127.0.0.1 - - [25/Sep/2023 11:43:30] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-25 11:44:20,857 [DEBUG] Sync pos and shop
+2023-09-25 11:44:20,871 [DEBUG] <Shop(id='314', name='РК ДОБРОМИЛЬ ПЛ.РИНОК.22', base_ip='220', active='False', shop_number='726')> --> <shops(code_shop='726', name_shop='РК ДОБРОМИЛЬ ПЛ.РИНОК.22', address='204', sign_activity='0')>
+2023-09-25 11:44:29,955 [INFO] 127.0.0.1 - - [25/Sep/2023 11:44:29] "GET /api/dbsync HTTP/1.1" 200 -
