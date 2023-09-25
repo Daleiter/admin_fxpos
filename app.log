@@ -21929,3 +21929,1368 @@ AttributeError: 'NoneType' object has no attribute 'numbers_list'
 2023-09-21 17:29:39,471 [INFO] Running job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-21 17:29:49 EEST)" (scheduled at 2023-09-21 17:29:39.468062+03:00)
 2023-09-21 17:29:39,539 [DEBUG] Sync pos and shop
 2023-09-21 17:29:43,566 [INFO] Job "run_dbsync (trigger: interval[0:00:10], next run at: 2023-09-21 17:29:49 EEST)" executed successfully
+2023-09-25 09:05:49,346 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:05:49,346 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:05:49,348 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:05:49,349 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 09:05:49,349 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 09:05:49,349 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 09:05:49,349 [INFO] Scheduler started
+2023-09-25 09:05:49,350 [DEBUG] Looking for jobs to run
+2023-09-25 09:05:49,362 [DEBUG] Next wakeup is due at 2023-09-25 09:06:49.346743+03:00 (in 59.984785 seconds)
+2023-09-25 09:05:49,390 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8888
+ * Running on http://10.69.8.220:8888
+2023-09-25 09:05:49,390 [INFO] [33mPress CTRL+C to quit[0m
+2023-09-25 09:05:49,391 [INFO]  * Restarting with stat
+2023-09-25 09:05:50,442 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:05:50,442 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:05:50,444 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:05:50,445 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 09:05:50,445 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 09:05:50,445 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 09:05:50,445 [INFO] Scheduler started
+2023-09-25 09:05:50,446 [DEBUG] Looking for jobs to run
+2023-09-25 09:05:50,457 [DEBUG] Next wakeup is due at 2023-09-25 09:06:50.442520+03:00 (in 59.985277 seconds)
+2023-09-25 09:05:50,476 [WARNING]  * Debugger is active!
+2023-09-25 09:05:50,476 [INFO]  * Debugger PIN: 528-864-763
+2023-09-25 09:06:06,102 [DEBUG] Sync pos and shop
+2023-09-25 09:06:10,736 [INFO] 127.0.0.1 - - [25/Sep/2023 09:06:10] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-25 09:06:40,648 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-25 09:06:40,872 [INFO]  * Restarting with stat
+2023-09-25 09:06:41,817 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:06:41,818 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:06:41,820 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:06:41,821 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 09:06:41,821 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 09:06:41,821 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 09:06:41,821 [INFO] Scheduler started
+2023-09-25 09:06:41,822 [DEBUG] Looking for jobs to run
+2023-09-25 09:06:41,832 [DEBUG] Next wakeup is due at 2023-09-25 09:07:41.818000+03:00 (in 59.985538 seconds)
+2023-09-25 09:06:41,847 [WARNING]  * Debugger is active!
+2023-09-25 09:06:41,848 [INFO]  * Debugger PIN: 528-864-763
+2023-09-25 09:06:45,844 [DEBUG] Sync pos and shop
+2023-09-25 09:06:49,357 [DEBUG] Looking for jobs to run
+2023-09-25 09:06:49,358 [INFO] Running job "run_dbsync (trigger: interval[0:01:00], next run at: 2023-09-25 09:07:49 EEST)" (scheduled at 2023-09-25 09:06:49.346743+03:00)
+2023-09-25 09:06:49,358 [DEBUG] Next wakeup is due at 2023-09-25 09:07:49.346519+03:00 (in 59.988542 seconds)
+2023-09-25 09:06:49,446 [DEBUG] Sync pos and shop
+2023-09-25 09:06:49,886 [INFO] 127.0.0.1 - - [25/Sep/2023 09:06:49] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-25 09:06:52,775 [INFO] Job "run_dbsync (trigger: interval[0:01:00], next run at: 2023-09-25 09:07:49 EEST)" executed successfully
+2023-09-25 09:09:30,002 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:09:30,002 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:09:30,004 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:09:30,005 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 09:09:30,005 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 09:09:30,005 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 09:09:30,005 [INFO] Scheduler started
+2023-09-25 09:09:30,006 [DEBUG] Looking for jobs to run
+2023-09-25 09:09:30,016 [DEBUG] Next wakeup is due at 2023-09-25 09:10:30.002811+03:00 (in 59.986473 seconds)
+2023-09-25 09:09:30,027 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8888
+ * Running on http://10.69.8.220:8888
+2023-09-25 09:09:30,027 [INFO] [33mPress CTRL+C to quit[0m
+2023-09-25 09:09:30,028 [INFO]  * Restarting with stat
+2023-09-25 09:09:30,904 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:09:30,904 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:09:30,909 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:09:30,910 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 09:09:30,910 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 09:09:30,911 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 09:09:30,911 [INFO] Scheduler started
+2023-09-25 09:09:30,916 [DEBUG] Looking for jobs to run
+2023-09-25 09:09:30,931 [DEBUG] Next wakeup is due at 2023-09-25 09:10:30.904766+03:00 (in 59.973395 seconds)
+2023-09-25 09:09:30,962 [WARNING]  * Debugger is active!
+2023-09-25 09:09:30,964 [INFO]  * Debugger PIN: 528-864-763
+2023-09-25 09:09:31,091 [DEBUG] Sync pos and shop
+2023-09-25 09:09:35,576 [INFO] 127.0.0.1 - - [25/Sep/2023 09:09:35] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-25 09:09:37,812 [DEBUG] Sync pos and shop
+2023-09-25 09:09:42,542 [INFO] 127.0.0.1 - - [25/Sep/2023 09:09:42] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-25 09:10:30,008 [DEBUG] Looking for jobs to run
+2023-09-25 09:10:30,009 [INFO] Running job "run_dbsync (trigger: interval[0:01:00], next run at: 2023-09-25 09:10:30 EEST)" (scheduled at 2023-09-25 09:10:30.002811+03:00)
+2023-09-25 09:10:30,010 [DEBUG] Next wakeup is due at 2023-09-25 09:11:30.002587+03:00 (in 59.993836 seconds)
+2023-09-25 09:10:30,137 [DEBUG] Sync pos and shop
+2023-09-25 09:10:30,911 [DEBUG] Looking for jobs to run
+2023-09-25 09:10:30,912 [INFO] Running job "run_dbsync (trigger: interval[0:01:00], next run at: 2023-09-25 09:10:30 EEST)" (scheduled at 2023-09-25 09:10:30.904766+03:00)
+2023-09-25 09:10:30,913 [DEBUG] Next wakeup is due at 2023-09-25 09:11:30.903733+03:00 (in 59.991812 seconds)
+2023-09-25 09:10:30,990 [DEBUG] Sync pos and shop
+2023-09-25 09:10:34,350 [INFO] Job "run_dbsync (trigger: interval[0:01:00], next run at: 2023-09-25 09:11:30 EEST)" executed successfully
+2023-09-25 09:10:35,252 [INFO] Job "run_dbsync (trigger: interval[0:01:00], next run at: 2023-09-25 09:11:30 EEST)" executed successfully
+2023-09-25 09:10:41,416 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-25 09:10:41,631 [INFO]  * Restarting with stat
+2023-09-25 09:10:42,528 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:10:42,528 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:10:42,533 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:10:42,535 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 09:10:42,535 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 09:10:42,536 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 09:10:42,537 [INFO] Scheduler started
+2023-09-25 09:10:42,537 [DEBUG] Looking for jobs to run
+2023-09-25 09:10:42,549 [DEBUG] Next wakeup is due at 2023-09-25 09:11:42.528859+03:00 (in 59.980305 seconds)
+2023-09-25 09:10:42,572 [WARNING]  * Debugger is active!
+2023-09-25 09:10:42,573 [INFO]  * Debugger PIN: 528-864-763
+2023-09-25 09:10:46,963 [DEBUG] Sync pos and shop
+2023-09-25 09:10:50,693 [INFO] 127.0.0.1 - - [25/Sep/2023 09:10:50] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-25 09:11:06,227 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-25 09:11:06,486 [INFO]  * Restarting with stat
+2023-09-25 09:11:07,396 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:11:07,396 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:11:07,398 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:11:07,399 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 09:11:07,399 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 09:11:07,399 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 09:11:07,399 [INFO] Scheduler started
+2023-09-25 09:11:07,400 [DEBUG] Looking for jobs to run
+2023-09-25 09:11:07,410 [DEBUG] Next wakeup is due at 2023-09-25 09:12:07.396774+03:00 (in 59.986436 seconds)
+2023-09-25 09:11:07,424 [WARNING]  * Debugger is active!
+2023-09-25 09:11:07,425 [INFO]  * Debugger PIN: 528-864-763
+2023-09-25 09:11:12,563 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-25 09:11:12,805 [INFO]  * Restarting with stat
+2023-09-25 09:11:13,802 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:11:13,802 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:11:13,804 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:11:13,805 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 09:11:13,805 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 09:11:13,806 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 09:11:13,806 [INFO] Scheduler started
+2023-09-25 09:11:13,806 [DEBUG] Looking for jobs to run
+2023-09-25 09:11:13,817 [DEBUG] Next wakeup is due at 2023-09-25 09:12:13.802388+03:00 (in 59.984802 seconds)
+2023-09-25 09:11:13,829 [WARNING]  * Debugger is active!
+2023-09-25 09:11:13,830 [INFO]  * Debugger PIN: 528-864-763
+2023-09-25 09:11:14,644 [DEBUG] Sync pos and shop
+2023-09-25 09:11:18,274 [INFO] 127.0.0.1 - - [25/Sep/2023 09:11:18] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-25 09:11:30,016 [DEBUG] Looking for jobs to run
+2023-09-25 09:11:30,018 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-25 09:13:30 EEST)" (scheduled at 2023-09-25 09:11:30.002587+03:00)
+2023-09-25 09:11:30,018 [INFO] Running job "run_dbsync (trigger: interval[0:01:00], next run at: 2023-09-25 09:12:30 EEST)" (scheduled at 2023-09-25 09:11:30.002811+03:00)
+2023-09-25 09:11:30,019 [DEBUG] Next wakeup is due at 2023-09-25 09:12:30.002811+03:00 (in 59.985956 seconds)
+2023-09-25 09:11:30,027 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-25 09:11:30,044 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 1528
+2023-09-25 09:11:30,089 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.114.100 ГОРОДЕНКА ВУЛ.ШЕВЧЕНКА.74А більше 15хв.!'}, 'endsAt': '2023-09-25T06:14:44.309Z', 'fingerprint': '0d6e9a3f8a638a14', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-09-25T03:30:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-25T09:10:44.323+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '559', 'instance': '192.168.114.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'ГОРОДЕНКА ВУЛ.ШЕВЧЕНКА.74А', 'team': 'slaves'}}
+2023-09-25 09:11:30,142 [DEBUG] Sync pos and shop
+2023-09-25 09:11:30,167 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.666.100 КАФЕ ЦЕНТРАЛЬНОГО ОФІСУ більше 15хв.!'}, 'endsAt': '2023-09-25T06:13:44.309Z', 'fingerprint': '8b3ee1758f608d75', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-09-19T14:13:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-25T09:09:44.330+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '453', 'instance': '192.168.666.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'КАФЕ ЦЕНТРАЛЬНОГО ОФІСУ', 'team': 'slaves'}}
+2023-09-25 09:11:30,203 [ERROR] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-25 09:13:30 EEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/views/app_all.py", line 60, in get_aler
+    handler.get_incedents()
+  File "/home/bodia/admin_fxpos/admin_fxpos/service/resources/incident_handler.py", line 33, in get_incedents
+    incedent.add_info = {"fingerprint": alert["fingerprint"], "summary": alert["annotations"]["summary"], "phones": phones.numbers_list, "CallInProgress": '', "CallStatus": 0, "LastCallDateTime": ""}
+                                                                                                                    ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'numbers_list'
+2023-09-25 09:11:33,683 [INFO] Job "run_dbsync (trigger: interval[0:01:00], next run at: 2023-09-25 09:12:30 EEST)" executed successfully
+2023-09-25 09:11:50,273 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-25 09:11:50,573 [INFO]  * Restarting with stat
+2023-09-25 09:11:51,391 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:11:51,391 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:11:51,393 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:11:51,393 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 09:11:51,394 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 09:11:51,394 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 09:11:51,394 [INFO] Scheduler started
+2023-09-25 09:11:51,394 [DEBUG] Looking for jobs to run
+2023-09-25 09:11:51,405 [DEBUG] Next wakeup is due at 2023-09-25 09:12:51.391608+03:00 (in 59.986361 seconds)
+2023-09-25 09:11:51,418 [WARNING]  * Debugger is active!
+2023-09-25 09:11:51,419 [INFO]  * Debugger PIN: 528-864-763
+2023-09-25 09:11:51,648 [DEBUG] Sync pos and shop
+2023-09-25 09:11:55,042 [INFO] 127.0.0.1 - - [25/Sep/2023 09:11:55] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-25 09:11:55,829 [DEBUG] Sync pos and shop
+2023-09-25 09:12:00,239 [INFO] 127.0.0.1 - - [25/Sep/2023 09:12:00] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-25 09:12:09,489 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-25 09:12:09,708 [INFO]  * Restarting with stat
+2023-09-25 09:12:19,424 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:12:19,424 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:12:19,426 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:12:19,426 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 09:12:19,426 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 09:12:19,427 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 09:12:19,427 [INFO] Scheduler started
+2023-09-25 09:12:19,427 [DEBUG] Looking for jobs to run
+2023-09-25 09:12:19,437 [DEBUG] Next wakeup is due at 2023-09-25 09:13:19.424367+03:00 (in 59.986552 seconds)
+2023-09-25 09:12:19,452 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8888
+ * Running on http://10.69.8.220:8888
+2023-09-25 09:12:19,452 [INFO] [33mPress CTRL+C to quit[0m
+2023-09-25 09:12:19,453 [INFO]  * Restarting with stat
+2023-09-25 09:12:20,369 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:12:20,369 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:12:20,371 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:12:20,373 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 09:12:20,374 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 09:12:20,374 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 09:12:20,374 [INFO] Scheduler started
+2023-09-25 09:12:20,375 [DEBUG] Looking for jobs to run
+2023-09-25 09:12:20,387 [DEBUG] Next wakeup is due at 2023-09-25 09:13:20.369326+03:00 (in 59.981992 seconds)
+2023-09-25 09:12:20,407 [WARNING]  * Debugger is active!
+2023-09-25 09:12:20,408 [INFO]  * Debugger PIN: 528-864-763
+2023-09-25 09:12:20,527 [DEBUG] Sync pos and shop
+2023-09-25 09:12:24,508 [INFO] 127.0.0.1 - - [25/Sep/2023 09:12:24] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-25 09:12:28,657 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-25 09:12:29,044 [INFO]  * Restarting with stat
+2023-09-25 09:12:29,873 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:12:29,873 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:12:29,875 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:12:29,875 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 09:12:29,875 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 09:12:29,876 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 09:12:29,876 [INFO] Scheduler started
+2023-09-25 09:12:29,876 [DEBUG] Looking for jobs to run
+2023-09-25 09:12:29,887 [DEBUG] Next wakeup is due at 2023-09-25 09:13:29.873267+03:00 (in 59.986038 seconds)
+2023-09-25 09:12:29,900 [WARNING]  * Debugger is active!
+2023-09-25 09:12:29,901 [INFO]  * Debugger PIN: 528-864-763
+2023-09-25 09:12:30,527 [DEBUG] Sync pos and shop
+2023-09-25 09:12:34,344 [INFO] 127.0.0.1 - - [25/Sep/2023 09:12:34] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-25 09:29:44,968 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:29:44,968 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:29:44,970 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:29:44,971 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 09:29:44,971 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 09:29:44,971 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 09:29:44,971 [INFO] Scheduler started
+2023-09-25 09:29:44,971 [DEBUG] Looking for jobs to run
+2023-09-25 09:29:44,982 [DEBUG] Next wakeup is due at 2023-09-25 09:30:44.968713+03:00 (in 59.986402 seconds)
+2023-09-25 09:29:44,996 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8888
+ * Running on http://10.69.8.220:8888
+2023-09-25 09:29:44,996 [INFO] [33mPress CTRL+C to quit[0m
+2023-09-25 09:29:44,997 [INFO]  * Restarting with stat
+2023-09-25 09:29:45,816 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:29:45,817 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:29:45,819 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:29:45,819 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 09:29:45,819 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 09:29:45,820 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 09:29:45,820 [INFO] Scheduler started
+2023-09-25 09:29:45,820 [DEBUG] Looking for jobs to run
+2023-09-25 09:29:45,831 [DEBUG] Next wakeup is due at 2023-09-25 09:30:45.817074+03:00 (in 59.985851 seconds)
+2023-09-25 09:29:45,845 [WARNING]  * Debugger is active!
+2023-09-25 09:29:45,845 [INFO]  * Debugger PIN: 528-864-763
+2023-09-25 09:29:47,007 [DEBUG] Sync pos and shop
+2023-09-25 09:29:47,011 [DEBUG] Sync pos and shop
+2023-09-25 09:29:49,706 [DEBUG] Sync pos and shop
+2023-09-25 09:29:54,180 [INFO] 127.0.0.1 - - [25/Sep/2023 09:29:54] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-25 09:29:54,209 [INFO] 127.0.0.1 - - [25/Sep/2023 09:29:54] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-25 09:29:57,511 [INFO] 127.0.0.1 - - [25/Sep/2023 09:29:57] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-25 09:30:18,125 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-25 09:30:18,454 [INFO]  * Restarting with stat
+2023-09-25 09:30:19,346 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:30:19,347 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:30:19,348 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:30:19,349 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 09:30:19,349 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 09:30:19,349 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 09:30:19,349 [INFO] Scheduler started
+2023-09-25 09:30:19,350 [DEBUG] Looking for jobs to run
+2023-09-25 09:30:19,360 [DEBUG] Next wakeup is due at 2023-09-25 09:31:19.347087+03:00 (in 59.986391 seconds)
+2023-09-25 09:30:19,376 [WARNING]  * Debugger is active!
+2023-09-25 09:30:19,376 [INFO]  * Debugger PIN: 528-864-763
+2023-09-25 09:30:19,484 [DEBUG] Sync pos and shop
+2023-09-25 09:30:22,971 [INFO] 127.0.0.1 - - [25/Sep/2023 09:30:22] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-25 09:30:37,452 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-25 09:30:37,758 [INFO]  * Restarting with stat
+2023-09-25 09:30:38,605 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:30:38,605 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:30:38,607 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:30:38,608 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 09:30:38,608 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 09:30:38,609 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 09:30:38,609 [INFO] Scheduler started
+2023-09-25 09:30:38,609 [DEBUG] Looking for jobs to run
+2023-09-25 09:30:38,620 [DEBUG] Next wakeup is due at 2023-09-25 09:31:38.605282+03:00 (in 59.985007 seconds)
+2023-09-25 09:30:38,637 [WARNING]  * Debugger is active!
+2023-09-25 09:30:38,637 [INFO]  * Debugger PIN: 528-864-763
+2023-09-25 09:30:38,774 [DEBUG] Sync pos and shop
+2023-09-25 09:30:38,787 [INFO] 127.0.0.1 - - [25/Sep/2023 09:30:38] "[35m[1mGET /api/dbsync HTTP/1.1[0m" 500 -
+2023-09-25 09:30:38,818 [INFO] 127.0.0.1 - - [25/Sep/2023 09:30:38] "[36mGET /api/dbsync?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-09-25 09:30:38,842 [INFO] 127.0.0.1 - - [25/Sep/2023 09:30:38] "[36mGET /api/dbsync?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-09-25 09:30:38,889 [INFO] 127.0.0.1 - - [25/Sep/2023 09:30:38] "[36mGET /api/dbsync?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-25 09:30:38,928 [INFO] 127.0.0.1 - - [25/Sep/2023 09:30:38] "[36mGET /api/dbsync?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-25 09:30:44,884 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-25 09:30:44,974 [DEBUG] Looking for jobs to run
+2023-09-25 09:30:44,976 [INFO] Running job "run_dbsync (trigger: interval[0:01:00], next run at: 2023-09-25 09:31:44 EEST)" (scheduled at 2023-09-25 09:30:44.968713+03:00)
+2023-09-25 09:30:44,976 [DEBUG] Next wakeup is due at 2023-09-25 09:31:44.968480+03:00 (in 59.993770 seconds)
+2023-09-25 09:30:45,090 [DEBUG] Sync pos and shop
+2023-09-25 09:30:45,316 [INFO]  * Restarting with stat
+2023-09-25 09:30:46,398 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:30:46,399 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:30:46,401 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:30:46,401 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 09:30:46,401 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 09:30:46,402 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 09:30:46,402 [INFO] Scheduler started
+2023-09-25 09:30:46,402 [DEBUG] Looking for jobs to run
+2023-09-25 09:30:46,410 [DEBUG] Next wakeup is due at 2023-09-25 09:31:46.398965+03:00 (in 59.988366 seconds)
+2023-09-25 09:30:46,432 [WARNING]  * Debugger is active!
+2023-09-25 09:30:46,432 [INFO]  * Debugger PIN: 528-864-763
+2023-09-25 09:30:46,548 [DEBUG] Sync pos and shop
+2023-09-25 09:30:46,555 [INFO] 127.0.0.1 - - [25/Sep/2023 09:30:46] "[35m[1mGET /api/dbsync HTTP/1.1[0m" 500 -
+2023-09-25 09:30:46,597 [INFO] 127.0.0.1 - - [25/Sep/2023 09:30:46] "[36mGET /api/dbsync?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-09-25 09:30:46,629 [INFO] 127.0.0.1 - - [25/Sep/2023 09:30:46] "[36mGET /api/dbsync?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-09-25 09:30:46,663 [INFO] 127.0.0.1 - - [25/Sep/2023 09:30:46] "[36mGET /api/dbsync?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-25 09:30:46,714 [INFO] 127.0.0.1 - - [25/Sep/2023 09:30:46] "[36mGET /api/dbsync?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-25 09:30:48,475 [INFO] Job "run_dbsync (trigger: interval[0:01:00], next run at: 2023-09-25 09:31:44 EEST)" executed successfully
+2023-09-25 09:30:53,615 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-25 09:30:53,954 [INFO]  * Restarting with stat
+2023-09-25 09:30:54,948 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:30:54,948 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:30:54,950 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:30:54,950 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 09:30:54,950 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 09:30:54,951 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 09:30:54,951 [INFO] Scheduler started
+2023-09-25 09:30:54,951 [DEBUG] Looking for jobs to run
+2023-09-25 09:30:54,956 [DEBUG] Next wakeup is due at 2023-09-25 09:31:54.948279+03:00 (in 59.991439 seconds)
+2023-09-25 09:30:54,984 [WARNING]  * Debugger is active!
+2023-09-25 09:30:54,986 [INFO]  * Debugger PIN: 528-864-763
+2023-09-25 09:30:55,204 [DEBUG] Sync pos and shop
+2023-09-25 09:30:55,239 [INFO] 127.0.0.1 - - [25/Sep/2023 09:30:55] "[35m[1mGET /api/dbsync HTTP/1.1[0m" 500 -
+2023-09-25 09:30:55,322 [INFO] 127.0.0.1 - - [25/Sep/2023 09:30:55] "[36mGET /api/dbsync?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-09-25 09:30:55,332 [INFO] 127.0.0.1 - - [25/Sep/2023 09:30:55] "[36mGET /api/dbsync?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-09-25 09:30:55,380 [INFO] 127.0.0.1 - - [25/Sep/2023 09:30:55] "[36mGET /api/dbsync?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-25 09:30:55,417 [INFO] 127.0.0.1 - - [25/Sep/2023 09:30:55] "[36mGET /api/dbsync?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-25 09:31:04,301 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-25 09:31:04,670 [INFO]  * Restarting with stat
+2023-09-25 09:31:05,615 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:31:05,615 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:31:05,617 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:31:05,617 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 09:31:05,617 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 09:31:05,618 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 09:31:05,618 [INFO] Scheduler started
+2023-09-25 09:31:05,618 [DEBUG] Looking for jobs to run
+2023-09-25 09:31:05,629 [DEBUG] Next wakeup is due at 2023-09-25 09:32:05.615198+03:00 (in 59.986072 seconds)
+2023-09-25 09:31:05,644 [WARNING]  * Debugger is active!
+2023-09-25 09:31:05,644 [INFO]  * Debugger PIN: 528-864-763
+2023-09-25 09:31:05,735 [DEBUG] Sync pos and shop
+2023-09-25 09:31:09,630 [INFO] 127.0.0.1 - - [25/Sep/2023 09:31:09] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-25 09:31:42,672 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-25 09:31:42,983 [INFO]  * Restarting with stat
+2023-09-25 09:31:44,146 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:31:44,146 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:31:44,148 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:31:44,148 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 09:31:44,148 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 09:31:44,149 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 09:31:44,149 [INFO] Scheduler started
+2023-09-25 09:31:44,149 [DEBUG] Looking for jobs to run
+2023-09-25 09:31:44,159 [DEBUG] Next wakeup is due at 2023-09-25 09:32:44.146355+03:00 (in 59.986485 seconds)
+2023-09-25 09:31:44,177 [WARNING]  * Debugger is active!
+2023-09-25 09:31:44,177 [INFO]  * Debugger PIN: 528-864-763
+2023-09-25 09:31:44,303 [DEBUG] Sync pos and shop
+2023-09-25 09:31:44,975 [DEBUG] Looking for jobs to run
+2023-09-25 09:31:44,977 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-25 09:33:44 EEST)" (scheduled at 2023-09-25 09:31:44.968480+03:00)
+2023-09-25 09:31:44,978 [INFO] Running job "run_dbsync (trigger: interval[0:01:00], next run at: 2023-09-25 09:32:44 EEST)" (scheduled at 2023-09-25 09:31:44.968713+03:00)
+2023-09-25 09:31:44,978 [DEBUG] Next wakeup is due at 2023-09-25 09:32:44.968713+03:00 (in 59.992395 seconds)
+2023-09-25 09:31:44,983 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-25 09:31:44,992 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 1528
+2023-09-25 09:31:45,012 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.114.100 ГОРОДЕНКА ВУЛ.ШЕВЧЕНКА.74А більше 15хв.!'}, 'endsAt': '2023-09-25T06:34:44.309Z', 'fingerprint': '0d6e9a3f8a638a14', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-09-25T03:30:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-25T09:30:44.331+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '559', 'instance': '192.168.114.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'ГОРОДЕНКА ВУЛ.ШЕВЧЕНКА.74А', 'team': 'slaves'}}
+2023-09-25 09:31:45,017 [DEBUG] Sync pos and shop
+2023-09-25 09:31:45,056 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.666.100 КАФЕ ЦЕНТРАЛЬНОГО ОФІСУ більше 15хв.!'}, 'endsAt': '2023-09-25T06:35:44.309Z', 'fingerprint': '8b3ee1758f608d75', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-09-19T14:13:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-25T09:31:44.332+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '453', 'instance': '192.168.666.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'КАФЕ ЦЕНТРАЛЬНОГО ОФІСУ', 'team': 'slaves'}}
+2023-09-25 09:31:45,075 [ERROR] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-25 09:33:44 EEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/views/app_all.py", line 60, in get_aler
+    handler.get_incedents()
+  File "/home/bodia/admin_fxpos/admin_fxpos/service/resources/incident_handler.py", line 33, in get_incedents
+    incedent.add_info = {"fingerprint": alert["fingerprint"], "summary": alert["annotations"]["summary"], "phones": phones.numbers_list, "CallInProgress": '', "CallStatus": 0, "LastCallDateTime": ""}
+                                                                                                                    ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'numbers_list'
+2023-09-25 09:31:47,040 [DEBUG] Sync pos and shop
+2023-09-25 09:31:49,264 [INFO] 127.0.0.1 - - [25/Sep/2023 09:31:49] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-25 09:31:49,786 [INFO] Job "run_dbsync (trigger: interval[0:01:00], next run at: 2023-09-25 09:32:44 EEST)" executed successfully
+2023-09-25 09:31:52,446 [INFO] 127.0.0.1 - - [25/Sep/2023 09:31:52] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-25 09:32:00,684 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-25 09:32:01,018 [INFO]  * Restarting with stat
+2023-09-25 09:32:01,960 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:32:01,960 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:32:01,963 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:32:01,963 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 09:32:01,963 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 09:32:01,964 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 09:32:01,964 [INFO] Scheduler started
+2023-09-25 09:32:01,964 [DEBUG] Looking for jobs to run
+2023-09-25 09:32:01,975 [DEBUG] Next wakeup is due at 2023-09-25 09:33:01.960874+03:00 (in 59.985870 seconds)
+2023-09-25 09:32:01,989 [WARNING]  * Debugger is active!
+2023-09-25 09:32:01,990 [INFO]  * Debugger PIN: 528-864-763
+2023-09-25 09:32:02,132 [DEBUG] Sync pos and shop
+2023-09-25 09:32:02,149 [INFO] 127.0.0.1 - - [25/Sep/2023 09:32:02] "[35m[1mGET /api/dbsync HTTP/1.1[0m" 500 -
+2023-09-25 09:32:02,175 [INFO] 127.0.0.1 - - [25/Sep/2023 09:32:02] "[36mGET /api/dbsync?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-09-25 09:32:02,205 [INFO] 127.0.0.1 - - [25/Sep/2023 09:32:02] "[36mGET /api/dbsync?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-09-25 09:32:02,247 [INFO] 127.0.0.1 - - [25/Sep/2023 09:32:02] "[36mGET /api/dbsync?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-25 09:32:02,289 [INFO] 127.0.0.1 - - [25/Sep/2023 09:32:02] "[36mGET /api/dbsync?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-25 09:32:03,701 [DEBUG] Sync pos and shop
+2023-09-25 09:32:03,724 [INFO] 127.0.0.1 - - [25/Sep/2023 09:32:03] "[35m[1mGET /api/dbsync HTTP/1.1[0m" 500 -
+2023-09-25 09:32:03,761 [INFO] 127.0.0.1 - - [25/Sep/2023 09:32:03] "[36mGET /api/dbsync?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-09-25 09:32:03,787 [INFO] 127.0.0.1 - - [25/Sep/2023 09:32:03] "[36mGET /api/dbsync?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-09-25 09:32:03,818 [INFO] 127.0.0.1 - - [25/Sep/2023 09:32:03] "[36mGET /api/dbsync?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-25 09:32:03,851 [INFO] 127.0.0.1 - - [25/Sep/2023 09:32:03] "[36mGET /api/dbsync?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-25 09:32:09,249 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-25 09:32:09,505 [INFO]  * Restarting with stat
+2023-09-25 09:32:10,317 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:32:10,318 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:32:10,319 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:32:10,320 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 09:32:10,320 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 09:32:10,320 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 09:32:10,320 [INFO] Scheduler started
+2023-09-25 09:32:10,321 [DEBUG] Looking for jobs to run
+2023-09-25 09:32:10,331 [DEBUG] Next wakeup is due at 2023-09-25 09:33:10.317932+03:00 (in 59.986243 seconds)
+2023-09-25 09:32:10,345 [WARNING]  * Debugger is active!
+2023-09-25 09:32:10,345 [INFO]  * Debugger PIN: 528-864-763
+2023-09-25 09:32:16,525 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-25 09:32:16,844 [INFO]  * Restarting with stat
+2023-09-25 09:32:17,832 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:32:17,832 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:32:17,834 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:32:17,834 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 09:32:17,834 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 09:32:17,834 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 09:32:17,835 [INFO] Scheduler started
+2023-09-25 09:32:17,835 [DEBUG] Looking for jobs to run
+2023-09-25 09:32:17,845 [DEBUG] Next wakeup is due at 2023-09-25 09:33:17.832216+03:00 (in 59.986422 seconds)
+2023-09-25 09:32:17,863 [WARNING]  * Debugger is active!
+2023-09-25 09:32:17,864 [INFO]  * Debugger PIN: 528-864-763
+2023-09-25 09:32:17,990 [DEBUG] Sync pos and shop
+2023-09-25 09:32:22,030 [INFO] 127.0.0.1 - - [25/Sep/2023 09:32:22] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-25 09:32:44,976 [DEBUG] Looking for jobs to run
+2023-09-25 09:32:44,976 [DEBUG] Next wakeup is due at 2023-09-25 09:33:44.968480+03:00 (in 59.992186 seconds)
+2023-09-25 09:32:44,977 [INFO] Running job "run_dbsync (trigger: interval[0:01:00], next run at: 2023-09-25 09:33:44 EEST)" (scheduled at 2023-09-25 09:32:44.968713+03:00)
+2023-09-25 09:32:45,022 [DEBUG] Sync pos and shop
+2023-09-25 09:32:49,285 [INFO] Job "run_dbsync (trigger: interval[0:01:00], next run at: 2023-09-25 09:33:44 EEST)" executed successfully
+2023-09-25 09:32:58,064 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-25 09:32:58,377 [INFO]  * Restarting with stat
+2023-09-25 09:32:59,420 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:32:59,420 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:32:59,422 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:32:59,422 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 09:32:59,422 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 09:32:59,423 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 09:32:59,423 [INFO] Scheduler started
+2023-09-25 09:32:59,423 [DEBUG] Looking for jobs to run
+2023-09-25 09:32:59,433 [DEBUG] Next wakeup is due at 2023-09-25 09:33:59.420274+03:00 (in 59.986448 seconds)
+2023-09-25 09:32:59,448 [WARNING]  * Debugger is active!
+2023-09-25 09:32:59,448 [INFO]  * Debugger PIN: 528-864-763
+2023-09-25 09:32:59,667 [DEBUG] Sync pos and shop
+2023-09-25 09:33:03,423 [INFO] 127.0.0.1 - - [25/Sep/2023 09:33:03] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-25 09:33:17,939 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-25 09:33:18,256 [INFO]  * Restarting with stat
+2023-09-25 09:33:19,235 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:33:19,235 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:33:19,237 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:33:19,237 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 09:33:19,237 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 09:33:19,238 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 09:33:19,238 [INFO] Scheduler started
+2023-09-25 09:33:19,238 [DEBUG] Looking for jobs to run
+2023-09-25 09:33:19,249 [DEBUG] Next wakeup is due at 2023-09-25 09:34:19.235516+03:00 (in 59.986415 seconds)
+2023-09-25 09:33:19,265 [WARNING]  * Debugger is active!
+2023-09-25 09:33:19,265 [INFO]  * Debugger PIN: 528-864-763
+2023-09-25 09:33:19,387 [DEBUG] Sync pos and shop
+2023-09-25 09:33:23,063 [INFO] 127.0.0.1 - - [25/Sep/2023 09:33:23] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-25 09:33:44,969 [DEBUG] Looking for jobs to run
+2023-09-25 09:33:44,975 [DEBUG] Next wakeup is due at 2023-09-25 09:34:44.968713+03:00 (in 59.996854 seconds)
+2023-09-25 09:33:44,978 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-25 09:35:44 EEST)" (scheduled at 2023-09-25 09:33:44.968480+03:00)
+2023-09-25 09:33:44,979 [INFO] Running job "run_dbsync (trigger: interval[0:01:00], next run at: 2023-09-25 09:34:44 EEST)" (scheduled at 2023-09-25 09:33:44.968713+03:00)
+2023-09-25 09:33:45,000 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-25 09:33:45,035 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 1528
+2023-09-25 09:33:45,047 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.114.100 ГОРОДЕНКА ВУЛ.ШЕВЧЕНКА.74А більше 15хв.!'}, 'endsAt': '2023-09-25T06:36:44.309Z', 'fingerprint': '0d6e9a3f8a638a14', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-09-25T03:30:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-25T09:32:44.331+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '559', 'instance': '192.168.114.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'ГОРОДЕНКА ВУЛ.ШЕВЧЕНКА.74А', 'team': 'slaves'}}
+2023-09-25 09:33:45,057 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.666.100 КАФЕ ЦЕНТРАЛЬНОГО ОФІСУ більше 15хв.!'}, 'endsAt': '2023-09-25T06:37:44.309Z', 'fingerprint': '8b3ee1758f608d75', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-09-19T14:13:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-25T09:33:44.332+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '453', 'instance': '192.168.666.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'КАФЕ ЦЕНТРАЛЬНОГО ОФІСУ', 'team': 'slaves'}}
+2023-09-25 09:33:45,061 [ERROR] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-25 09:35:44 EEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/views/app_all.py", line 60, in get_aler
+    handler.get_incedents()
+  File "/home/bodia/admin_fxpos/admin_fxpos/service/resources/incident_handler.py", line 33, in get_incedents
+    incedent.add_info = {"fingerprint": alert["fingerprint"], "summary": alert["annotations"]["summary"], "phones": phones.numbers_list, "CallInProgress": '', "CallStatus": 0, "LastCallDateTime": ""}
+                                                                                                                    ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'numbers_list'
+2023-09-25 09:33:45,067 [DEBUG] Sync pos and shop
+2023-09-25 09:33:48,618 [INFO] Job "run_dbsync (trigger: interval[0:01:00], next run at: 2023-09-25 09:34:44 EEST)" executed successfully
+2023-09-25 09:33:52,947 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-25 09:33:53,163 [INFO]  * Restarting with stat
+2023-09-25 09:34:05,425 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:34:05,426 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:34:05,428 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:34:05,429 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 09:34:05,429 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 09:34:05,430 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 09:34:05,430 [INFO] Scheduler started
+2023-09-25 09:34:05,430 [DEBUG] Looking for jobs to run
+2023-09-25 09:34:05,436 [DEBUG] Next wakeup is due at 2023-09-25 09:35:05.425916+03:00 (in 59.989636 seconds)
+2023-09-25 09:34:05,462 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8888
+ * Running on http://10.69.8.220:8888
+2023-09-25 09:34:05,463 [INFO] [33mPress CTRL+C to quit[0m
+2023-09-25 09:34:05,463 [INFO]  * Restarting with stat
+2023-09-25 09:34:06,553 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:34:06,554 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:34:06,556 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:34:06,558 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 09:34:06,558 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 09:34:06,559 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 09:34:06,560 [INFO] Scheduler started
+2023-09-25 09:34:06,562 [DEBUG] Looking for jobs to run
+2023-09-25 09:34:06,572 [DEBUG] Next wakeup is due at 2023-09-25 09:35:06.553666+03:00 (in 59.980985 seconds)
+2023-09-25 09:34:06,593 [WARNING]  * Debugger is active!
+2023-09-25 09:34:06,593 [INFO]  * Debugger PIN: 528-864-763
+2023-09-25 09:34:06,762 [DEBUG] Sync pos and shop
+2023-09-25 09:34:10,768 [INFO] 127.0.0.1 - - [25/Sep/2023 09:34:10] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-25 09:34:14,932 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-25 09:34:15,246 [INFO]  * Restarting with stat
+2023-09-25 09:34:16,427 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:34:16,427 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:34:16,429 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:34:16,429 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 09:34:16,429 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 09:34:16,430 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 09:34:16,430 [INFO] Scheduler started
+2023-09-25 09:34:16,430 [DEBUG] Looking for jobs to run
+2023-09-25 09:34:16,441 [DEBUG] Next wakeup is due at 2023-09-25 09:35:16.427252+03:00 (in 59.985948 seconds)
+2023-09-25 09:34:16,454 [WARNING]  * Debugger is active!
+2023-09-25 09:34:16,455 [INFO]  * Debugger PIN: 528-864-763
+2023-09-25 09:34:18,541 [DEBUG] Sync pos and shop
+2023-09-25 09:34:22,419 [INFO] 127.0.0.1 - - [25/Sep/2023 09:34:22] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-25 09:34:51,340 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-25 09:34:51,658 [INFO]  * Restarting with stat
+2023-09-25 09:34:52,608 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:34:52,608 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:34:52,611 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:34:52,611 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 09:34:52,612 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 09:34:52,612 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 09:34:52,612 [INFO] Scheduler started
+2023-09-25 09:34:52,613 [DEBUG] Looking for jobs to run
+2023-09-25 09:34:52,623 [DEBUG] Next wakeup is due at 2023-09-25 09:35:52.608726+03:00 (in 59.985313 seconds)
+2023-09-25 09:34:52,638 [WARNING]  * Debugger is active!
+2023-09-25 09:34:52,638 [INFO]  * Debugger PIN: 528-864-763
+2023-09-25 09:34:52,760 [DEBUG] Sync pos and shop
+2023-09-25 09:34:57,007 [INFO] 127.0.0.1 - - [25/Sep/2023 09:34:57] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-25 09:35:05,438 [DEBUG] Looking for jobs to run
+2023-09-25 09:35:05,440 [INFO] Running job "run_dbsync (trigger: interval[0:01:00], next run at: 2023-09-25 09:35:05 EEST)" (scheduled at 2023-09-25 09:35:05.425916+03:00)
+2023-09-25 09:35:05,441 [DEBUG] Next wakeup is due at 2023-09-25 09:36:05.425553+03:00 (in 59.986373 seconds)
+2023-09-25 09:35:05,623 [DEBUG] Sync pos and shop
+2023-09-25 09:35:09,325 [INFO] Job "run_dbsync (trigger: interval[0:01:00], next run at: 2023-09-25 09:36:05 EEST)" executed successfully
+2023-09-25 09:35:10,370 [DEBUG] Sync pos and shop
+2023-09-25 09:35:14,073 [INFO] 127.0.0.1 - - [25/Sep/2023 09:35:14] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-25 09:35:52,619 [DEBUG] Looking for jobs to run
+2023-09-25 09:35:52,620 [INFO] Running job "run_dbsync (trigger: interval[0:01:00], next run at: 2023-09-25 09:35:52 EEST)" (scheduled at 2023-09-25 09:35:52.608726+03:00)
+2023-09-25 09:35:52,621 [DEBUG] Next wakeup is due at 2023-09-25 09:36:52.608479+03:00 (in 59.988639 seconds)
+2023-09-25 09:35:52,703 [DEBUG] Sync pos and shop
+2023-09-25 09:35:56,547 [INFO] Job "run_dbsync (trigger: interval[0:01:00], next run at: 2023-09-25 09:36:52 EEST)" executed successfully
+2023-09-25 09:36:05,439 [DEBUG] Looking for jobs to run
+2023-09-25 09:36:05,440 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-25 09:38:05 EEST)" (scheduled at 2023-09-25 09:36:05.425553+03:00)
+2023-09-25 09:36:05,441 [INFO] Running job "run_dbsync (trigger: interval[0:01:00], next run at: 2023-09-25 09:37:05 EEST)" (scheduled at 2023-09-25 09:36:05.425916+03:00)
+2023-09-25 09:36:05,444 [DEBUG] Next wakeup is due at 2023-09-25 09:37:05.425916+03:00 (in 59.986352 seconds)
+2023-09-25 09:36:05,456 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-25 09:36:05,482 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 1528
+2023-09-25 09:36:05,538 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.114.100 ГОРОДЕНКА ВУЛ.ШЕВЧЕНКА.74А більше 15хв.!'}, 'endsAt': '2023-09-25T06:38:44.309Z', 'fingerprint': '0d6e9a3f8a638a14', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-09-25T03:30:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-25T09:34:44.328+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '559', 'instance': '192.168.114.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'ГОРОДЕНКА ВУЛ.ШЕВЧЕНКА.74А', 'team': 'slaves'}}
+2023-09-25 09:36:05,564 [DEBUG] Sync pos and shop
+2023-09-25 09:36:05,573 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.666.100 КАФЕ ЦЕНТРАЛЬНОГО ОФІСУ більше 15хв.!'}, 'endsAt': '2023-09-25T06:39:44.309Z', 'fingerprint': '8b3ee1758f608d75', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-09-19T14:13:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-25T09:35:44.331+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '453', 'instance': '192.168.666.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'КАФЕ ЦЕНТРАЛЬНОГО ОФІСУ', 'team': 'slaves'}}
+2023-09-25 09:36:05,592 [ERROR] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-25 09:38:05 EEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/views/app_all.py", line 60, in get_aler
+    handler.get_incedents()
+  File "/home/bodia/admin_fxpos/admin_fxpos/service/resources/incident_handler.py", line 33, in get_incedents
+    incedent.add_info = {"fingerprint": alert["fingerprint"], "summary": alert["annotations"]["summary"], "phones": phones.numbers_list, "CallInProgress": '', "CallStatus": 0, "LastCallDateTime": ""}
+                                                                                                                    ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'numbers_list'
+2023-09-25 09:36:10,229 [INFO] Job "run_dbsync (trigger: interval[0:01:00], next run at: 2023-09-25 09:37:05 EEST)" executed successfully
+2023-09-25 09:36:17,155 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-25 09:37:40,183 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:37:40,184 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:37:40,186 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:37:40,188 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 09:37:40,188 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 09:37:40,188 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 09:37:40,189 [INFO] Scheduler started
+2023-09-25 09:37:40,189 [DEBUG] Looking for jobs to run
+2023-09-25 09:37:40,200 [DEBUG] Next wakeup is due at 2023-09-25 09:38:40.184025+03:00 (in 59.983848 seconds)
+2023-09-25 09:37:40,224 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8888
+ * Running on http://10.69.8.220:8888
+2023-09-25 09:37:40,224 [INFO] [33mPress CTRL+C to quit[0m
+2023-09-25 09:37:40,226 [INFO]  * Restarting with stat
+2023-09-25 09:37:41,384 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:37:41,384 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:37:41,386 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:37:41,388 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 09:37:41,388 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 09:37:41,389 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 09:37:41,389 [INFO] Scheduler started
+2023-09-25 09:37:41,390 [DEBUG] Looking for jobs to run
+2023-09-25 09:37:41,401 [DEBUG] Next wakeup is due at 2023-09-25 09:38:41.384213+03:00 (in 59.983017 seconds)
+2023-09-25 09:37:41,416 [WARNING]  * Debugger is active!
+2023-09-25 09:37:41,417 [INFO]  * Debugger PIN: 528-864-763
+2023-09-25 09:37:43,825 [DEBUG] Sync pos and shop
+2023-09-25 09:37:43,839 [INFO] 127.0.0.1 - - [25/Sep/2023 09:37:43] "[35m[1mGET /api/dbsync HTTP/1.1[0m" 500 -
+2023-09-25 09:37:43,877 [INFO] 127.0.0.1 - - [25/Sep/2023 09:37:43] "[36mGET /api/dbsync?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-09-25 09:37:43,879 [INFO] 127.0.0.1 - - [25/Sep/2023 09:37:43] "[36mGET /api/dbsync?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-09-25 09:37:43,941 [INFO] 127.0.0.1 - - [25/Sep/2023 09:37:43] "[36mGET /api/dbsync?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-25 09:37:43,978 [INFO] 127.0.0.1 - - [25/Sep/2023 09:37:43] "[36mGET /api/dbsync?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-25 09:37:55,933 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-25 09:37:56,257 [INFO]  * Restarting with stat
+2023-09-25 09:37:57,314 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:37:57,314 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:37:57,316 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:37:57,317 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 09:37:57,317 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 09:37:57,317 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 09:37:57,317 [INFO] Scheduler started
+2023-09-25 09:37:57,318 [DEBUG] Looking for jobs to run
+2023-09-25 09:37:57,337 [DEBUG] Next wakeup is due at 2023-09-25 09:38:57.314688+03:00 (in 59.977577 seconds)
+2023-09-25 09:37:57,357 [WARNING]  * Debugger is active!
+2023-09-25 09:37:57,358 [INFO]  * Debugger PIN: 528-864-763
+2023-09-25 09:52:36,116 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:52:36,116 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:52:36,117 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:52:36,118 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 09:52:36,118 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 09:52:36,118 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 09:52:36,118 [INFO] Scheduler started
+2023-09-25 09:52:36,119 [DEBUG] Looking for jobs to run
+2023-09-25 09:52:36,129 [DEBUG] Next wakeup is due at 2023-09-25 09:53:36.116128+03:00 (in 59.986438 seconds)
+2023-09-25 09:52:36,143 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8888
+ * Running on http://10.69.8.220:8888
+2023-09-25 09:52:36,143 [INFO] [33mPress CTRL+C to quit[0m
+2023-09-25 09:52:36,145 [INFO]  * Restarting with stat
+2023-09-25 09:52:37,241 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:52:37,242 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:52:37,246 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:52:37,247 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 09:52:37,248 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 09:52:37,248 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 09:52:37,249 [INFO] Scheduler started
+2023-09-25 09:52:37,249 [DEBUG] Looking for jobs to run
+2023-09-25 09:52:37,260 [DEBUG] Next wakeup is due at 2023-09-25 09:53:37.242225+03:00 (in 59.982169 seconds)
+2023-09-25 09:52:37,280 [WARNING]  * Debugger is active!
+2023-09-25 09:52:37,281 [INFO]  * Debugger PIN: 528-864-763
+2023-09-25 09:52:40,076 [DEBUG] Sync pos and shop
+2023-09-25 09:52:43,942 [INFO] 127.0.0.1 - - [25/Sep/2023 09:52:43] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-25 09:52:57,671 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-25 09:52:57,949 [INFO]  * Restarting with stat
+2023-09-25 09:53:09,979 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:53:09,980 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:53:09,983 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:53:09,984 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 09:53:09,984 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 09:53:09,985 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 09:53:09,985 [INFO] Scheduler started
+2023-09-25 09:53:09,985 [DEBUG] Looking for jobs to run
+2023-09-25 09:53:09,985 [DEBUG] Next wakeup is due at 2023-09-25 09:54:09.979964+03:00 (in 59.994087 seconds)
+2023-09-25 09:53:10,024 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8888
+ * Running on http://10.69.8.220:8888
+2023-09-25 09:53:10,025 [INFO] [33mPress CTRL+C to quit[0m
+2023-09-25 09:53:10,026 [INFO]  * Restarting with stat
+2023-09-25 09:53:11,035 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:53:11,035 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:53:11,037 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:53:11,037 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 09:53:11,037 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 09:53:11,038 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 09:53:11,038 [INFO] Scheduler started
+2023-09-25 09:53:11,038 [DEBUG] Looking for jobs to run
+2023-09-25 09:53:11,049 [DEBUG] Next wakeup is due at 2023-09-25 09:54:11.035544+03:00 (in 59.986170 seconds)
+2023-09-25 09:53:11,065 [WARNING]  * Debugger is active!
+2023-09-25 09:53:11,065 [INFO]  * Debugger PIN: 528-864-763
+2023-09-25 09:53:12,057 [DEBUG] Sync pos and shop
+2023-09-25 09:53:15,680 [INFO] 127.0.0.1 - - [25/Sep/2023 09:53:15] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-25 09:53:26,064 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-25 09:53:26,294 [INFO]  * Restarting with stat
+2023-09-25 09:53:27,130 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:53:27,131 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:53:27,132 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:53:27,133 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 09:53:27,133 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 09:53:27,133 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 09:53:27,133 [INFO] Scheduler started
+2023-09-25 09:53:27,134 [DEBUG] Looking for jobs to run
+2023-09-25 09:53:27,144 [DEBUG] Next wakeup is due at 2023-09-25 09:54:27.131094+03:00 (in 59.986382 seconds)
+2023-09-25 09:53:27,158 [WARNING]  * Debugger is active!
+2023-09-25 09:53:27,159 [INFO]  * Debugger PIN: 528-864-763
+2023-09-25 09:53:37,803 [DEBUG] Sync pos and shop
+2023-09-25 09:54:09,987 [DEBUG] Looking for jobs to run
+2023-09-25 09:54:09,988 [INFO] Running job "run_dbsync (trigger: interval[0:01:00], next run at: 2023-09-25 09:54:09 EEST)" (scheduled at 2023-09-25 09:54:09.979964+03:00)
+2023-09-25 09:54:09,989 [DEBUG] Next wakeup is due at 2023-09-25 09:55:09.979665+03:00 (in 59.991824 seconds)
+2023-09-25 09:54:10,154 [DEBUG] Sync pos and shop
+2023-09-25 09:54:14,106 [INFO] Job "run_dbsync (trigger: interval[0:01:00], next run at: 2023-09-25 09:55:09 EEST)" executed successfully
+2023-09-25 09:54:27,141 [DEBUG] Looking for jobs to run
+2023-09-25 09:54:27,143 [INFO] Running job "run_dbsync (trigger: interval[0:01:00], next run at: 2023-09-25 09:55:27 EEST)" (scheduled at 2023-09-25 09:54:27.131094+03:00)
+2023-09-25 09:54:27,143 [DEBUG] Next wakeup is due at 2023-09-25 09:55:27.130868+03:00 (in 59.989017 seconds)
+2023-09-25 09:54:27,202 [DEBUG] Sync pos and shop
+2023-09-25 09:54:52,249 [INFO] 127.0.0.1 - - [25/Sep/2023 09:54:52] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-25 09:55:09,992 [DEBUG] Looking for jobs to run
+2023-09-25 09:55:09,993 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-25 09:57:09 EEST)" (scheduled at 2023-09-25 09:55:09.979665+03:00)
+2023-09-25 09:55:09,994 [INFO] Running job "run_dbsync (trigger: interval[0:01:00], next run at: 2023-09-25 09:56:09 EEST)" (scheduled at 2023-09-25 09:55:09.979964+03:00)
+2023-09-25 09:55:09,996 [DEBUG] Next wakeup is due at 2023-09-25 09:56:09.979964+03:00 (in 59.987532 seconds)
+2023-09-25 09:55:10,002 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-25 09:55:10,010 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 1528
+2023-09-25 09:55:10,033 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.114.100 ГОРОДЕНКА ВУЛ.ШЕВЧЕНКА.74А більше 15хв.!'}, 'endsAt': '2023-09-25T06:58:44.309Z', 'fingerprint': '0d6e9a3f8a638a14', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-09-25T03:30:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-25T09:54:44.330+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '559', 'instance': '192.168.114.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'ГОРОДЕНКА ВУЛ.ШЕВЧЕНКА.74А', 'team': 'slaves'}}
+2023-09-25 09:55:10,047 [DEBUG] Sync pos and shop
+2023-09-25 09:55:10,055 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.666.100 КАФЕ ЦЕНТРАЛЬНОГО ОФІСУ більше 15хв.!'}, 'endsAt': '2023-09-25T06:57:44.309Z', 'fingerprint': '8b3ee1758f608d75', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-09-19T14:13:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-25T09:53:44.334+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '453', 'instance': '192.168.666.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'КАФЕ ЦЕНТРАЛЬНОГО ОФІСУ', 'team': 'slaves'}}
+2023-09-25 09:55:10,065 [ERROR] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-25 09:57:09 EEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/views/app_all.py", line 60, in get_aler
+    handler.get_incedents()
+  File "/home/bodia/admin_fxpos/admin_fxpos/service/resources/incident_handler.py", line 33, in get_incedents
+    incedent.add_info = {"fingerprint": alert["fingerprint"], "summary": alert["annotations"]["summary"], "phones": phones.numbers_list, "CallInProgress": '', "CallStatus": 0, "LastCallDateTime": ""}
+                                                                                                                    ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'numbers_list'
+2023-09-25 09:55:14,166 [INFO] Job "run_dbsync (trigger: interval[0:01:00], next run at: 2023-09-25 09:56:09 EEST)" executed successfully
+2023-09-25 09:55:27,135 [DEBUG] Looking for jobs to run
+2023-09-25 09:55:27,135 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-25 09:55:27 EEST)" (scheduled at 2023-09-25 09:55:27.130868+03:00)
+2023-09-25 09:55:27,137 [WARNING] Execution of job "run_dbsync (trigger: interval[0:01:00], next run at: 2023-09-25 09:55:27 EEST)" skipped: maximum number of running instances reached (1)
+2023-09-25 09:55:27,138 [DEBUG] Next wakeup is due at 2023-09-25 09:56:27.131094+03:00 (in 59.995532 seconds)
+2023-09-25 09:55:27,140 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-25 09:55:27,145 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 1528
+2023-09-25 09:55:27,154 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.114.100 ГОРОДЕНКА ВУЛ.ШЕВЧЕНКА.74А більше 15хв.!'}, 'endsAt': '2023-09-25T06:58:44.309Z', 'fingerprint': '0d6e9a3f8a638a14', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-09-25T03:30:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-25T09:54:44.330+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '559', 'instance': '192.168.114.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'ГОРОДЕНКА ВУЛ.ШЕВЧЕНКА.74А', 'team': 'slaves'}}
+2023-09-25 09:55:27,166 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.666.100 КАФЕ ЦЕНТРАЛЬНОГО ОФІСУ більше 15хв.!'}, 'endsAt': '2023-09-25T06:57:44.309Z', 'fingerprint': '8b3ee1758f608d75', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-09-19T14:13:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-25T09:53:44.334+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '453', 'instance': '192.168.666.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'КАФЕ ЦЕНТРАЛЬНОГО ОФІСУ', 'team': 'slaves'}}
+2023-09-25 09:55:27,171 [ERROR] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-25 09:57:27 EEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/views/app_all.py", line 60, in get_aler
+    handler.get_incedents()
+  File "/home/bodia/admin_fxpos/admin_fxpos/service/resources/incident_handler.py", line 33, in get_incedents
+    incedent.add_info = {"fingerprint": alert["fingerprint"], "summary": alert["annotations"]["summary"], "phones": phones.numbers_list, "CallInProgress": '', "CallStatus": 0, "LastCallDateTime": ""}
+                                                                                                                    ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'numbers_list'
+2023-09-25 09:55:47,006 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:55:47,006 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:55:47,008 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:55:47,008 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 09:55:47,008 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 09:55:47,009 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 09:55:47,009 [INFO] Scheduler started
+2023-09-25 09:55:47,009 [DEBUG] Looking for jobs to run
+2023-09-25 09:55:47,014 [DEBUG] Next wakeup is due at 2023-09-25 09:57:47.006156+03:00 (in 119.991272 seconds)
+2023-09-25 09:55:47,034 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8888
+ * Running on http://10.69.8.220:8888
+2023-09-25 09:55:47,034 [INFO] [33mPress CTRL+C to quit[0m
+2023-09-25 09:55:47,035 [INFO]  * Restarting with stat
+2023-09-25 09:55:47,826 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:55:47,826 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:55:47,828 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:55:47,829 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 09:55:47,829 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 09:55:47,830 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 09:55:47,830 [INFO] Scheduler started
+2023-09-25 09:55:47,830 [DEBUG] Looking for jobs to run
+2023-09-25 09:55:47,840 [DEBUG] Next wakeup is due at 2023-09-25 09:57:47.826489+03:00 (in 119.985636 seconds)
+2023-09-25 09:55:47,855 [WARNING]  * Debugger is active!
+2023-09-25 09:55:47,855 [INFO]  * Debugger PIN: 528-864-763
+2023-09-25 09:55:51,372 [DEBUG] Sync pos and shop
+2023-09-25 09:56:57,691 [INFO] 127.0.0.1 - - [25/Sep/2023 09:56:57] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-25 09:57:15,606 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-25 09:57:15,933 [INFO]  * Restarting with stat
+2023-09-25 09:57:16,916 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:57:16,916 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:57:16,918 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 09:57:16,919 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 09:57:16,919 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 09:57:16,919 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 09:57:16,919 [INFO] Scheduler started
+2023-09-25 09:57:16,920 [DEBUG] Looking for jobs to run
+2023-09-25 09:57:16,925 [DEBUG] Next wakeup is due at 2023-09-25 09:59:16.916262+03:00 (in 119.990534 seconds)
+2023-09-25 09:57:16,948 [WARNING]  * Debugger is active!
+2023-09-25 09:57:16,949 [INFO]  * Debugger PIN: 528-864-763
+2023-09-25 09:57:24,072 [DEBUG] Sync pos and shop
+2023-09-25 09:57:27,618 [DEBUG] Sync pos and shop
+2023-09-25 09:57:27,833 [INFO] 127.0.0.1 - - [25/Sep/2023 09:57:27] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-25 09:57:28,532 [DEBUG] Sync pos and shop
+2023-09-25 09:57:29,361 [DEBUG] Sync pos and shop
+2023-09-25 09:57:32,840 [INFO] 127.0.0.1 - - [25/Sep/2023 09:57:32] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-25 09:57:35,638 [INFO] 127.0.0.1 - - [25/Sep/2023 09:57:35] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-25 09:57:38,067 [INFO] 127.0.0.1 - - [25/Sep/2023 09:57:38] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-25 09:57:41,189 [DEBUG] Sync pos and shop
+2023-09-25 09:57:46,118 [INFO] 127.0.0.1 - - [25/Sep/2023 09:57:46] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-25 09:57:47,006 [DEBUG] Looking for jobs to run
+2023-09-25 09:57:47,008 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-25 09:57:47 EEST)" (scheduled at 2023-09-25 09:57:47.006156+03:00)
+2023-09-25 09:57:47,009 [DEBUG] Next wakeup is due at 2023-09-25 09:59:47.006156+03:00 (in 119.999190 seconds)
+2023-09-25 09:57:47,015 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-25 09:57:47,020 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 None
+2023-09-25 09:57:47,081 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.114.100 ГОРОДЕНКА ВУЛ.ШЕВЧЕНКА.74А більше 15хв.!'}, 'endsAt': '2023-09-25T07:00:44.309Z', 'fingerprint': '0d6e9a3f8a638a14', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-09-25T03:30:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-25T09:56:44.336+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '559', 'instance': '192.168.114.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'ГОРОДЕНКА ВУЛ.ШЕВЧЕНКА.74А', 'team': 'slaves'}}
+2023-09-25 09:57:47,092 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.666.100 КАФЕ ЦЕНТРАЛЬНОГО ОФІСУ більше 15хв.!'}, 'endsAt': '2023-09-25T07:01:44.309Z', 'fingerprint': '8b3ee1758f608d75', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-09-19T14:13:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-25T09:57:44.336+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '453', 'instance': '192.168.666.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'КАФЕ ЦЕНТРАЛЬНОГО ОФІСУ', 'team': 'slaves'}}
+2023-09-25 09:57:47,098 [ERROR] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-25 09:59:47 EEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/views/app_all.py", line 60, in get_aler
+    handler.get_incedents()
+  File "/home/bodia/admin_fxpos/admin_fxpos/service/resources/incident_handler.py", line 33, in get_incedents
+    incedent.add_info = {"fingerprint": alert["fingerprint"], "summary": alert["annotations"]["summary"], "phones": phones.numbers_list, "CallInProgress": '', "CallStatus": 0, "LastCallDateTime": ""}
+                                                                                                                    ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'numbers_list'
+2023-09-25 09:57:51,010 [DEBUG] Sync pos and shop
+2023-09-25 09:57:55,604 [INFO] 127.0.0.1 - - [25/Sep/2023 09:57:55] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-25 09:58:41,593 [DEBUG] Sync pos and shop
+2023-09-25 09:58:46,164 [INFO] 127.0.0.1 - - [25/Sep/2023 09:58:46] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-25 09:59:16,917 [DEBUG] Looking for jobs to run
+2023-09-25 09:59:16,917 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-25 10:01:16 EEST)" (scheduled at 2023-09-25 09:59:16.916262+03:00)
+2023-09-25 09:59:16,917 [DEBUG] Next wakeup is due at 2023-09-25 10:01:16.916262+03:00 (in 119.999095 seconds)
+2023-09-25 09:59:16,919 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-25 09:59:16,922 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 None
+2023-09-25 09:59:16,930 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.114.100 ГОРОДЕНКА ВУЛ.ШЕВЧЕНКА.74А більше 15хв.!'}, 'endsAt': '2023-09-25T07:02:44.309Z', 'fingerprint': '0d6e9a3f8a638a14', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-09-25T03:30:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-25T09:58:44.328+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '559', 'instance': '192.168.114.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'ГОРОДЕНКА ВУЛ.ШЕВЧЕНКА.74А', 'team': 'slaves'}}
+2023-09-25 09:59:16,936 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.666.100 КАФЕ ЦЕНТРАЛЬНОГО ОФІСУ більше 15хв.!'}, 'endsAt': '2023-09-25T07:01:44.309Z', 'fingerprint': '8b3ee1758f608d75', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-09-19T14:13:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-25T09:57:44.336+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '453', 'instance': '192.168.666.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'КАФЕ ЦЕНТРАЛЬНОГО ОФІСУ', 'team': 'slaves'}}
+2023-09-25 09:59:16,940 [ERROR] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-25 10:01:16 EEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/views/app_all.py", line 60, in get_aler
+    handler.get_incedents()
+  File "/home/bodia/admin_fxpos/admin_fxpos/service/resources/incident_handler.py", line 33, in get_incedents
+    incedent.add_info = {"fingerprint": alert["fingerprint"], "summary": alert["annotations"]["summary"], "phones": phones.numbers_list, "CallInProgress": '', "CallStatus": 0, "LastCallDateTime": ""}
+                                                                                                                    ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'numbers_list'
+2023-09-25 09:59:47,010 [DEBUG] Looking for jobs to run
+2023-09-25 09:59:47,011 [DEBUG] Next wakeup is due at 2023-09-25 10:01:47.006156+03:00 (in 119.995468 seconds)
+2023-09-25 09:59:47,011 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-25 10:01:47 EEST)" (scheduled at 2023-09-25 09:59:47.006156+03:00)
+2023-09-25 09:59:47,013 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-25 09:59:47,016 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 None
+2023-09-25 09:59:47,021 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.114.100 ГОРОДЕНКА ВУЛ.ШЕВЧЕНКА.74А більше 15хв.!'}, 'endsAt': '2023-09-25T07:02:44.309Z', 'fingerprint': '0d6e9a3f8a638a14', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-09-25T03:30:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-25T09:58:44.328+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '559', 'instance': '192.168.114.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'ГОРОДЕНКА ВУЛ.ШЕВЧЕНКА.74А', 'team': 'slaves'}}
+2023-09-25 09:59:47,024 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.666.100 КАФЕ ЦЕНТРАЛЬНОГО ОФІСУ більше 15хв.!'}, 'endsAt': '2023-09-25T07:03:44.309Z', 'fingerprint': '8b3ee1758f608d75', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-09-19T14:13:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-25T09:59:44.331+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '453', 'instance': '192.168.666.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'КАФЕ ЦЕНТРАЛЬНОГО ОФІСУ', 'team': 'slaves'}}
+2023-09-25 09:59:47,029 [ERROR] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-25 10:01:47 EEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/views/app_all.py", line 60, in get_aler
+    handler.get_incedents()
+  File "/home/bodia/admin_fxpos/admin_fxpos/service/resources/incident_handler.py", line 33, in get_incedents
+    incedent.add_info = {"fingerprint": alert["fingerprint"], "summary": alert["annotations"]["summary"], "phones": phones.numbers_list, "CallInProgress": '', "CallStatus": 0, "LastCallDateTime": ""}
+                                                                                                                    ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'numbers_list'
+2023-09-25 10:00:23,152 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-25 10:00:23,422 [INFO]  * Restarting with stat
+2023-09-25 10:00:24,796 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 10:00:24,797 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 10:00:24,800 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 10:00:24,800 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 10:00:24,801 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 10:00:24,801 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 10:00:24,801 [INFO] Scheduler started
+2023-09-25 10:00:24,802 [DEBUG] Looking for jobs to run
+2023-09-25 10:00:24,814 [DEBUG] Next wakeup is due at 2023-09-25 10:02:24.796420+03:00 (in 119.982238 seconds)
+2023-09-25 10:00:24,834 [WARNING]  * Debugger is active!
+2023-09-25 10:00:24,835 [INFO]  * Debugger PIN: 528-864-763
+2023-09-25 10:00:26,066 [DEBUG] Sync pos and shop
+2023-09-25 10:00:30,213 [INFO] 127.0.0.1 - - [25/Sep/2023 10:00:30] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-25 10:00:40,005 [DEBUG] Sync pos and shop
+2023-09-25 10:00:43,819 [INFO] 127.0.0.1 - - [25/Sep/2023 10:00:43] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-25 10:01:15,366 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-25 10:01:15,699 [INFO]  * Restarting with stat
+2023-09-25 10:01:16,693 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 10:01:16,693 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 10:01:16,698 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 10:01:16,699 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 10:01:16,700 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 10:01:16,700 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 10:01:16,700 [INFO] Scheduler started
+2023-09-25 10:01:16,701 [DEBUG] Looking for jobs to run
+2023-09-25 10:01:16,715 [DEBUG] Next wakeup is due at 2023-09-25 10:03:16.693333+03:00 (in 119.977665 seconds)
+2023-09-25 10:01:16,739 [WARNING]  * Debugger is active!
+2023-09-25 10:01:16,740 [INFO]  * Debugger PIN: 528-864-763
+2023-09-25 10:01:23,957 [DEBUG] Sync pos and shop
+2023-09-25 10:01:32,525 [INFO] 127.0.0.1 - - [25/Sep/2023 10:01:32] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-25 10:01:47,007 [DEBUG] Looking for jobs to run
+2023-09-25 10:01:47,007 [DEBUG] Next wakeup is due at 2023-09-25 10:03:47.006156+03:00 (in 119.998456 seconds)
+2023-09-25 10:01:47,007 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-25 10:03:47 EEST)" (scheduled at 2023-09-25 10:01:47.006156+03:00)
+2023-09-25 10:01:47,009 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-25 10:01:47,013 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 None
+2023-09-25 10:01:47,019 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.114.100 ГОРОДЕНКА ВУЛ.ШЕВЧЕНКА.74А більше 15хв.!'}, 'endsAt': '2023-09-25T07:04:44.309Z', 'fingerprint': '0d6e9a3f8a638a14', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-09-25T03:30:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-25T10:00:44.337+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '559', 'instance': '192.168.114.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'ГОРОДЕНКА ВУЛ.ШЕВЧЕНКА.74А', 'team': 'slaves'}}
+2023-09-25 10:01:47,021 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.666.100 КАФЕ ЦЕНТРАЛЬНОГО ОФІСУ більше 15хв.!'}, 'endsAt': '2023-09-25T07:05:44.309Z', 'fingerprint': '8b3ee1758f608d75', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-09-19T14:13:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-25T10:01:44.332+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '453', 'instance': '192.168.666.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'КАФЕ ЦЕНТРАЛЬНОГО ОФІСУ', 'team': 'slaves'}}
+2023-09-25 10:01:47,025 [ERROR] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-25 10:03:47 EEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/views/app_all.py", line 60, in get_aler
+    handler.get_incedents()
+  File "/home/bodia/admin_fxpos/admin_fxpos/service/resources/incident_handler.py", line 33, in get_incedents
+    incedent.add_info = {"fingerprint": alert["fingerprint"], "summary": alert["annotations"]["summary"], "phones": phones.numbers_list, "CallInProgress": '', "CallStatus": 0, "LastCallDateTime": ""}
+                                                                                                                    ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'numbers_list'
+2023-09-25 10:02:14,612 [DEBUG] Sync pos and shop
+2023-09-25 10:02:21,811 [INFO] 127.0.0.1 - - [25/Sep/2023 10:02:21] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-25 10:02:36,302 [DEBUG] Sync pos and shop
+2023-09-25 10:02:43,885 [INFO] 127.0.0.1 - - [25/Sep/2023 10:02:43] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-25 10:03:16,693 [DEBUG] Looking for jobs to run
+2023-09-25 10:03:16,694 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-25 10:03:16 EEST)" (scheduled at 2023-09-25 10:03:16.693333+03:00)
+2023-09-25 10:03:16,694 [DEBUG] Next wakeup is due at 2023-09-25 10:05:16.693333+03:00 (in 119.999533 seconds)
+2023-09-25 10:03:16,696 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-25 10:03:16,699 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 None
+2023-09-25 10:03:16,708 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.114.100 ГОРОДЕНКА ВУЛ.ШЕВЧЕНКА.74А більше 15хв.!'}, 'endsAt': '2023-09-25T07:06:44.309Z', 'fingerprint': '0d6e9a3f8a638a14', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-09-25T03:30:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-25T10:02:44.334+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '559', 'instance': '192.168.114.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'ГОРОДЕНКА ВУЛ.ШЕВЧЕНКА.74А', 'team': 'slaves'}}
+2023-09-25 10:03:16,720 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.666.100 КАФЕ ЦЕНТРАЛЬНОГО ОФІСУ більше 15хв.!'}, 'endsAt': '2023-09-25T07:05:44.309Z', 'fingerprint': '8b3ee1758f608d75', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-09-19T14:13:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-25T10:01:44.332+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '453', 'instance': '192.168.666.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'КАФЕ ЦЕНТРАЛЬНОГО ОФІСУ', 'team': 'slaves'}}
+2023-09-25 10:03:16,723 [ERROR] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-25 10:05:16 EEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/views/app_all.py", line 60, in get_aler
+    handler.get_incedents()
+  File "/home/bodia/admin_fxpos/admin_fxpos/service/resources/incident_handler.py", line 33, in get_incedents
+    incedent.add_info = {"fingerprint": alert["fingerprint"], "summary": alert["annotations"]["summary"], "phones": phones.numbers_list, "CallInProgress": '', "CallStatus": 0, "LastCallDateTime": ""}
+                                                                                                                    ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'numbers_list'
+2023-09-25 10:03:47,006 [DEBUG] Looking for jobs to run
+2023-09-25 10:03:47,007 [DEBUG] Next wakeup is due at 2023-09-25 10:05:47.006156+03:00 (in 119.999340 seconds)
+2023-09-25 10:03:47,007 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-25 10:05:47 EEST)" (scheduled at 2023-09-25 10:03:47.006156+03:00)
+2023-09-25 10:03:47,008 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-25 10:03:47,012 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 None
+2023-09-25 10:03:47,018 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.114.100 ГОРОДЕНКА ВУЛ.ШЕВЧЕНКА.74А більше 15хв.!'}, 'endsAt': '2023-09-25T07:06:44.309Z', 'fingerprint': '0d6e9a3f8a638a14', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-09-25T03:30:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-25T10:02:44.334+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '559', 'instance': '192.168.114.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'ГОРОДЕНКА ВУЛ.ШЕВЧЕНКА.74А', 'team': 'slaves'}}
+2023-09-25 10:03:47,021 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.666.100 КАФЕ ЦЕНТРАЛЬНОГО ОФІСУ більше 15хв.!'}, 'endsAt': '2023-09-25T07:07:44.309Z', 'fingerprint': '8b3ee1758f608d75', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-09-19T14:13:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-25T10:03:44.335+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '453', 'instance': '192.168.666.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'КАФЕ ЦЕНТРАЛЬНОГО ОФІСУ', 'team': 'slaves'}}
+2023-09-25 10:03:47,034 [ERROR] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-25 10:05:47 EEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/views/app_all.py", line 60, in get_aler
+    handler.get_incedents()
+  File "/home/bodia/admin_fxpos/admin_fxpos/service/resources/incident_handler.py", line 33, in get_incedents
+    incedent.add_info = {"fingerprint": alert["fingerprint"], "summary": alert["annotations"]["summary"], "phones": phones.numbers_list, "CallInProgress": '', "CallStatus": 0, "LastCallDateTime": ""}
+                                                                                                                    ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'numbers_list'
+2023-09-25 10:05:03,004 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-25 10:05:03,276 [INFO]  * Restarting with stat
+2023-09-25 10:05:04,523 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 10:05:04,523 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 10:05:04,525 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 10:05:04,526 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 10:05:04,526 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 10:05:04,526 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 10:05:04,526 [INFO] Scheduler started
+2023-09-25 10:05:04,527 [DEBUG] Looking for jobs to run
+2023-09-25 10:05:04,534 [DEBUG] Next wakeup is due at 2023-09-25 10:07:04.523161+03:00 (in 119.989014 seconds)
+2023-09-25 10:05:04,567 [WARNING]  * Debugger is active!
+2023-09-25 10:05:04,568 [INFO]  * Debugger PIN: 528-864-763
+2023-09-25 10:05:09,841 [DEBUG] Sync pos and shop
+2023-09-25 10:05:17,853 [INFO] 127.0.0.1 - - [25/Sep/2023 10:05:17] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-25 10:05:19,534 [DEBUG] Sync pos and shop
+2023-09-25 10:05:27,694 [INFO] 127.0.0.1 - - [25/Sep/2023 10:05:27] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-25 10:05:47,006 [DEBUG] Looking for jobs to run
+2023-09-25 10:05:47,007 [DEBUG] Next wakeup is due at 2023-09-25 10:07:47.006156+03:00 (in 119.999090 seconds)
+2023-09-25 10:05:47,008 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-25 10:07:47 EEST)" (scheduled at 2023-09-25 10:05:47.006156+03:00)
+2023-09-25 10:05:47,012 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-25 10:05:47,016 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 None
+2023-09-25 10:05:47,026 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.114.100 ГОРОДЕНКА ВУЛ.ШЕВЧЕНКА.74А більше 15хв.!'}, 'endsAt': '2023-09-25T07:08:44.309Z', 'fingerprint': '0d6e9a3f8a638a14', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-09-25T03:30:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-25T10:04:44.331+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '559', 'instance': '192.168.114.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'ГОРОДЕНКА ВУЛ.ШЕВЧЕНКА.74А', 'team': 'slaves'}}
+2023-09-25 10:05:47,037 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.666.100 КАФЕ ЦЕНТРАЛЬНОГО ОФІСУ більше 15хв.!'}, 'endsAt': '2023-09-25T07:09:44.309Z', 'fingerprint': '8b3ee1758f608d75', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-09-19T14:13:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-25T10:05:44.328+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '453', 'instance': '192.168.666.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'КАФЕ ЦЕНТРАЛЬНОГО ОФІСУ', 'team': 'slaves'}}
+2023-09-25 10:05:47,051 [ERROR] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-25 10:07:47 EEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/views/app_all.py", line 60, in get_aler
+    handler.get_incedents()
+  File "/home/bodia/admin_fxpos/admin_fxpos/service/resources/incident_handler.py", line 33, in get_incedents
+    incedent.add_info = {"fingerprint": alert["fingerprint"], "summary": alert["annotations"]["summary"], "phones": phones.numbers_list, "CallInProgress": '', "CallStatus": 0, "LastCallDateTime": ""}
+                                                                                                                    ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'numbers_list'
+2023-09-25 10:07:04,529 [DEBUG] Looking for jobs to run
+2023-09-25 10:07:04,530 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-25 10:07:04 EEST)" (scheduled at 2023-09-25 10:07:04.523161+03:00)
+2023-09-25 10:07:04,532 [DEBUG] Next wakeup is due at 2023-09-25 10:09:04.523161+03:00 (in 119.993436 seconds)
+2023-09-25 10:07:04,539 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-25 10:07:04,543 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 None
+2023-09-25 10:07:04,563 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.114.100 ГОРОДЕНКА ВУЛ.ШЕВЧЕНКА.74А більше 15хв.!'}, 'endsAt': '2023-09-25T07:10:44.309Z', 'fingerprint': '0d6e9a3f8a638a14', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-09-25T03:30:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-25T10:06:44.333+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '559', 'instance': '192.168.114.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'ГОРОДЕНКА ВУЛ.ШЕВЧЕНКА.74А', 'team': 'slaves'}}
+2023-09-25 10:07:04,591 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.666.100 КАФЕ ЦЕНТРАЛЬНОГО ОФІСУ більше 15хв.!'}, 'endsAt': '2023-09-25T07:09:44.309Z', 'fingerprint': '8b3ee1758f608d75', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-09-19T14:13:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-25T10:05:44.328+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '453', 'instance': '192.168.666.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'КАФЕ ЦЕНТРАЛЬНОГО ОФІСУ', 'team': 'slaves'}}
+2023-09-25 10:07:04,604 [ERROR] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-25 10:09:04 EEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/views/app_all.py", line 60, in get_aler
+    handler.get_incedents()
+  File "/home/bodia/admin_fxpos/admin_fxpos/service/resources/incident_handler.py", line 33, in get_incedents
+    incedent.add_info = {"fingerprint": alert["fingerprint"], "summary": alert["annotations"]["summary"], "phones": phones.numbers_list, "CallInProgress": '', "CallStatus": 0, "LastCallDateTime": ""}
+                                                                                                                    ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'numbers_list'
+2023-09-25 10:07:47,008 [DEBUG] Looking for jobs to run
+2023-09-25 10:07:47,008 [DEBUG] Next wakeup is due at 2023-09-25 10:09:47.006156+03:00 (in 119.997579 seconds)
+2023-09-25 10:07:47,008 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-25 10:09:47 EEST)" (scheduled at 2023-09-25 10:07:47.006156+03:00)
+2023-09-25 10:07:47,011 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-25 10:07:47,014 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 None
+2023-09-25 10:07:47,019 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.114.100 ГОРОДЕНКА ВУЛ.ШЕВЧЕНКА.74А більше 15хв.!'}, 'endsAt': '2023-09-25T07:10:44.309Z', 'fingerprint': '0d6e9a3f8a638a14', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-09-25T03:30:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-25T10:06:44.333+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '559', 'instance': '192.168.114.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'ГОРОДЕНКА ВУЛ.ШЕВЧЕНКА.74А', 'team': 'slaves'}}
+2023-09-25 10:07:47,031 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.666.100 КАФЕ ЦЕНТРАЛЬНОГО ОФІСУ більше 15хв.!'}, 'endsAt': '2023-09-25T07:11:44.309Z', 'fingerprint': '8b3ee1758f608d75', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-09-19T14:13:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-25T10:07:44.328+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '453', 'instance': '192.168.666.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'КАФЕ ЦЕНТРАЛЬНОГО ОФІСУ', 'team': 'slaves'}}
+2023-09-25 10:07:47,037 [ERROR] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-25 10:09:47 EEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/views/app_all.py", line 60, in get_aler
+    handler.get_incedents()
+  File "/home/bodia/admin_fxpos/admin_fxpos/service/resources/incident_handler.py", line 33, in get_incedents
+    incedent.add_info = {"fingerprint": alert["fingerprint"], "summary": alert["annotations"]["summary"], "phones": phones.numbers_list, "CallInProgress": '', "CallStatus": 0, "LastCallDateTime": ""}
+                                                                                                                    ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'numbers_list'
+2023-09-25 10:08:50,574 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-25 10:08:50,964 [INFO]  * Restarting with stat
+2023-09-25 10:08:52,073 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 10:08:52,073 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 10:08:52,076 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 10:08:52,077 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 10:08:52,077 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 10:08:52,077 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 10:08:52,077 [INFO] Scheduler started
+2023-09-25 10:08:52,078 [DEBUG] Looking for jobs to run
+2023-09-25 10:08:52,085 [DEBUG] Next wakeup is due at 2023-09-25 10:10:52.073046+03:00 (in 119.988291 seconds)
+2023-09-25 10:08:52,108 [WARNING]  * Debugger is active!
+2023-09-25 10:08:52,108 [INFO]  * Debugger PIN: 528-864-763
+2023-09-25 10:09:13,458 [DEBUG] Sync pos and shop
+2023-09-25 10:09:44,762 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 10:09:44,762 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 10:09:44,764 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 10:09:44,764 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 10:09:44,764 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 10:09:44,765 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 10:09:44,765 [INFO] Scheduler started
+2023-09-25 10:09:44,765 [DEBUG] Looking for jobs to run
+2023-09-25 10:09:44,776 [DEBUG] Next wakeup is due at 2023-09-25 10:11:44.762299+03:00 (in 119.986248 seconds)
+2023-09-25 10:09:44,790 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8888
+ * Running on http://10.69.8.220:8888
+2023-09-25 10:09:44,790 [INFO] [33mPress CTRL+C to quit[0m
+2023-09-25 10:09:44,791 [INFO]  * Restarting with stat
+2023-09-25 10:09:45,617 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 10:09:45,617 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 10:09:45,619 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 10:09:45,619 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 10:09:45,619 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 10:09:45,620 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 10:09:45,620 [INFO] Scheduler started
+2023-09-25 10:09:45,620 [DEBUG] Looking for jobs to run
+2023-09-25 10:09:45,630 [DEBUG] Next wakeup is due at 2023-09-25 10:11:45.617108+03:00 (in 119.986190 seconds)
+2023-09-25 10:09:45,643 [WARNING]  * Debugger is active!
+2023-09-25 10:09:45,644 [INFO]  * Debugger PIN: 528-864-763
+2023-09-25 10:09:48,611 [DEBUG] Sync pos and shop
+2023-09-25 10:09:56,507 [INFO] 127.0.0.1 - - [25/Sep/2023 10:09:56] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-25 10:10:16,427 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-25 10:10:16,705 [INFO]  * Restarting with stat
+2023-09-25 10:10:17,659 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 10:10:17,659 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 10:10:17,662 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 10:10:17,662 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 10:10:17,662 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 10:10:17,663 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 10:10:17,663 [INFO] Scheduler started
+2023-09-25 10:10:17,663 [DEBUG] Looking for jobs to run
+2023-09-25 10:10:17,669 [DEBUG] Next wakeup is due at 2023-09-25 10:12:17.659549+03:00 (in 119.989940 seconds)
+2023-09-25 10:10:17,693 [WARNING]  * Debugger is active!
+2023-09-25 10:10:17,693 [INFO]  * Debugger PIN: 528-864-763
+2023-09-25 10:11:44,773 [DEBUG] Looking for jobs to run
+2023-09-25 10:11:44,773 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-25 10:13:44 EEST)" (scheduled at 2023-09-25 10:11:44.762299+03:00)
+2023-09-25 10:11:44,773 [DEBUG] Next wakeup is due at 2023-09-25 10:13:44.762299+03:00 (in 119.989146 seconds)
+2023-09-25 10:11:44,776 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-25 10:11:44,780 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 None
+2023-09-25 10:11:44,842 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.114.100 ГОРОДЕНКА ВУЛ.ШЕВЧЕНКА.74А більше 15хв.!'}, 'endsAt': '2023-09-25T07:14:44.309Z', 'fingerprint': '0d6e9a3f8a638a14', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-09-25T03:30:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-25T10:10:44.334+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '559', 'instance': '192.168.114.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'ГОРОДЕНКА ВУЛ.ШЕВЧЕНКА.74А', 'team': 'slaves'}}
+2023-09-25 10:11:44,853 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.666.100 КАФЕ ЦЕНТРАЛЬНОГО ОФІСУ більше 15хв.!'}, 'endsAt': '2023-09-25T07:15:44.309Z', 'fingerprint': '8b3ee1758f608d75', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-09-19T14:13:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-25T10:11:44.332+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '453', 'instance': '192.168.666.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'КАФЕ ЦЕНТРАЛЬНОГО ОФІСУ', 'team': 'slaves'}}
+2023-09-25 10:11:44,857 [ERROR] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-25 10:13:44 EEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/views/app_all.py", line 60, in get_aler
+    handler.get_incedents()
+  File "/home/bodia/admin_fxpos/admin_fxpos/service/resources/incident_handler.py", line 33, in get_incedents
+    incedent.add_info = {"fingerprint": alert["fingerprint"], "summary": alert["annotations"]["summary"], "phones": phones.numbers_list, "CallInProgress": '', "CallStatus": 0, "LastCallDateTime": ""}
+                                                                                                                    ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'numbers_list'
+2023-09-25 10:11:52,386 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 10:11:52,386 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 10:11:52,389 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 10:11:52,390 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 10:11:52,390 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 10:11:52,390 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 10:11:52,390 [INFO] Scheduler started
+2023-09-25 10:11:52,391 [DEBUG] Looking for jobs to run
+2023-09-25 10:11:52,397 [DEBUG] Next wakeup is due at 2023-09-25 10:13:52.386230+03:00 (in 119.989041 seconds)
+2023-09-25 10:11:52,427 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8888
+ * Running on http://10.69.8.220:8888
+2023-09-25 10:11:52,427 [INFO] [33mPress CTRL+C to quit[0m
+2023-09-25 10:11:52,428 [INFO]  * Restarting with stat
+2023-09-25 10:11:53,814 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 10:11:53,815 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 10:11:53,819 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 10:11:53,820 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 10:11:53,820 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 10:11:53,821 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 10:11:53,821 [INFO] Scheduler started
+2023-09-25 10:11:53,822 [DEBUG] Looking for jobs to run
+2023-09-25 10:11:53,827 [DEBUG] Next wakeup is due at 2023-09-25 10:13:53.814506+03:00 (in 119.987214 seconds)
+2023-09-25 10:11:53,856 [WARNING]  * Debugger is active!
+2023-09-25 10:11:53,856 [INFO]  * Debugger PIN: 528-864-763
+2023-09-25 10:11:54,901 [DEBUG] Sync pos and shop
+2023-09-25 10:11:55,416 [DEBUG] <Shop(id='314', name='РК ДОБРОМИЛЬ ПЛ.РИНОК.22', base_ip='204', active='False', shop_number='726')> --> <shops(code_shop='726', name_shop='РК ДОБРОМИЛЬ ПЛ.РИНОК.22', address='204', sign_activity='1')>
+2023-09-25 10:12:02,394 [INFO] 127.0.0.1 - - [25/Sep/2023 10:12:02] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-25 10:12:17,448 [DEBUG] Sync pos and shop
+2023-09-25 10:12:18,111 [DEBUG] <Shop(id='314', name='РК ДОБРОМИЛЬ ПЛ.РИНОК.22', base_ip='204', active='True', shop_number='726')> --> <shops(code_shop='726', name_shop='РК ДОБРОМИЛЬ ПЛ.РИНОК.22', address='204', sign_activity='0')>
+2023-09-25 10:12:27,922 [INFO] 127.0.0.1 - - [25/Sep/2023 10:12:27] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-25 10:13:52,386 [DEBUG] Looking for jobs to run
+2023-09-25 10:13:52,388 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-25 10:13:52 EEST)" (scheduled at 2023-09-25 10:13:52.386230+03:00)
+2023-09-25 10:13:52,388 [DEBUG] Next wakeup is due at 2023-09-25 10:15:52.386230+03:00 (in 119.999082 seconds)
+2023-09-25 10:13:52,395 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-25 10:13:52,402 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 None
+2023-09-25 10:13:52,450 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.114.100 ГОРОДЕНКА ВУЛ.ШЕВЧЕНКА.74А більше 15хв.!'}, 'endsAt': '2023-09-25T07:16:44.309Z', 'fingerprint': '0d6e9a3f8a638a14', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-09-25T03:30:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-25T10:12:44.332+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '559', 'instance': '192.168.114.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'ГОРОДЕНКА ВУЛ.ШЕВЧЕНКА.74А', 'team': 'slaves'}}
+2023-09-25 10:13:52,468 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.666.100 КАФЕ ЦЕНТРАЛЬНОГО ОФІСУ більше 15хв.!'}, 'endsAt': '2023-09-25T07:17:44.309Z', 'fingerprint': '8b3ee1758f608d75', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-09-19T14:13:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-25T10:13:44.331+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '453', 'instance': '192.168.666.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'КАФЕ ЦЕНТРАЛЬНОГО ОФІСУ', 'team': 'slaves'}}
+2023-09-25 10:13:52,474 [ERROR] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-25 10:15:52 EEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/views/app_all.py", line 60, in get_aler
+    handler.get_incedents()
+  File "/home/bodia/admin_fxpos/admin_fxpos/service/resources/incident_handler.py", line 33, in get_incedents
+    incedent.add_info = {"fingerprint": alert["fingerprint"], "summary": alert["annotations"]["summary"], "phones": phones.numbers_list, "CallInProgress": '', "CallStatus": 0, "LastCallDateTime": ""}
+                                                                                                                    ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'numbers_list'
+2023-09-25 10:13:53,820 [DEBUG] Looking for jobs to run
+2023-09-25 10:13:53,821 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-25 10:15:53 EEST)" (scheduled at 2023-09-25 10:13:53.814506+03:00)
+2023-09-25 10:13:53,822 [DEBUG] Next wakeup is due at 2023-09-25 10:15:53.814506+03:00 (in 119.993485 seconds)
+2023-09-25 10:13:53,828 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-25 10:13:53,833 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 None
+2023-09-25 10:13:53,852 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.114.100 ГОРОДЕНКА ВУЛ.ШЕВЧЕНКА.74А більше 15хв.!'}, 'endsAt': '2023-09-25T07:16:44.309Z', 'fingerprint': '0d6e9a3f8a638a14', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-09-25T03:30:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-25T10:12:44.332+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '559', 'instance': '192.168.114.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'ГОРОДЕНКА ВУЛ.ШЕВЧЕНКА.74А', 'team': 'slaves'}}
+2023-09-25 10:13:53,871 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.666.100 КАФЕ ЦЕНТРАЛЬНОГО ОФІСУ більше 15хв.!'}, 'endsAt': '2023-09-25T07:17:44.309Z', 'fingerprint': '8b3ee1758f608d75', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-09-19T14:13:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-25T10:13:44.331+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '453', 'instance': '192.168.666.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'КАФЕ ЦЕНТРАЛЬНОГО ОФІСУ', 'team': 'slaves'}}
+2023-09-25 10:13:53,876 [ERROR] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-25 10:15:53 EEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/views/app_all.py", line 60, in get_aler
+    handler.get_incedents()
+  File "/home/bodia/admin_fxpos/admin_fxpos/service/resources/incident_handler.py", line 33, in get_incedents
+    incedent.add_info = {"fingerprint": alert["fingerprint"], "summary": alert["annotations"]["summary"], "phones": phones.numbers_list, "CallInProgress": '', "CallStatus": 0, "LastCallDateTime": ""}
+                                                                                                                    ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'numbers_list'
+2023-09-25 10:14:10,931 [DEBUG] Sync pos and shop
+2023-09-25 10:14:20,342 [INFO] 127.0.0.1 - - [25/Sep/2023 10:14:20] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-25 10:14:25,804 [DEBUG] Sync pos and shop
+2023-09-25 10:14:34,621 [INFO] 127.0.0.1 - - [25/Sep/2023 10:14:34] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-25 10:15:25,708 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-25 10:15:26,070 [INFO]  * Restarting with stat
+2023-09-25 10:15:27,351 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 10:15:27,352 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 10:15:27,354 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 10:15:27,355 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 10:15:27,355 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 10:15:27,356 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 10:15:27,356 [INFO] Scheduler started
+2023-09-25 10:15:27,356 [DEBUG] Looking for jobs to run
+2023-09-25 10:15:27,367 [DEBUG] Next wakeup is due at 2023-09-25 10:17:27.351392+03:00 (in 119.984119 seconds)
+2023-09-25 10:15:27,393 [WARNING]  * Debugger is active!
+2023-09-25 10:15:27,394 [INFO]  * Debugger PIN: 528-864-763
+2023-09-25 10:15:29,780 [DEBUG] Sync pos and shop
+2023-09-25 10:15:37,166 [INFO] 127.0.0.1 - - [25/Sep/2023 10:15:37] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-25 10:15:52,389 [DEBUG] Looking for jobs to run
+2023-09-25 10:15:52,390 [DEBUG] Next wakeup is due at 2023-09-25 10:17:52.386230+03:00 (in 119.996489 seconds)
+2023-09-25 10:15:52,390 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-25 10:17:52 EEST)" (scheduled at 2023-09-25 10:15:52.386230+03:00)
+2023-09-25 10:15:52,391 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-25 10:15:52,394 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 None
+2023-09-25 10:15:52,399 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.114.100 ГОРОДЕНКА ВУЛ.ШЕВЧЕНКА.74А більше 15хв.!'}, 'endsAt': '2023-09-25T07:18:44.309Z', 'fingerprint': '0d6e9a3f8a638a14', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-09-25T03:30:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-25T10:14:44.334+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '559', 'instance': '192.168.114.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'ГОРОДЕНКА ВУЛ.ШЕВЧЕНКА.74А', 'team': 'slaves'}}
+2023-09-25 10:15:52,404 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.666.100 КАФЕ ЦЕНТРАЛЬНОГО ОФІСУ більше 15хв.!'}, 'endsAt': '2023-09-25T07:19:44.309Z', 'fingerprint': '8b3ee1758f608d75', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-09-19T14:13:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-25T10:15:44.332+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '453', 'instance': '192.168.666.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'КАФЕ ЦЕНТРАЛЬНОГО ОФІСУ', 'team': 'slaves'}}
+2023-09-25 10:15:52,407 [ERROR] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-25 10:17:52 EEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/views/app_all.py", line 60, in get_aler
+    handler.get_incedents()
+  File "/home/bodia/admin_fxpos/admin_fxpos/service/resources/incident_handler.py", line 33, in get_incedents
+    incedent.add_info = {"fingerprint": alert["fingerprint"], "summary": alert["annotations"]["summary"], "phones": phones.numbers_list, "CallInProgress": '', "CallStatus": 0, "LastCallDateTime": ""}
+                                                                                                                    ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'numbers_list'
+2023-09-25 10:17:27,358 [DEBUG] Looking for jobs to run
+2023-09-25 10:17:27,358 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-25 10:19:27 EEST)" (scheduled at 2023-09-25 10:17:27.351392+03:00)
+2023-09-25 10:17:27,359 [DEBUG] Next wakeup is due at 2023-09-25 10:19:27.351392+03:00 (in 119.992822 seconds)
+2023-09-25 10:17:27,360 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-25 10:17:27,363 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 None
+2023-09-25 10:17:27,373 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.114.100 ГОРОДЕНКА ВУЛ.ШЕВЧЕНКА.74А більше 15хв.!'}, 'endsAt': '2023-09-25T07:20:44.309Z', 'fingerprint': '0d6e9a3f8a638a14', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-09-25T03:30:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-25T10:16:44.331+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '559', 'instance': '192.168.114.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'ГОРОДЕНКА ВУЛ.ШЕВЧЕНКА.74А', 'team': 'slaves'}}
+2023-09-25 10:17:27,379 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.666.100 КАФЕ ЦЕНТРАЛЬНОГО ОФІСУ більше 15хв.!'}, 'endsAt': '2023-09-25T07:19:44.309Z', 'fingerprint': '8b3ee1758f608d75', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-09-19T14:13:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-25T10:15:44.332+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '453', 'instance': '192.168.666.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'КАФЕ ЦЕНТРАЛЬНОГО ОФІСУ', 'team': 'slaves'}}
+2023-09-25 10:17:27,385 [ERROR] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-25 10:19:27 EEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/views/app_all.py", line 60, in get_aler
+    handler.get_incedents()
+  File "/home/bodia/admin_fxpos/admin_fxpos/service/resources/incident_handler.py", line 33, in get_incedents
+    incedent.add_info = {"fingerprint": alert["fingerprint"], "summary": alert["annotations"]["summary"], "phones": phones.numbers_list, "CallInProgress": '', "CallStatus": 0, "LastCallDateTime": ""}
+                                                                                                                    ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'numbers_list'
+2023-09-25 10:17:52,386 [DEBUG] Looking for jobs to run
+2023-09-25 10:17:52,387 [DEBUG] Next wakeup is due at 2023-09-25 10:19:52.386230+03:00 (in 119.999176 seconds)
+2023-09-25 10:17:52,387 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-25 10:19:52 EEST)" (scheduled at 2023-09-25 10:17:52.386230+03:00)
+2023-09-25 10:17:52,388 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-25 10:17:52,391 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 None
+2023-09-25 10:17:52,396 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.114.100 ГОРОДЕНКА ВУЛ.ШЕВЧЕНКА.74А більше 15хв.!'}, 'endsAt': '2023-09-25T07:20:44.309Z', 'fingerprint': '0d6e9a3f8a638a14', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-09-25T03:30:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-25T10:16:44.331+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '559', 'instance': '192.168.114.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'ГОРОДЕНКА ВУЛ.ШЕВЧЕНКА.74А', 'team': 'slaves'}}
+2023-09-25 10:17:52,402 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.666.100 КАФЕ ЦЕНТРАЛЬНОГО ОФІСУ більше 15хв.!'}, 'endsAt': '2023-09-25T07:21:44.309Z', 'fingerprint': '8b3ee1758f608d75', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-09-19T14:13:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-25T10:17:44.333+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '453', 'instance': '192.168.666.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'КАФЕ ЦЕНТРАЛЬНОГО ОФІСУ', 'team': 'slaves'}}
+2023-09-25 10:17:52,407 [ERROR] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-25 10:19:52 EEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/views/app_all.py", line 60, in get_aler
+    handler.get_incedents()
+  File "/home/bodia/admin_fxpos/admin_fxpos/service/resources/incident_handler.py", line 33, in get_incedents
+    incedent.add_info = {"fingerprint": alert["fingerprint"], "summary": alert["annotations"]["summary"], "phones": phones.numbers_list, "CallInProgress": '', "CallStatus": 0, "LastCallDateTime": ""}
+                                                                                                                    ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'numbers_list'
+2023-09-25 10:18:16,416 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-25 10:18:16,702 [INFO]  * Restarting with stat
+2023-09-25 10:18:17,797 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 10:18:17,797 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 10:18:17,800 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 10:18:17,801 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 10:18:17,802 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 10:18:17,802 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 10:18:17,803 [INFO] Scheduler started
+2023-09-25 10:18:17,803 [DEBUG] Looking for jobs to run
+2023-09-25 10:18:17,816 [DEBUG] Next wakeup is due at 2023-09-25 10:20:17.797291+03:00 (in 119.981495 seconds)
+2023-09-25 10:18:17,850 [WARNING]  * Debugger is active!
+2023-09-25 10:18:17,850 [INFO]  * Debugger PIN: 528-864-763
+2023-09-25 10:18:18,732 [DEBUG] Sync pos and shop
+2023-09-25 10:18:26,797 [INFO] 127.0.0.1 - - [25/Sep/2023 10:18:26] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-25 10:18:29,347 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-25 10:18:29,702 [INFO]  * Restarting with stat
+2023-09-25 10:18:30,809 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 10:18:30,810 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 10:18:30,812 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 10:18:30,812 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 10:18:30,813 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 10:18:30,813 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 10:18:30,813 [INFO] Scheduler started
+2023-09-25 10:18:30,814 [DEBUG] Looking for jobs to run
+2023-09-25 10:18:30,825 [DEBUG] Next wakeup is due at 2023-09-25 10:20:30.809876+03:00 (in 119.984180 seconds)
+2023-09-25 10:18:30,846 [WARNING]  * Debugger is active!
+2023-09-25 10:18:30,847 [INFO]  * Debugger PIN: 528-864-763
+2023-09-25 10:18:30,966 [DEBUG] Sync pos and shop
+2023-09-25 10:18:37,742 [INFO] 127.0.0.1 - - [25/Sep/2023 10:18:37] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-25 10:19:13,579 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-25 10:19:13,929 [INFO]  * Restarting with stat
+2023-09-25 10:19:15,084 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 10:19:15,085 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 10:19:15,089 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 10:19:15,090 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 10:19:15,090 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 10:19:15,091 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 10:19:15,091 [INFO] Scheduler started
+2023-09-25 10:19:15,092 [DEBUG] Looking for jobs to run
+2023-09-25 10:19:15,098 [DEBUG] Next wakeup is due at 2023-09-25 10:21:15.084164+03:00 (in 119.985924 seconds)
+2023-09-25 10:19:15,135 [WARNING]  * Debugger is active!
+2023-09-25 10:19:15,137 [INFO]  * Debugger PIN: 528-864-763
+2023-09-25 10:19:15,247 [DEBUG] Sync pos and shop
+2023-09-25 10:21:10,249 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 10:21:10,250 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 10:21:10,252 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 10:21:10,253 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 10:21:10,253 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 10:21:10,254 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 10:21:10,254 [INFO] Scheduler started
+2023-09-25 10:21:10,254 [DEBUG] Looking for jobs to run
+2023-09-25 10:21:10,266 [DEBUG] Next wakeup is due at 2023-09-25 10:23:10.249527+03:00 (in 119.983319 seconds)
+2023-09-25 10:21:10,300 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8888
+ * Running on http://10.69.8.220:8888
+2023-09-25 10:21:10,303 [INFO] [33mPress CTRL+C to quit[0m
+2023-09-25 10:21:10,304 [INFO]  * Restarting with stat
+2023-09-25 10:21:11,382 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 10:21:11,382 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 10:21:11,385 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 10:21:11,386 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 10:21:11,386 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 10:21:11,386 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 10:21:11,387 [INFO] Scheduler started
+2023-09-25 10:21:11,387 [DEBUG] Looking for jobs to run
+2023-09-25 10:21:11,405 [DEBUG] Next wakeup is due at 2023-09-25 10:23:11.381847+03:00 (in 119.976017 seconds)
+2023-09-25 10:21:11,427 [WARNING]  * Debugger is active!
+2023-09-25 10:21:11,427 [INFO]  * Debugger PIN: 528-864-763
+2023-09-25 10:21:12,536 [DEBUG] Sync pos and shop
+2023-09-25 10:21:48,394 [INFO] 127.0.0.1 - - [25/Sep/2023 10:21:48] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-25 10:21:54,423 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-25 10:21:54,839 [INFO]  * Restarting with stat
+2023-09-25 10:21:56,113 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 10:21:56,114 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 10:21:56,118 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 10:21:56,120 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 10:21:56,120 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 10:21:56,121 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 10:21:56,121 [INFO] Scheduler started
+2023-09-25 10:21:56,122 [DEBUG] Looking for jobs to run
+2023-09-25 10:21:56,135 [DEBUG] Next wakeup is due at 2023-09-25 10:23:56.113568+03:00 (in 119.978561 seconds)
+2023-09-25 10:21:56,159 [WARNING]  * Debugger is active!
+2023-09-25 10:21:56,160 [INFO]  * Debugger PIN: 528-864-763
+2023-09-25 10:22:58,344 [DEBUG] Sync pos and shop
+2023-09-25 10:23:01,929 [INFO] 127.0.0.1 - - [25/Sep/2023 10:23:01] "GET /api/dbsync HTTP/1.1" 200 -
+2023-09-25 10:23:10,256 [DEBUG] Looking for jobs to run
+2023-09-25 10:23:10,257 [INFO] Running job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-25 10:23:10 EEST)" (scheduled at 2023-09-25 10:23:10.249527+03:00)
+2023-09-25 10:23:10,258 [DEBUG] Next wakeup is due at 2023-09-25 10:25:10.249527+03:00 (in 119.992768 seconds)
+2023-09-25 10:23:10,265 [DEBUG] Starting new HTTP connection (1): 192.168.1.200:9093
+2023-09-25 10:23:10,270 [DEBUG] http://192.168.1.200:9093 "GET /api/v2/alerts?filter=job=~%22routers%22 HTTP/1.1" 200 None
+2023-09-25 10:23:10,348 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.114.100 ГОРОДЕНКА ВУЛ.ШЕВЧЕНКА.74А більше 15хв.!'}, 'endsAt': '2023-09-25T07:26:44.309Z', 'fingerprint': '0d6e9a3f8a638a14', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-09-25T03:30:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-25T10:22:44.329+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '559', 'instance': '192.168.114.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'ГОРОДЕНКА ВУЛ.ШЕВЧЕНКА.74А', 'team': 'slaves'}}
+2023-09-25 10:23:10,368 [DEBUG] {'annotations': {'summary': 'Роутер 192.168.666.100 КАФЕ ЦЕНТРАЛЬНОГО ОФІСУ більше 15хв.!'}, 'endsAt': '2023-09-25T07:25:44.309Z', 'fingerprint': '8b3ee1758f608d75', 'receivers': [{'name': 'alertmananger-bot'}], 'startsAt': '2023-09-19T14:13:44.309Z', 'status': {'inhibitedBy': [], 'silencedBy': [], 'state': 'active'}, 'updatedAt': '2023-09-25T10:21:44.329+03:00', 'generatorURL': 'http://ff29190170e3:9090/graph?g0.expr=probe_success%7Bjob%3D%22routers%22%7D+%3D%3D+0&g0.tab=1', 'labels': {'alertname': "Роутер без зв'язку більше 15хв.", 'id_shop': '453', 'instance': '192.168.666.100', 'job': 'routers', 'provider': 'Gigatrans', 'severity': 'critical', 'shop_name': 'КАФЕ ЦЕНТРАЛЬНОГО ОФІСУ', 'team': 'slaves'}}
+2023-09-25 10:23:10,381 [ERROR] Job "get_aler (trigger: interval[0:02:00], next run at: 2023-09-25 10:25:10 EEST)" raised an exception
+Traceback (most recent call last):
+  File "/home/bodia/admin_fxpos/admin_fxpos/myenv/lib/python3.11/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bodia/admin_fxpos/admin_fxpos/views/app_all.py", line 60, in get_aler
+    handler.get_incedents()
+  File "/home/bodia/admin_fxpos/admin_fxpos/service/resources/incident_handler.py", line 33, in get_incedents
+    incedent.add_info = {"fingerprint": alert["fingerprint"], "summary": alert["annotations"]["summary"], "phones": phones.numbers_list, "CallInProgress": '', "CallStatus": 0, "LastCallDateTime": ""}
+                                                                                                                    ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'numbers_list'
+2023-09-25 10:23:35,063 [INFO]  * Detected change in '/home/bodia/admin_fxpos/admin_fxpos/utils/sync.py', reloading
+2023-09-25 10:23:35,359 [INFO]  * Restarting with stat
+2023-09-25 10:23:39,729 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 10:23:39,729 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 10:23:39,731 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 10:23:39,732 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 10:23:39,732 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 10:23:39,732 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 10:23:39,733 [INFO] Scheduler started
+2023-09-25 10:23:39,735 [DEBUG] Looking for jobs to run
+2023-09-25 10:23:39,735 [DEBUG] Next wakeup is due at 2023-09-25 10:25:39.729103+03:00 (in 119.993570 seconds)
+2023-09-25 10:23:39,773 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8888
+ * Running on http://10.69.8.220:8888
+2023-09-25 10:23:39,773 [INFO] [33mPress CTRL+C to quit[0m
+2023-09-25 10:23:39,774 [INFO]  * Restarting with stat
+2023-09-25 10:23:40,782 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 10:23:40,782 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 10:23:40,784 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2023-09-25 10:23:40,784 [INFO] Added job "get_aler" to job store "default"
+2023-09-25 10:23:40,784 [INFO] Added job "run_dbsync" to job store "default"
+2023-09-25 10:23:40,785 [INFO] Added job "send_exice_reoprt" to job store "default"
+2023-09-25 10:23:40,785 [INFO] Scheduler started
+2023-09-25 10:23:40,785 [DEBUG] Looking for jobs to run
+2023-09-25 10:23:40,796 [DEBUG] Next wakeup is due at 2023-09-25 10:25:40.782215+03:00 (in 119.986102 seconds)
+2023-09-25 10:23:40,810 [WARNING]  * Debugger is active!
+2023-09-25 10:23:40,811 [INFO]  * Debugger PIN: 528-864-763
+2023-09-25 10:23:43,526 [DEBUG] Sync pos and shop
+2023-09-25 10:23:47,569 [INFO] 127.0.0.1 - - [25/Sep/2023 10:23:47] "GET /api/dbsync HTTP/1.1" 200 -

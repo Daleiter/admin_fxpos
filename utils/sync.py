@@ -62,6 +62,14 @@ class DBSync:
                 db_value.active = cd_value.sign_activity
                 db.session.commit()
                 db.session.refresh(db_value)
+
+        def update_name(cd_value, db_value):
+            if db_value.name != cd_value.name_shop and db_value.base_ip != 1:
+                self.logger.debug(f"{db_value} --> {cd_value}")
+                db_value.name = cd_value.name_shop  
+                db.session.commit()
+                db.session.refresh(db_value)
+
         def update_prro_status(index_poscd, index_pos):
             prro = is_workpace_prro(index_poscd.code_shop, index_poscd.id_workplace)
             for attribute in index_pos.attributes:
@@ -85,6 +93,7 @@ class DBSync:
                     rk.append(shopcd)
                     #Update shop active in our DB
                     update_active(shopcd, shop)
+                    update_name(shopcd, shop)
         nemashop = difference_set(rk, rkcd)
         #print(nemashop)
         for shopi in nemashop:

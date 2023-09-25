@@ -14,7 +14,7 @@ class Config:
     CACHE_TYPE = 'redis'
     CACHE_REDIS_URL = 'redis://192.168.1.15:6379/0'
     DEBUG = False
-    SYNCDB_TIMEOUT = 60
+    SYNCDB_TIMEOUT = 9999
 
 
 class DevelopmentConfig(Config):
